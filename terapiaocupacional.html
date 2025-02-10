@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUERTAS ABIERTAS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="SRC/Agregar un subtítulo.jpg" type="image/x-icon">
+
+    <style>
+      .navbar-custom {
+          background-color: #feffff;
+          padding-right: 20px; /* Ajusta el espacio del margen derecho */
+      }
+      .navbar-nav {
+          margin-left: auto; /* Empuja el menú hacia la derecha */
+          
+          color: #02a551; /* Cambia el color del texto si es necesario */
+          font-size: 23px;
+          font-weight: bold;
+          color: #000000;
+      }
+      .navbar-nav .nav-link {
+          font-size: 28px; /* Cambia el tamaño de la letra */
+          color: #02a551;
+          white-space: nowrap;
+      }
+      .navbar-nav .nav-item:hover {
+          border-bottom: 2px solid #02a551; /* Línea negra al pasar el cursor */
+          padding-bottom: 2px; /* Espacio para evitar que el texto toque la línea */
+      }
+      .logo-margin {
+        margin-right: 45px; /* Aumenta el margen derecho del logo */
+      }
+      body {
+          background-color: #feffff; /* Color gris claro */
+          font-family: 'Montserrat', sans-serif;
+      }
+      /* Estilo para reducir las imágenes del carrusel */
+      .carousel-inner img {
+          max-width: 50%; /* Reduce el ancho al 50% */
+          max-height: 50%; /* Reduce la altura al 50% */
+          margin: 0 auto; /* Centra las imágenes */
+      }
+      .carousel-item.active {
+      background-color: #feffff; /* Cambia este color al que desees */
+      color: #feffff; /* Cambia el color del texto si es necesario */
+      }
+
+      .carousel-item h2 {
+        color: #02a551; /* Cambia el color del texto si es necesario */
+          font-size: 24px;
+          font-weight: bold;
+          margin: 20px 0;
+      }
+       .social-icon  {
+            position: fixed;
+            right: 20px;
+            width: 30px; /* Ajusta el tamaño del ícono */
+            height: 30px;
+            z-index: 1000;
+          }
+
+          .whatsapp-icon {
+            bottom: 140px; /* Ajusta la posición desde abajo */
+          }
+
+          
+            .facebook-icon {
+              bottom: 90px; /* Se posiciona arriba del icono de WhatsApp */
+        }
+          
+
+          .social-icon img {
+      width: 50px; /* Ajusta el tamaño deseado para los íconos */
+      height: auto; /* Mantiene la proporción de aspecto */
+      
+     
+        }
+
+        .footer-social-icon img {
+  width: 50px; /* Tamaño de los íconos del footer */
+  height: auto;
+  margin: 0 20px; /* Espaciado entre los íconos */
+  opacity: 0.7; /* Ligera transparencia */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.footer-social-icon img:hover {
+  opacity: 1; /* Sin transparencia al pasar el cursor */
+  transform: scale(1.1); /* Efecto de agrandado */
+}
+
+  hr {
+          height: 14px;
+          border: none;
+          margin-top: 0;        
+          background: #000000;  /* fallback for old browsers */
+          background: -webkit-linear-gradient(to left, #0f9b0f, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+          background: linear-gradient(to left, #0f9b0f, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+          
+          margin: 0;
+      }
+
+              .scroll-up-icon {
+        position: fixed;
+        left: 20px; /* Ajusta la posición horizontal */
+        bottom: 20px; /* Ajusta la posición vertical */
+        width: 70px;
+        height: 70px;
+        background-color: #000; /* Color de fondo */
+        color: #fff; /* Color del ícono */
+        border-radius: 50%; /* Forma circular */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000; /* Asegúrate de que esté sobre otros elementos */
+        cursor: pointer;
+        opacity: 0.7; /* Transparencia inicial */
+        transition: opacity 0.3s ease;
+}
+
+.scroll-up-icon:hover {
+        opacity: 1; /* Aumenta la visibilidad al pasar el cursor */
+        }
+        .scroll-up-icon i {
+  font-size: 1,5rem; /* Tamaño de la flecha */
+} 
+
+.footer {
+background-color: #dbdbdb; /* Fondo oscuro */
+color: #000000; /* Texto claro */
+padding: 60px 0; /* Espaciado */
+}
+
+.footer a {
+color: #000000; /* Color de enlaces */
+text-decoration: none;
+}
+
+.footer a:hover {
+text-decoration: underline; /* Subrayado al pasar el cursor */
+color: #000000;
+padding-bottom: 2px; /* Espacio para evitar que el texto toque la línea */
+}
+
+.footer p {
+margin: 20; /* Elimina márgenes */
+}
+
+.footer-links a{
+    display: flex;
+    justify-content: center; /* Centra los elementos */
+   
+    margin: 0 15px; /* Margen horizontal */
+    
+  }
+  .footer-icons {
+  display: flex; /* Usamos flexbox para alinear los íconos horizontalmente */
+  justify-content: space-evenly; /* Distribuye espacio igual entre los íconos */
+  align-items: center; /* Centra verticalmente los íconos */
+  max-width: 300px; /* Ancho máximo del contenedor de íconos */
+  margin: 0 auto; /* Centrar contenedor en la página */
+  gap: 25px;
+}
+.card-img-uniform {
+background-color: #dbdbdb;
+height: 200px; /* Altura fija para las imágenes */
+object-fit: cover; /* Asegura que la imagen se recorte proporcionalmente */
+width: 100%; /* Asegura que ocupe todo el ancho disponible */
+}
+
+.carousel-item img {
+height: 400px; /* Ajusta la altura según tus necesidades */
+object-fit: cover; /* Recorta la imagen proporcionalmente para que se ajuste al espacio */
+width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+}
+.montserrat-uniquifier {
+font-family: "Montserrat", serif;
+font-optical-sizing: auto;
+font-weight: weight;
+font-style: normal;
+}
+@media (max-width: 768px) {
+  /* Estilos para tablets y móviles */
+  body {
+      font-size: 14px;
+  }
+  .container {
+      padding: 10px;
+  }
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #02a551;
+}
+div.card-body{
+  background-color: #dbdbdb;
+}
+
+.dropdown-menu.show .dropdown-item {
+    color: #02a551; /* Cambia el color del texto a verde */
+}
+
+  /* Asegurar que el dropdown se abra al pasar el mouse */
+  .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  .dropdown-item {
+    color: #02a551; /* Color del texto del menú desplegable */
+}
+
+  /* Evita que se quede abierto cuando el mouse salga */
+  .dropdown-menu {
+    display: none;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+  }
+
+/*boton*/
+
+
+    .custom-button {
+      height: 50px; /* Misma altura que los íconos */
+    padding: 0 20px; /* Hace que sea alargado */
+    border: 2px solid rgb(14, 13, 13); /* Borde color */
+    background: transparent; /* Fondo transparente */
+    color: rgb(10, 10, 10); /* Texto color */
+    font-size: 16px; /* Tamaño de texto */
+    cursor: pointer;
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+   margin-left: 22px; /* espacio con los otros iconos */
+  
+   
+   
+}
+
+    /* Cambia el color al pasar el mouse */
+    .custom-button:hover {
+        background: #0f9b0f; /* Cambia esto al color que desees */
+        color: white;
+    }
+
+
+.card-1 img { border-radius: 10px; }
+
+.card-2 img { filter: grayscale(50%);
+        
+}
+.contenedor-tarjetas { background-color:#02a551  }
+
+.card {
+  border-radius: 20px; /* Bordes redondeados */
+  overflow: hidden; /* Evita que el contenido sobresalga */
+}
+
+.card-img-uniform {
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  object-fit: cover; /* Mantiene proporciones sin deformar */
+  height: 200px; /* Ajusta la altura de todas las imágenes */
+}
+
+.card-group {
+  gap: 10px; /* Espaciado entre tarjetas */
+  /*background: linear-gradient(to left,#dbdbdb, #dbdbdb ); /* Degradado de verde a negro */
+         
+  background: #000000;  /* fallback for old browsers */
+          background: -webkit-linear-gradient(to left, #feffff,#02a551);  /* Chrome 10-25, Safari 5.1-6 */
+          background: linear-gradient(to left, #feffff ,#02a551);
+}
+
+h5 {
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: justify;  /* Justifica el texto */
+    max-width: 90%;  /* Asegura que los párrafos no sean demasiado anchos */
+  }
+
+  /* Opcional: Si quieres que el texto se vea más uniforme */
+  p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .custom-heading {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #02a551;
+}
+  </style>
+</head>
+<body>
+ 
+  <hr >   
+  <div class="container-fluid justify-content-center">
+  <div class="navbar-text text-center">
+    <h1>"Puertas Abiertas"</h1>
+  </div>
+  </div>
+  
+  <hr style="border: 1px solid; margin: 0;">
+    <nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container-fluid">
+      <!-- Logo -->
+      <img src="SRC/logopuertasabiertas.jpg" alt="Logo" width="250" height="200" class="d-inline-block align-text-top logo-margin">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+        <!-- Menu Items -->
+        <ul class="navbar-nav mb-lg-4 mb-lg-2">
+
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="QuienesSomos.html">Quienes Somos </a>
+          </li>
+
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Tratamiento 
+          </a>
+          <ul class="dropdown-menu">
+
+            <li><a class="dropdown-item" href="psicologia.html">PSICOLOGÍA</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="fonoaudiologia.html">FONOAUDIOLOGÍA</a></li>
+            <li><hr class="dropdown-divider"></li>
+
+            <li><a class="dropdown-item" href="musicoterapia.html">MUSICOTERAPIA</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="habilidadessociales.html">HABILIDADES SOCIALES</a></li>
+            
+
+          
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+             Integracion  
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="acompañanteexterno.html">ACOMPAÑAMIENTO EXTERNO</a></li>
+        
+
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="ubicacion.html">Ubicación </a>
+       </li>
+
+
+            <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://wa.me/5491123719454">Contacto</a>
+          </li>      
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+</div>
+
+<hr style="border: 1px solid; margin: 0;">
+
+<div class="container-fluid justify-content-center">
+<div class="navbar-text text-center">
+  <h2  class="custom-heading">Terapia Ocupacional</h2>
+</div>
+</div>
+
+<hr style="border: 1px solid; margin: 0;">
+<div style="position: relative; padding: 20px; color: white; border-radius: 10px;">
+  <div style="background-image: url('src/carrusel/Terapia\ Ocupacional.jpg'); /* Reemplaza con la ruta de tu imagen */
+              background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+              background-position: center; /* Centra la imagen en el fondo */
+              height: 100%; /* Asegura que el contenedor tenga altura */
+              position: absolute; /* Posiciona el fondo */
+              top: 0; /* Alinea al top */
+              left: 0; /* Alinea a la izquierda */
+              right: 0; /* Alinea a la derecha */
+              bottom: 0; /* Alinea al fondo */
+              filter: brightness(0.5); /* Aclara la imagen */
+              z-index: 1; /* Asegura que la imagen esté detrás del texto */
+              ">
+  </div>
+  <div style="position: relative; z-index: 2;"> <!-- Este div contiene el texto -->
+    <h5>La terapia ocupacional es una disciplina que promueve la autonomía y el desarrollo de habilidades funcionales en niños, adolescentes y adultos.</h5>  
+    <br>  
+    <h5>Su objetivo es identificar, evaluar y brindar estrategias para mejorar la motricidad fina y gruesa, la integración sensorial, la coordinación y la independencia en las actividades diarias.</h5>  
+    <br>  
+    <h5>Los terapeutas ocupacionales trabajan en la prevención, diagnóstico e intervención de dificultades como trastornos del desarrollo, problemas de coordinación, alteraciones sensoriales y dificultades en la autonomía personal.</h5>  
+    <br>  
+    <h5>A través de técnicas especializadas, ayudan a fortalecer la regulación sensorial, la planificación motriz y las habilidades para la vida diaria.</h5>  
+    <br>  
+    <h5>Además, colaboran con familias y docentes para diseñar estrategias que favorezcan la inclusión y la participación. Su labor es clave para garantizar un desarrollo integral, permitiendo que cada persona alcance su máximo nivel de independencia y bienestar.</h5>  
+     </div>
+</div>
+<hr style="border: 1px solid; margin: 0;">
+
+ <!-- Íconos sociales -->
+ 
+ <div class="social-icon whatsapp-icon">
+  <a href="https://wa.me/5491123719454" target="_blank" rel="noopener noreferrer">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+  </a>
+</div>
+
+<div class="social-icon facebook-icon">
+  <a href="https://www.facebook.com/centropuertasabiertas" target="_blank" rel="noopener noreferrer">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+  </a>
+</div>
+<!-- ICONO ARRIBA-->
+<div class="scroll-up-icon">
+  <i class="fa-solid fa-arrow-up"></i>
+</div>
+<!-- CSS para personalizar el color de las flechas -->
+<style>
+  /* Cambiar color de las flechas a negro */
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: #eaf0d2; /* Cambia aquí al color deseado */
+    border-radius: 50%; /* Opcional: redondea las flechas */
+    width: 4rem; /* Ajusta el tamaño de las flechas */
+    height: 4rem;
+  }
+
+  /* Fondo transparente detrás de las flechas */
+  .carousel-control-prev,
+  .carousel-control-next {
+   
+    opacity: 16; /* Asegúrate de que las flechas sean completamente visibles */
+  }
+</style>
+ 
+
+<script>
+// Array con las posiciones iniciales de los íconos
+const initialPositions = {
+  
+    whatsapp: 90, // posición inicial de WhatsApp
+    facebook: 160, // posición inicial de Facebook
+};
+
+window.addEventListener("scroll", () => {
+    const scrollPosition = window.scrollY;
+
+    // Ajustar WhatsApp
+    const whatsappIcon = document.querySelector(".whatsapp-icon");
+    whatsappIcon.style.top = initialPositions.whatsapp + scrollPosition * 0.1 + "px";
+
+    // Ajustar Facebook
+    const facebookIcon = document.querySelector(".facebook-icon");
+     facebookIcon.style.top = initialPositions.facebook + scrollPosition * 0.1 + "px";
+       whatsappIcon.style.top = 90 + scrollPosition * 0.03 + "px";
+       facebookIcon.style.top = 160 + scrollPosition * 0.03 + "px";
+       
+    
+ // Obtener la referencia al ícono de subir
+ const scrollUpIcon = document.querySelector(".scroll-up-icon");
+
+// Mostrar/ocultar el ícono según el desplazamiento
+window.addEventListener("scroll", () => {
+  const scrollPosition = window.scrollY;
+
+  // Aparece cuando el usuario baja 100 píxeles
+  if (scrollPosition > 100) {
+    scrollUpIcon.style.display = "flex";
+    scrollUpIcon.style.bottom = 20 + scrollPosition * 0.1 + "px"; // Desplazamiento dinámico
+  } else {
+    scrollUpIcon.style.display = "none";
+  }
+});
+
+// Scroll hacia arriba al hacer clic en el ícono
+scrollUpIcon.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
+ 
+});
+
+
+</script>
+  
+
+
+
+
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+  <div class="carousel-inner">
+    <!-- Primera frase -->
+    <div class="carousel-item active" data-bs-interval="3000">
+      <div class="d-block w-100 text-center">
+        <h2>Capacitaciones y Superviciones</h2>
+      </div>
+    </div>
+    
+    <!-- Segunda frase -->
+    <div class="carousel-item" data-bs-interval="3000">
+      <div class="d-block w-100 text-center">
+        <h2>ADOS-2</h2>
+      </div>
+    </div>
+     <!-- 3era frase -->
+        <div class="carousel-item" data-bs-interval="3000">
+          <div class="d-block w-100 text-center">
+            <h2>ADI-R</h2>
+          </div>
+        </div>
+            <!-- 4ta frase -->
+    <div class="carousel-item" data-bs-interval="3000">
+      <div class="d-block w-100 text-center">
+        <h2>Evaluacion Diagnostica Integral</h2>
+      </div>
+    </div>
+     <!-- 5ta frase -->
+     <div class="carousel-item" data-bs-interval="3000">
+      <div class="d-block w-100 text-center">
+     <h2>Perfiles Neurocognitivos</h2>
+     </div>
+     </div>
+
+  </div>
+</div>
+<hr style="border: 1px solid; margin: 0;">
+<div class="card-group">
+  <div class="card">
+    <img src="SRC/carrusel/Terapia Ocupacional.jpg" class="card-img-top card-img-uniform" alt="Terapia Ocupacional">
+   
+ 
+  </div>
+  <div class="card">
+    <img src="SRC/carrusel/musicoterapia.jpg" class="card-img-top card-img-uniform" alt="Musicoterapia">
+  
+  </div>
+  <div class="card">
+    <img src="SRC/carrusel/habilidades-sociales.jpg" class="card-img-top card-img-uniform" alt="Habilidades Sociales">
+  </div>
+</div>
+
+
+<hr style="border: 1px solid; margin: 0;">
+
+<div class="container-fluid justify-content-center">
+<div class="navbar-text text-center">
+  <h1>Brindamos atención a pacientes con CUD, obras sociales y particulares</h1>
+</div>
+</div>
+
+<hr style="border: 1px solid; margin: 0;">
+<footer>
+  <!-- Footer con íconos sociales alineados horizontalmente -->
+  <div class="footer">
+    <div class="container text-center">
+      <div class="footer-icons">
+        <a href="https://wa.me/5491123719454" target="_blank" class="footer-social-icon">
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+        </a>
+        <a href="https://www.facebook.com/centropuertasabiertas" target="_blank" class="footer-social-icon">
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com/" target="_blank" class="footer-social-icon">
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram">
+        </a>
+      
+        <button class="custom-button" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSdvaX3ZFmnI_dcLJHrN1btVR1koqKEv1Tv0l7Z783a1D0M2Rg/viewform?vc=0&c=0&w=1&flr=0&usp=mail_form_link'">
+          ¡Envianos tu CV!
+        </button>
+  
+      
+      </div>
+     <div><br></div>
+     <div style="text-align: center; font-family: Arial, sans-serif; color: #333;">
+      <div style="display: flex; justify-content: center; align-items: stretch; margin: 10px 0;">
+          <div style="margin-right: 20px; flex: 1; min-width: 150px;">
+              <strong>Encontranos en:</strong><br>
+              AV. Manuel Belgrano 3980,<br>
+              Sarandí, Avellaneda,<br>
+              Buenos Aires.
+          </div>
+          <div style="margin-right: 20px; flex: 1; min-width: 150px;">
+              <strong>Teléfono:</strong><br>
+              <a href="tel:1142075531" style="text-decoration: none; color: inherit;">1142075531</a>
+          </div>
+          <div style="flex: 1; min-width: 150px;">
+              <strong>Horario:</strong><br>
+              Lunes a Viernes de 9:00 a 20:00 hs.
+          </div>
+      </div>
+      <p style="margin: 20px 0; font-size: 0.9em; color: #777;">
+          &copy; 2025 Puertas Abiertas. Todos los derechos reservados.
+      </p>
+  </div>
+  </footer>
+</body>
+</html>
