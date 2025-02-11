@@ -38,7 +38,10 @@
       .logo-margin {
         margin-right: 45px; /* Aumenta el margen derecho del logo */
       }
-   
+      body {
+          background-color: #feffff; /* Color gris claro */
+          font-family: 'Montserrat', sans-serif;
+      }
       /* Estilo para reducir las imágenes del carrusel */
       .carousel-inner img {
           max-width: 50%; /* Reduce el ancho al 50% */
@@ -188,8 +191,6 @@ font-style: normal;
   /* Estilos para tablets y móviles */
   body {
       font-size: 14px;
-      background-color: #feffff; /* Color gris claro */
-      font-family: 'Montserrat', sans-serif;
   }
   .container {
       padding: 10px;
@@ -219,6 +220,7 @@ div.card-body{
   .dropdown-item {
     color: #02a551; /* Color del texto del menú desplegable */
 }
+
   /* Evita que se quede abierto cuando el mouse salga */
   .dropdown-menu {
     display: none;
@@ -238,11 +240,11 @@ div.card-body{
     padding: 0 20px; /* Hace que sea alargado */
     border: 2px solid rgb(14, 13, 13); /* Borde color */
     background: transparent; /* Fondo transparente */
-    color: rgb(15, 155, 15); /* Texto color */
+    color: rgb(10, 10, 10); /* Texto color */
     font-size: 16px; /* Tamaño de texto */
     cursor: pointer;
     white-space: nowrap; /* Evita que el texto se divida en varias líneas */
-    margin-left: 22px; /* espacio con los otros iconos */
+   margin-left: 22px; /* espacio con los otros iconos */
   
    
    
@@ -320,7 +322,6 @@ h5 {
       <img src="SRC/logopuertasabiertas.jpg" alt="Logo" width="250" height="200" class="d-inline-block align-text-top logo-margin">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-        
     </button>
     <div class="collapse navbar-collapse" id="navbarText">
         <!-- Menu Items -->
@@ -339,11 +340,10 @@ h5 {
             Tratamiento 
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="psicopedagogia.html">PSICOPEDAGOGÍA</a></li>
+            <li><a class="dropdown-item" href="psicopedagogía.html">PSICOPEDAGOGÍA</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="psicologia.html">PSICOLOGÍA</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="fonoaudiologia.html">FONOAUDIOLOGÍA</a></li>
+
+            <li><a class="dropdown-item" href="fonoaudiología.html">FONOAUDIOLOGÍA</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="terapiaocupacional.html">TERAPISTA OCUPACIONAL</a></li>
             <li><hr class="dropdown-divider"></li>
@@ -358,7 +358,7 @@ h5 {
 
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-             Integracion  
+            Integración 
           </a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="acompañanteexterno.html">ACOMPAÑAMIENTO EXTERNO</a></li>
@@ -366,9 +366,16 @@ h5 {
 
           </ul>
         </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="ubicación.html">Ubicación </a>
+       </li>
+
+
             <li class="nav-item">
             <a class="nav-link" target="_blank" href="https://wa.me/5491123719454">Contacto</a>
           </li>      
+
         </ul>
       </div>
     </div>
@@ -381,57 +388,38 @@ h5 {
 
 <div class="container-fluid justify-content-center">
 <div class="navbar-text text-center">
-  <h2  class="custom-heading">Ubicacion</h2>
+  <h2  class="custom-heading">Psicología</h2>
 </div>
 </div>
 
 <hr style="border: 1px solid; margin: 0;">
-<div class="container-fluid "> <!-- Cambiar a container-fluid para ocupar todo el ancho -->
-  <div class="row g-2">
-    <div class="col-md-3"> <!-- 40% de ancho en pantallas medianas y más -->
-      <div class="card h-100 d-flex flex-column"> <!-- Usar flexbox para ocupar todo el espacio -->
-          <div class="card-body d-flex flex-column justify-content-between"> <!-- Alinear contenido -->
-              <h5 class="card-title">Contáctanos:</h5>
-              <div class="contact-item mb-3"> <!-- Reducir el margen inferior -->
-                  <i class="fas fa-location-dot"></i>
-                  <a href="https://maps.app.goo.gl/wXEMgqGxeB3W6iGi7" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
-                      AV. Manuel Belgrano 3980, Sarandí, Avellaneda.
-                  </a>
-              </div>
-  
-              <div class="contact-item mb-3"> <!-- Reducir el margen inferior -->
-                  <i class="fas fa-phone"></i>
-                  <a href="tel:1142075531" style="text-decoration: none;">1142075531</a>
-              </div>
-  
-              <div class="contact-item mb-3"> <!-- Reducir el margen inferior -->
-                  <i class="fab fa-facebook"></i>
-                  <a href="https://www.facebook.com/centropuertasabiertas" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
-                      Facebook
-                  </a>
-              </div>
-  
-              <div class="contact-item">
-                  <i class="fas fa-map-marker-alt"></i>
-                  <a href="https://maps.app.goo.gl/7EjLCAPoMi75TZEr6" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
-                      Ver en Google Maps
-                  </a>
-              </div>
-          </div>
-      </div>
+<div style="position: relative; padding: 20px; color: white; border-radius: 10px;">
+  <div style="background-image: url('src/carrusel/psicologia.jpg'); /* Reemplaza con la ruta de tu imagen */
+              background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+              background-position: center; /* Centra la imagen en el fondo */
+              height: 100%; /* Asegura que el contenedor tenga altura */
+              position: absolute; /* Posiciona el fondo */
+              top: 0; /* Alinea al top */
+              left: 0; /* Alinea a la izquierda */
+              right: 0; /* Alinea a la derecha */
+              bottom: 0; /* Alinea al fondo */
+              filter: brightness(0.5); /* Aclara la imagen */
+              z-index: 1; /* Asegura que la imagen esté detrás del texto */
+              ">
   </div>
-
-      <!-- Mapa de Google Maps a la derecha -->
-      <div class="col-md-9"> <!-- 60% de ancho en pantallas medianas y más -->
-          <div class="card h-100">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m24!1m12!1m3!1d52477.6495297027!2d-58.364839729055454!3d-34.70888505674199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m9!3e6!4m3!3m2!1d-34.7308032!2d-58.3073792!4m3!3m2!1d-34.6891515!2d-58.3407153!5e0!3m2!1ses-419!2sar!4v1739151839688!5m2!1ses-419!2sar"
-                  width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" 
-                  referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-      </div>
-  </div>
+  <div style="position: relative; z-index: 2;"> <!-- Este div contiene el texto -->
+    <h5>La psicología es la ciencia que estudia el comportamiento, las emociones y los procesos mentales en niños, adolescentes y adultos.</h5>  
+    <br>  
+    <h5>Su objetivo es identificar, evaluar y brindar estrategias para mejorar el bienestar emocional, la adaptación social, el manejo del estrés y la salud mental.</h5>  
+    <br>  
+    <h5>Los psicólogos trabajan en la prevención, diagnóstico e intervención de problemas como la ansiedad, la depresión, las dificultades emocionales, la autoestima y los trastornos del desarrollo.</h5>  
+    <br>  
+    <h5>A través de técnicas especializadas, ayudan a fortalecer la resiliencia, la regulación emocional y las habilidades sociales.</h5>  
+    <br>  
+    <h5>Además, colaboran con familias y docentes para diseñar estrategias que favorezcan el desarrollo integral. Su labor es clave para garantizar el equilibrio emocional, permitiendo que cada persona alcance su máximo bienestar psicológico y personal.</h5>  
+    </div>
 </div>
-
+<hr style="border: 1px solid; margin: 0;">
 
  <!-- Íconos sociales -->
  
@@ -518,8 +506,9 @@ scrollUpIcon.addEventListener("click", () => {
  
 });
 
+
 </script>
-<hr style="border: 1px solid; margin: 0;">
+   
 <div class="container-fluid justify-content-center">
   <div class="navbar-text text-center">
     <h1>ADOS/2 - ADI/R - Diagnostico Integral - Perfiles Neurocognitivos</h1>
@@ -534,7 +523,22 @@ scrollUpIcon.addEventListener("click", () => {
     </div>
   
   
+  <hr>
+<hr style="border: 1px solid; margin: 0;">
+<div class="card-group">
+  <div class="card">
+    <img src="SRC/carrusel/Terapia Ocupacional.jpg" class="card-img-top card-img-uniform" alt="Terapia Ocupacional">
+   
+ 
+  </div>
+  <div class="card">
+    <img src="SRC/carrusel/musicoterapia.jpg" class="card-img-top card-img-uniform" alt="Musicoterapia">
   
+  </div>
+  <div class="card">
+    <img src="SRC/carrusel/habilidades-sociales.jpg" class="card-img-top card-img-uniform" alt="Habilidades Sociales">
+  </div>
+</div>
 
 
 <hr style="border: 1px solid; margin: 0;">
