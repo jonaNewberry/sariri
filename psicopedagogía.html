@@ -304,6 +304,19 @@ h5 {
   font-weight: bold;
   color: #02a551;
 }
+#fondo-psicopedagogia {
+      background-image: url('src/carrusel/psicopedagogia.jpg'); /* Reemplaza con la ruta de tu imagen */
+      background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+      background-position: center; /* Centra la imagen en el fondo */
+      height: 100%; /* Asegura que el contenedor tenga altura */
+      position: absolute; /* Posiciona el fondo */
+      top: 0; /* Alinea al top */
+      left: 0; /* Alinea a la izquierda */
+      right: 0; /* Alinea a la derecha */
+      bottom: 0; /* Alinea al fondo */
+      filter: brightness(0.5); /* Aclara la imagen */
+      z-index: 1; /* Asegura que la imagen esté detrás del texto */
+  }
   </style>
 </head>
 <body>
@@ -394,18 +407,7 @@ h5 {
 
 <hr style="border: 1px solid; margin: 0;">
 <div style="position: relative; padding: 20px; color: white; border-radius: 10px;">
-  <div style="background-image: url('src/carrusel/psicopedagogia.jpg'); /* Reemplaza con la ruta de tu imagen */
-              background-size: cover; /* Asegura que la imagen cubra todo el fondo */
-              background-position: center; /* Centra la imagen en el fondo */
-              height: 100%; /* Asegura que el contenedor tenga altura */
-              position: absolute; /* Posiciona el fondo */
-              top: 0; /* Alinea al top */
-              left: 0; /* Alinea a la izquierda */
-              right: 0; /* Alinea a la derecha */
-              bottom: 0; /* Alinea al fondo */
-              filter: brightness(0.5); /* Aclara la imagen */
-              z-index: 1; /* Asegura que la imagen esté detrás del texto */
-              ">
+  <div id="fondo-psicopedagogia">
   </div>
   <div style="position: relative; z-index: 2;"> <!-- Este div contiene el texto -->
       <h5>La psicopedagogía es una disciplina que estudia los procesos de aprendizaje y las dificultades que pueden presentarse en niños, adolescentes y adultos.</h5>
