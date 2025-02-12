@@ -41,7 +41,6 @@
       body {
           background-color: #feffff; /* Color gris claro */
           font-family: 'Montserrat', sans-serif;
-          overflow-x: hidden; /* Evita el desbordamiento horizontal */
       }
       /* Estilo para reducir las imágenes del carrusel */
       .carousel-inner img {
@@ -61,10 +60,10 @@
           margin: 20px 0;
       }
        .social-icon  {
-            position: relative;
-            right: 10px;
-          
-            bottom: 10px;
+            position: fixed;
+            right: 20px;
+            width: 30px; /* Ajusta el tamaño del ícono */
+            height: 30px;
             z-index: 1000;
           }
 
@@ -79,9 +78,9 @@
           
 
           .social-icon img {
-      width: 40px; /* Ajusta el tamaño deseado para los íconos */
+      width: 50px; /* Ajusta el tamaño deseado para los íconos */
       height: auto; /* Mantiene la proporción de aspecto */
-      margin-bottom: 10px;
+      
      
         }
 
@@ -191,7 +190,9 @@ font-style: normal;
 @media (max-width: 768px) {
   /* Estilos para tablets y móviles */
   body {
-      font-size: 14px;
+    margin: 0; /* Elimina márgenes por defecto */
+    padding: 0; /* Elimina relleno por defecto */
+     font-size: 14px;
   }
   .container {
       padding: 18px;
