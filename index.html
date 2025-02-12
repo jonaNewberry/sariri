@@ -194,11 +194,23 @@ font-style: normal;
   }
   .container {
       padding: 10px;
+
   }
 }
 img {
   max-width: 100%;
-  height: auto;
+  height: auto;}
+  #imagen-integracion {
+    height: 200px; /* Ajusta la altura según tus necesidades */
+    object-fit: cover; /* Mantiene la proporción y recorta la imagen si es necesario */
+
+}
+
+#imagen-tratamiento {
+    height: 200px; /* Ajusta la altura según tus necesidades */
+    object-fit: cover; /* Mantiene la proporción y recorta la imagen si es necesario */
+
+    
 }
 h1 {
   font-size: 1.5rem;
@@ -262,7 +274,6 @@ div.card-body{
 .card-2 img { filter: grayscale(50%);
         
 }
-.contenedor-tarjetas { background-color:#02a551  }
 
 .card {
   border-radius: 20px; /* Bordes redondeados */
@@ -285,6 +296,14 @@ div.card-body{
           background: linear-gradient(to left, #feffff ,#02a551);
 }
 
+.degradado-fondo {
+  gap: 10px;
+  background: #79c498b2;  /* fallback for old browsers */
+          background: -webkit-linear-gradient(to left, #feffff,#02a551);  /* Chrome 10-25, Safari 5.1-6 */
+          background: linear-gradient(to left, #feffff ,#02a551);
+    padding: 20px; /* Espaciado interno */
+    border-radius: 0; /* Sin bordes redondeados */
+}
   </style>
 </head>
 <body>
@@ -365,41 +384,30 @@ div.card-body{
 </div>
 
 <hr style="border: 1px solid; margin: 0;">
-<!-- Tarjetas -->
-<div class="d-flex justify-content-center align-items-start flex-wrap gap-3" id="contenedor-tarjetas" style="background-color: #f5f5f5; padding: 20px; border-radius: 10px;">
-  <!-- Tarjeta izquierda -->
-  <div class="card mb-3" id="card-1" style="max-width: 555px;">
-      <div class="row g-0">
-          <div class="col-md-4">
-              <img src="src/tratamiento.jpg" class="img-fluid rounded-start" alt="TRATAMIENTOS">
-          </div>
-          <div class="col-md-8">
-              <div class="card-body">
-                  <h5 class="card-title">TRATAMIENTOS</h5>
-                  <p class="card-text">Desarrollo, aprendizaje, comunicación y bienestar</p>
-              </div>
-          </div>
+<div class="container-fluid degradado-fondo">
+  <div class="row">
+    <!-- Tarjeta izquierda -->
+    <div class="col-md-6">
+      <div class="card h-100">
+        <img src="SRC/integracion.jpg" class="card-img-top" alt="Descripción de la imagen 1" id="imagen-integracion">
+        <div class="card-body">
+          <h5 class="card-title">INTEGRACIÓN</h5>
+          <p class="card-text">Contamos con el servicio de acompañante externo</p></div>
       </div>
-  </div>
+    </div>
 
-  <!-- Tarjeta derecha -->
-  <div class="card mb-3" id="card-2" style="max-width: 600px;">
-      <div class="row g-0">
-          <div class="col-md-8">
-              <div class="card-body">
-                  <h5 class="card-title">INTEGRACIÓN</h5>
-                  <p class="card-text">Contamos con el servicio de acompañante externo</p>
-              </div>
-          </div>
-          <div class="col-md-4">
-              <img src="src/integracion.jpg" class="img-fluid rounded-start" alt="INTEGRACION">
-          </div>
+    <!-- Tarjeta derecha -->
+    <div class="col-md-6">
+      <div class="card h-100">
+        <img src="SRC/tratamiento.jpg" class="card-img-top" alt="Descripción de la imagen 2" id="imagen-tratamiento">
+        <div class="card-body">
+          <h5 class="card-title">TRATAMIENTOS</h5>
+          <p class="card-text">Desarrollo, aprendizaje, comunicación y bienestar</p>
+         </div>
       </div>
+    </div>
   </div>
 </div>
-
-
-
 
 <hr style="border: 1px solid; margin: 0;">
 <div class="card-group">
