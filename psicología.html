@@ -293,6 +293,7 @@ h5 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra de texto */
 
   }
+  
 
   /* Opcional: Si quieres que el texto se vea más uniforme */
   p {
@@ -306,6 +307,19 @@ h5 {
   font-weight: bold;
   color: #02a551;
 }
+.alineado-izquierda {
+      text-align: left; /* Alinea el texto a la izquierda */
+      line-height: 1.6; /* Mejora la legibilidad con un mayor interlineado */
+  }
+
+  .estilo-h5 {
+      font-size: 1.25em; /* Tamaño de fuente similar a h5 */
+      font-weight: bold; /* Negrita */
+      margin: 0; /* Elimina márgenes */
+      padding: 0; /* Elimina relleno */
+      color: rgba(255, 255, 255, 0.85); /* Color del texto menos brillante */
+      margin-bottom: 1em; /* Añade un renglón entre cada párrafo */
+  }
   </style>
 </head>
 <body>
@@ -395,7 +409,7 @@ h5 {
 </div>
 
 <hr style="border: 1px solid; margin: 0;">
-<div style="position: relative; padding: 20px; color: white; border-radius: 10px; width: 100%; height: calc(100vh - 40px); overflow: hidden;">
+<div style="position: relative; padding: 20px; color: white; border-radius: 10px; width: 100%; overflow: hidden;">
   <div id="fondo-psicopedagogia" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; border-radius: 10px; overflow: hidden;">
       <div style="background-image: url('SRC/carrusel/psicologia.png'); /* Reemplaza con la ruta de tu imagen */
           background-size: cover; /* Asegura que la imagen cubra todo el div */
@@ -406,17 +420,15 @@ h5 {
       </div>
       <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.5); border-radius: 10px;"></div> <!-- Capa oscura -->
   </div>
-  <div style="position: relative; z-index: 2; padding: 20px;"> <!-- Este div contiene el texto -->
-    <h5>La psicología es la ciencia que estudia el comportamiento, las emociones y los procesos mentales en niños, adolescentes y adultos.</h5>  
-    <br>  
-    <h5>Su objetivo es identificar, evaluar y brindar estrategias para mejorar el bienestar emocional, la adaptación social, el manejo del estrés y la salud mental.</h5>  
-    <br>  
-    <h5>Los psicólogos trabajan en la prevención, diagnóstico e intervención de problemas como la ansiedad, la depresión, las dificultades emocionales, la autoestima y los trastornos del desarrollo.</h5>  
-    <br>  
-    <h5>A través de técnicas especializadas, ayudan a fortalecer la resiliencia, la regulación emocional y las habilidades sociales.</h5>  
-    <br>  
-    <h5>Además, colaboran con familias y docentes para diseñar estrategias que favorezcan el desarrollo integral. Su labor es clave para garantizar el equilibrio emocional, permitiendo que cada persona alcance su máximo bienestar psicológico y personal.</h5>  
+  <div style="position: relative; z-index: 2; padding: 20px; display: flex; flex-direction: column; justify-content: center; min-height: 100vh;"> <!-- Este div contiene el texto -->
+    <div class="alineado-izquierda"> <!-- Añadido un div para alinear el texto a la izquierda -->
+      <p class="estilo-h5">La psicología es la ciencia que estudia el comportamiento, las emociones y los procesos mentales en niños, adolescentes y adultos.</p>  
+      <p class="estilo-h5">Su objetivo es identificar, evaluar y brindar estrategias para mejorar el bienestar emocional, la adaptación social, el manejo del estrés y la salud mental.</p>  
+      <p class="estilo-h5">Los psicólogos trabajan en la prevención, diagnóstico e intervención de problemas como la ansiedad, la depresión, las dificultades emocionales, la autoestima y los trastornos del desarrollo.</p>  
+      <p class="estilo-h5">A través de técnicas especializadas, ayudan a fortalecer la resiliencia, la regulación emocional y las habilidades sociales.</p>  
+      <p class="estilo-h5">Además, colaboran con familias y docentes para diseñar estrategias que favorezcan el desarrollo integral. Su labor es clave para garantizar el equilibrio emocional, permitiendo que cada persona alcance su máximo bienestar psicológico y personal.</p>  
     </div>
+  </div>
 </div>
 <hr style="border: 1px solid; margin: 0;">
 

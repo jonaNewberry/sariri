@@ -306,6 +306,19 @@ h5 {
   font-weight: bold;
   color: #02a551;
 }
+.alineado-izquierda {
+      text-align: left; /* Alinea el texto a la izquierda */
+      line-height: 1.6; /* Mejora la legibilidad con un mayor interlineado */
+  }
+
+  .estilo-h5 {
+      font-size: 1.25em; /* Tamaño de fuente similar a h5 */
+      font-weight: bold; /* Negrita */
+      margin: 0; /* Elimina márgenes */
+      padding: 0; /* Elimina relleno */
+      color: rgba(255, 255, 255, 0.85); /* Color del texto menos brillante */
+      margin-bottom: 1em;
+  }
 
   </style>
 </head>
@@ -396,7 +409,7 @@ h5 {
 </div>
 
 <hr style="border: 1px solid; margin: 0;">
-<div style="position: relative; padding: 20px; color: white; border-radius: 10px; width: 100%; height: calc(100vh - 40px); overflow: hidden;">
+<div style="position: relative; padding: 20px; color: white; border-radius: 10px; width: 100%; overflow: hidden;">
   <div id="fondo-psicopedagogia" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; border-radius: 10px; overflow: hidden;">
       <div style="background-image: url('SRC/carrusel/psicopedagogia.png'); /* Reemplaza con la ruta de tu imagen */
           background-size: cover; /* Asegura que la imagen cubra todo el div */
@@ -407,19 +420,19 @@ h5 {
       </div>
       <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.5); border-radius: 10px;"></div> <!-- Capa oscura -->
   </div>
-  <div style="position: relative; z-index: 2; padding: 20px;"> <!-- Este div contiene el texto -->
-      <h5>La psicopedagogía es una disciplina que estudia los procesos de aprendizaje y las dificultades que pueden presentarse en niños, adolescentes y adultos.</h5>
-      <br>
-      <h5>Su objetivo es identificar, evaluar y brindar estrategias para mejorar el rendimiento académico, la comprensión lectora, el razonamiento lógico y otras habilidades cognitivas.</h5>
-      <br>
-      <h5>Los psicopedagogos trabajan en la prevención, diagnóstico e intervención de problemas como la dislexia, la discalculia, el déficit de atención y las dificultades en la memoria o el lenguaje.</h5>
-      <br>
-      <h5>A través de técnicas especializadas, ayudan a fortalecer la autonomía, la motivación y la autoestima en el aprendizaje.</h5>
-      <br>
-      <h5>Además, colaboran con familias y docentes para diseñar estrategias que favorezcan la inclusión escolar y social. Su labor es clave para garantizar un desarrollo integral, permitiendo que cada persona alcance su máximo potencial educativo y personal.</h5>
+  <div style="position: relative; z-index: 2; padding: 20px; display: flex; flex-direction: column; justify-content: center; min-height: 100vh;"> <!-- Este div contiene el texto -->
+    <div class="alineado-izquierda"> <!-- Añadido un div para alinear el texto a la izquierda -->
+      <p class="estilo-h5">La psicopedagogía es una disciplina que estudia los procesos de aprendizaje y las dificultades que pueden presentarse en niños, adolescentes y adultos.</p>
+      <p class="estilo-h5">Su objetivo es identificar, evaluar y brindar estrategias para mejorar el rendimiento académico, la comprensión lectora, el razonamiento lógico y otras habilidades cognitivas.</p>
+      <p class="estilo-h5">Los psicopedagogos trabajan en la prevención, diagnóstico e intervención de problemas como la dislexia, la discalculia, el déficit de atención y las dificultades en la memoria o el lenguaje.</p>
+      <p class="estilo-h5">A través de técnicas especializadas, ayudan a fortalecer la autonomía, la motivación y la autoestima en el aprendizaje.</p>
+      <p class="estilo-h5">Además, colaboran con familias y docentes para diseñar estrategias que favorezcan la inclusión escolar y social. Su labor es clave para garantizar un desarrollo integral, permitiendo que cada persona alcance su máximo potencial educativo y personal.</p>
+    </div>
   </div>
 </div>
 <hr style="border: 1px solid; margin: 0;">
+
+
 
  <!-- Íconos sociales -->
  
