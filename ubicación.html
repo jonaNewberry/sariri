@@ -27,7 +27,7 @@
           color: #000000;
       }
       .navbar-nav .nav-link {
-        font-size: 26px; /* Cambia el tamaño de la letra */
+          font-size: 26px; /* Cambia el tamaño de la letra */
           color: #02a551;
           white-space: nowrap;
       }
@@ -38,7 +38,10 @@
       .logo-margin {
         margin-right: 45px; /* Aumenta el margen derecho del logo */
       }
-   
+      body {
+          background-color: #feffff; /* Color gris claro */
+          font-family: 'Montserrat', sans-serif;
+      }
       /* Estilo para reducir las imágenes del carrusel */
       .carousel-inner img {
           max-width: 50%; /* Reduce el ancho al 50% */
@@ -72,6 +75,7 @@
             .facebook-icon {
               bottom: 90px; /* Se posiciona arriba del icono de WhatsApp */
         }
+          
         @media (max-width: 768px) {
             .whatsapp-icon {
                 bottom: 60px; /* Ajusta la posición para pantallas más pequeñas */
@@ -80,7 +84,6 @@
                 bottom: 10px; /* Ajusta la posición para pantallas más pequeñas */
             }
         }
-
           .social-icon img {
       width: 40px; /* Ajusta el tamaño deseado para los íconos */
       height: auto; /* Mantiene la proporción de aspecto */
@@ -89,7 +92,7 @@
         }
 
         .footer-social-icon img {
-  width: 50px; /* Tamaño de los íconos del footer */
+  width: 40px; /* Tamaño de los íconos del footer */
   height: auto;
   margin: 0 20px; /* Espaciado entre los íconos */
   opacity: 0.7; /* Ligera transparencia */
@@ -140,7 +143,7 @@
 .footer {
 background-color: #dbdbdb; /* Fondo oscuro */
 color: #000000; /* Texto claro */
-padding: 60px 0; /* Espaciado */
+padding: 20px 0; /* Espaciado */
 }
 
 .footer a {
@@ -155,7 +158,7 @@ padding-bottom: 2px; /* Espacio para evitar que el texto toque la línea */
 }
 
 .footer p {
-margin: 20; /* Elimina márgenes */
+margin: 0; /* Elimina márgenes */
 }
 
 .footer-links a{
@@ -166,12 +169,12 @@ margin: 20; /* Elimina márgenes */
     
   }
   .footer-icons {
-  display: flex; /* Usamos flexbox para alinear los íconos horizontalmente */
-  justify-content: space-evenly; /* Distribuye espacio igual entre los íconos */
-  align-items: center; /* Centra verticalmente los íconos */
-  max-width: 300px; /* Ancho máximo del contenedor de íconos */
-  margin: 0 auto; /* Centrar contenedor en la página */
-  gap: 25px;
+    display: flex; /* Usamos flexbox para alinear los íconos horizontalmente */
+    justify-content: center; /* Centra los íconos horizontalmente */
+    align-items: center; /* Centra verticalmente los íconos */
+    width: 100%; /* Asegúrate de que ocupe todo el ancho disponible */
+    margin: 0 auto; /* Centrar contenedor en la página */
+    gap: 15px; /* Espacio entre íconos */
 }
 .card-img-uniform {
 background-color: #dbdbdb;
@@ -188,23 +191,43 @@ width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
 .montserrat-uniquifier {
 font-family: "Montserrat", serif;
 font-optical-sizing: auto;
-font-weight: weight;
+font-weight: normal;
 font-style: normal;
 }
 @media (max-width: 768px) {
   /* Estilos para tablets y móviles */
   body {
-      font-size: 14px;
-      background-color: #feffff; /* Color gris claro */
-      font-family: 'Montserrat', sans-serif;
+    margin: 0; /* Elimina márgenes por defecto */
+    padding: 0; /* Elimina relleno por defecto */
+     font-size: 14px;
   }
   .container {
-      padding: 10px;
+      padding: 18px;
+
   }
+  .container {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+}
+.item {
+    flex: 1 1 200px; /* Crece, se encoge y tiene un ancho base de 200px */
+}
 }
 img {
   max-width: 100%;
-  height: auto;
+  height: auto;}
+  #imagen-integracion {
+    height: 200px; /* Ajusta la altura según tus necesidades */
+    object-fit: cover; /* Mantiene la proporción y recorta la imagen si es necesario */
+
+}
+
+#imagen-tratamiento {
+    height: 200px; /* Ajusta la altura según tus necesidades */
+    object-fit: cover; /* Mantiene la proporción y recorta la imagen si es necesario */
+
+    
 }
 h1 {
   font-size: 1.5rem;
@@ -226,6 +249,7 @@ div.card-body{
   .dropdown-item {
     color: #02a551; /* Color del texto del menú desplegable */
 }
+
   /* Evita que se quede abierto cuando el mouse salga */
   .dropdown-menu {
     display: none;
@@ -245,11 +269,11 @@ div.card-body{
     padding: 0 20px; /* Hace que sea alargado */
     border: 2px solid rgb(14, 13, 13); /* Borde color */
     background: transparent; /* Fondo transparente */
-    color: rgb(15, 155, 15); /* Texto color */
+    color: rgb(10, 10, 10); /* Texto color */
     font-size: 16px; /* Tamaño de texto */
     cursor: pointer;
     white-space: nowrap; /* Evita que el texto se divida en varias líneas */
-    margin-left: 22px; /* espacio con los otros iconos */
+   margin-left: 22px; /* espacio con los otros iconos */
   
    
    
