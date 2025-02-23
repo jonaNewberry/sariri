@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="icon" href="SRC/logopuertas.jpg" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
  
 </head>
 <body>
@@ -255,75 +256,7 @@
   <i class="fa-solid fa-arrow-up"></i>
 </div>
 
-<style>
-  
-  .carousel-control-prev-icon,
-  .carousel-control-next-icon {
-    background-color: #eaf0d2; 
-    border-radius: 50%; 
-    width: 4rem; 
-    height: 4rem;
-  }
 
- 
-  .carousel-control-prev,
-  .carousel-control-next {
-   
-    opacity: 16; 
-  }
-</style>
- 
-
-<script>
-
-const initialPositions = {
-  
-    whatsapp: 90, 
-    facebook: 160, 
-};
-
-window.addEventListener("scroll", () => {
-    const scrollPosition = window.scrollY;
-
-   
-    const whatsappIcon = document.querySelector(".whatsapp-icon");
-    whatsappIcon.style.top = initialPositions.whatsapp + scrollPosition * 0.1 + "px";
-
-   
-    const facebookIcon = document.querySelector(".facebook-icon");
-     facebookIcon.style.top = initialPositions.facebook + scrollPosition * 0.1 + "px";
-       whatsappIcon.style.top = 90 + scrollPosition * 0.03 + "px";
-       facebookIcon.style.top = 160 + scrollPosition * 0.03 + "px";
-       
-    
- 
- const scrollUpIcon = document.querySelector(".scroll-up-icon");
-
-
-window.addEventListener("scroll", () => {
-  const scrollPosition = window.scrollY;
-
-  
-  if (scrollPosition > 100) {
-    scrollUpIcon.style.display = "flex";
-    scrollUpIcon.style.bottom = 20 + scrollPosition * 0.1 + "px"; 
-  } else {
-    scrollUpIcon.style.display = "none";
-  }
-});
-
-
-scrollUpIcon.addEventListener("click", () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  });
-});
- 
-});
-
-
-</script>
    
 <div class="container-fluid justify-content-center">
   <div class="navbar-text text-center">

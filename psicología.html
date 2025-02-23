@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="icon" href="SRC/logopuertas.jpg" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
-    
+    <script src="script.js"></script>
 </head>
 <body>
  
@@ -26,10 +26,13 @@
   
   <hr style="border: 1px solid; margin: 0;">
     <nav class="navbar navbar-expand-lg navbar-custom">
-    <div class="container-fluid">
-      <!-- Logo -->
-      <img src="SRC/logopuertasabiertas.jpg" alt="Logo" width="250" height="200" class="d-inline-block align-text-top logo-margin">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <div class="container-fluid">      <picture>
+     
+      <source srcset="SRC/logopuertasabiertas.webp" type="image/webp">
+
+    <!-- Logo -->
+    <img src="SRC/logopuertasabiertas.jpg" alt="Logo" width="250" height="200" class="d-inline-block align-text-top logo-margin">
+      </picture> <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarText">
@@ -140,75 +143,9 @@
   <i class="fa-solid fa-arrow-up"></i>
 </div>
 
-<style>
-  
-  .carousel-control-prev-icon,
-  .carousel-control-next-icon {
-    background-color: #eaf0d2; 
-    border-radius: 50%; 
-    width: 4rem; 
-    height: 4rem;
-  }
-
- 
-  .carousel-control-prev,
-  .carousel-control-next {
-   
-    opacity: 16; 
-  }
-</style>
  
 
-<script>
 
-const initialPositions = {
-  
-    whatsapp: 90, 
-    facebook: 160, 
-};
-
-window.addEventListener("scroll", () => {
-    const scrollPosition = window.scrollY;
-
-   
-    const whatsappIcon = document.querySelector(".whatsapp-icon");
-    whatsappIcon.style.top = initialPositions.whatsapp + scrollPosition * 0.1 + "px";
-
-   
-    const facebookIcon = document.querySelector(".facebook-icon");
-     facebookIcon.style.top = initialPositions.facebook + scrollPosition * 0.1 + "px";
-       whatsappIcon.style.top = 90 + scrollPosition * 0.03 + "px";
-       facebookIcon.style.top = 160 + scrollPosition * 0.03 + "px";
-       
-    
- 
- const scrollUpIcon = document.querySelector(".scroll-up-icon");
-
-
-window.addEventListener("scroll", () => {
-  const scrollPosition = window.scrollY;
-
-  
-  if (scrollPosition > 100) {
-    scrollUpIcon.style.display = "flex";
-    scrollUpIcon.style.bottom = 20 + scrollPosition * 0.1 + "px"; 
-  } else {
-    scrollUpIcon.style.display = "none";
-  }
-});
-
-
-scrollUpIcon.addEventListener("click", () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  });
-});
- 
-});
-
-
-</script>
    
 <div class="container-fluid justify-content-center">
   <div class="navbar-text text-center">
@@ -227,18 +164,33 @@ scrollUpIcon.addEventListener("click", () => {
   
 <hr style="border: 1px solid; margin: 0;">
 <div class="card-group">
-  <div class="card">
-    <img src="SRC/carrusel/terapia ocupacional.png" class="card-img-top card-img-uniform" alt="Terapia Ocupacional">
-   
+  <div class="card"> 
+  <picture>
+     
+    <source srcset="SRC/carrusel/terapia ocupacional.webp" type="image/webp">
+
+  <img src="SRC/carrusel/terapia ocupacional.png" class="card-img-top card-img-uniform" alt="psicopedagogía">
+    </picture>
+
  
   </div>
   <div class="card">
-    <img src="SRC/carrusel/musicoterapia.png" class="card-img-top card-img-uniform" alt="Musicoterapia">
+    <picture>
+     
+      <source srcset="SRC/carrusel/musicoterapia.webp" type="image/webp">
+  
+    <img src="SRC/carrusel/musicoterapial.png" class="card-img-top card-img-uniform" alt="psicopedagogía">
+      </picture>
   
   </div>
   <div class="card">
-    <img src="SRC/carrusel/habilidades-sociales.png" class="card-img-top card-img-uniform" alt="Habilidades Sociales">
-  </div>
+    <picture>
+     
+      <source srcset="SRC/carrusel/habilidades-sociales.webp" type="image/webp">
+  
+    <img src="SRC/carrusel/habilidades-sociales.png" class="card-img-top card-img-uniform" alt="psicopedagogía">
+      </picture>
+ </div>
 </div>
 
 

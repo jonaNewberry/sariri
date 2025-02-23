@@ -340,3 +340,18 @@ color: #02a551;
     color: rgba(255, 255, 255, 0.85); 
     margin-bottom: 1em; 
 }
+  
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #eaf0d2; 
+  border-radius: 50%; 
+  width: 4rem; 
+  height: 4rem;
+}
+
+
+.carousel-control-prev,
+.carousel-control-next {
+ 
+  opacity: 16; 
+}
