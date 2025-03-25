@@ -1,18 +1,23 @@
 .navbar-custom {
-    background-color: #feffff;
+  background-color: #feffff !important;
     padding-right: 20px;
 }
+#sariri-title {
+  margin-right: 60px; /* Ajusta este valor para aumentar la separación */
+  color: #FFD700; /* Color dorado para el título */
+  font-size: 3rem; /* Tamaño del texto */
+}
+
 .navbar-nav {
-    margin-left: auto; 
-    
-    color: #02a551;
+    margin-left: 30px;
+    color: #78B7B5;
     font-size: 23px;
     font-weight: bold;
     color: #000000;
 }
 .navbar-nav .nav-link {
     font-size: 26px; 
-    color: #02a551;
+    color: #78B7B5;
     white-space: nowrap;
 }
 .navbar-nav .nav-item:hover {
@@ -20,29 +25,14 @@
     padding-bottom: 2px; 
 }
 .logo-margin {
-  margin-right: 45px; 
+  margin-right: 55px; 
 }
 body {
     background-color: #feffff; 
     font-family: 'Montserrat', sans-serif;
 }
 
-.carousel-inner img {
-    max-width: 50%; 
-    max-height: 50%; 
-    margin: 0 auto; 
-}
-.carousel-item.active {
-background-color: #feffff; 
-color: #feffff;
-}
 
-.carousel-item h2 {
-  color: #02a551; 
-    font-size: 24px;
-    font-weight: bold;
-    margin: 20px 0;
-}
  .social-icon  {
       position: fixed;
       right: 20px;
@@ -167,11 +157,7 @@ object-fit: cover;
 width: 100%; 
 }
 
-.carousel-item img {
-height: 400px; 
-object-fit: cover; 
-width: 100%; 
-}
+
 .montserrat-uniquifier {
 font-family: "Montserrat", serif;
 font-optical-sizing: auto;
@@ -223,7 +209,7 @@ background-color: #dbdbdb;
 }
 
 .dropdown-menu.show .dropdown-item {
-color: #02a551; 
+color: #78B7B5; 
 }
 
 
@@ -231,7 +217,7 @@ color: #02a551;
 display: block;
 }
 .dropdown-item {
-color: #02a551; 
+color: #78B7B5; 
 }
 
 
@@ -268,33 +254,35 @@ margin-left: 22px;
   background: #0f9b0f;
   color: white;
 }
-
-
-.card-1 img { border-radius: 10px; }
-
-.card-2 img { filter: grayscale(50%);
-  
-}
-
 .card {
-border-radius: 20px;
-overflow: hidden; 
+  display: flex; /* Usar flexbox para el diseño */
+  flex-direction: row; /* Alinear elementos en fila */
+  background-color: transparent; /* Fondo transparente */
+  border: none; /* Sin borde */
 }
 
-.card-img-uniform {
-border-top-left-radius: 25px;
-border-top-right-radius: 25px;
-object-fit: cover; 
-height: 200px; 
+.text-container {
+  display: flex;
+  flex-direction: column; /* Alinear el texto en columna */
+  justify-content: center; /* Centrar verticalmente el texto */
+  width: 50%; /* Ajusta el ancho del contenedor de texto */
+  padding: 20px; /* Espaciado interno */
 }
 
-.card-group {
-gap: 10px;
-
-   
-background: #000000; 
-    background: -webkit-linear-gradient(to left, #feffff,#02a551);  
-    background: linear-gradient(to left, #feffff ,#02a551);
+.card-title {
+  color: #FFD700; /* Color dorado para el título */
+  margin: 0; /* Eliminar margen para alineación */
+  text-align: left; /* Alinear el texto a la izquierda */
+}
+#sariri-title {
+  font-size: 3rem; /* Ajusta este valor según sea necesario para que sea el doble del tamaño actual */
+  color: #FFD700; /* Color dorado para el título */
+  margin: 0; /* Eliminar margen para alineación */
+  text-align: left; /* Alinear el texto a la izquierda */
+}
+.card-text {
+  font-size: 1.2rem; /* Tamaño del texto */
+  color: #78B7B5; /* Color blanco para el texto */
 }
 
 .degradado-fondo {
@@ -341,17 +329,34 @@ color: #02a551;
     margin-bottom: 1em; 
 }
   
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-color: #eaf0d2; 
-  border-radius: 50%; 
-  width: 4rem; 
-  height: 4rem;
+.carousel-inner img {
+  width: 100%; /* Asegura que la imagen ocupe el 100% del ancho */
+  height: auto; /* Mantiene la proporción de la imagen */
 }
-
 
 .carousel-control-prev,
 .carousel-control-next {
- 
-  opacity: 16; 
+    position: absolute; /* Posiciona los botones de forma absoluta */
+    top: 50%; /* Centra verticalmente los botones */
+    transform: translateY(-50%); /* Ajusta la posición para centrar */
+    z-index: 10; /* Asegura que los botones estén por encima de la imagen */
+    width: 60px; /* Ancho del botón */
+    height: 60px; /* Alto del botón */
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo semi-transparente */
+    border-radius: 50%; /* Bordes redondeados */
+    border: none; /* Sin borde */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #000; /* Color del icono */
+    border-radius: 50%; /* Bordes redondeados para el icono */
+    width: 30px; /* Ancho del icono */
+    height: 30px; /* Alto del icono */
+}
+
+/* Aumentar el tamaño del icono */
+.carousel-control-prev-icon::after,
+.carousel-control-next-icon::after {
+    font-size: 24px; /* Tamaño del icono */
 }
