@@ -393,4 +393,28 @@ color: #02a551;
     padding: 0; 
     color: rgba(255, 255, 255, 0.85); 
     margin-bottom: 1em; 
+} 
+.rectangulo-amarillo {
+  width: 70%; /* Ancho del rectángulo */
+  height: 40px; /* Altura del rectángulo */
+  background-color: #FFD700; /* Color de fondo amarillo */
+
+}.rectangulo-naranja {
+  width: 80%; /* Ancho del rectángulo */
+  height: 40px; /* Altura del rectángulo */
+  background-color: #E6927C; /* Color de fondo amarillo */
+ 
+}.rectangulo-azul-claro {
+  width: 90%; /* Ancho del rectángulo */
+  height: 40px; /* Altura del rectángulo */
+  background-color: #83C4BE; /* Color de fondo amarillo */
+ 
+}.rectangulo-azul-oscuro {
+  width: 100%; /* Ancho del rectángulo */
+  height: 40px; /* Altura del rectángulo */
+  background-color: #016D77; /* Color de fondo amarillo */
+  
 }
+
+
+
