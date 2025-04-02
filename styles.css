@@ -187,18 +187,7 @@ flex: 1 1 200px;
 img {
 max-width: 100%;
 height: auto;}
-#imagen-integracion {
-height: 200px; 
-object-fit: cover; 
 
-}
-
-#imagen-tratamiento {
-height: 200px; 
-object-fit: cover; 
-
-
-}
 h1 {
 font-size: 1.5rem;
 font-weight: bold;
@@ -259,7 +248,19 @@ margin-left: 22px;
   flex-direction: row; /* Alinear elementos en fila */
   background-color: transparent; /* Fondo transparente */
   border: none; /* Sin borde */
+  width: 100%;
 }
+.image-container {
+  flex: 1; /* Permite que la imagen ocupe el espacio restante */
+  position: relative; /* Para posicionar la imagen */
+}
+
+.image-container img {
+  width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+  height: 98%; /* Asegura que la imagen ocupe todo el alto del contenedor */
+  object-fit: cover; /* Mantiene la proporción de la imagen y la recorta si es necesario */
+}
+
 
 .text-container {
   display: flex;
@@ -270,7 +271,7 @@ margin-left: 22px;
 }
 
 .card-title {
-  color: #FFD700; /* Color dorado para el título */
+  color: #006E77; /* Color dorado para el título */
   margin: 0; /* Eliminar margen para alineación */
   text-align: left; /* Alinear el texto a la izquierda */
 }
@@ -281,8 +282,8 @@ margin-left: 22px;
   text-align: left; /* Alinear el texto a la izquierda */
 }
 .card-text {
-  font-size: 1.2rem; /* Tamaño del texto */
-  color: #78B7B5; /* Color blanco para el texto */
+  font-size: 1.4rem; /* Tamaño del texto */
+  color: #72adab; /* Color blanco para el texto */
 }
 
 .degradado-fondo {
@@ -394,27 +395,55 @@ color: #02a551;
     color: rgba(255, 255, 255, 0.85); 
     margin-bottom: 1em; 
 } 
-.rectangulo-amarillo {
+.rectangulo-blanco {
   width: 70%; /* Ancho del rectángulo */
   height: 40px; /* Altura del rectángulo */
+  background-color: #feffff; /* Color de fondo amarillo */
+
+}
+.rectangulo-amarillo {
+  width: 70%; /* Ancho del rectángulo */
+  height: 50px; /* Altura del rectángulo */
   background-color: #FFD700; /* Color de fondo amarillo */
 
 }.rectangulo-naranja {
   width: 80%; /* Ancho del rectángulo */
-  height: 40px; /* Altura del rectángulo */
+  height: 60px; /* Altura del rectángulo */
   background-color: #E6927C; /* Color de fondo amarillo */
  
 }.rectangulo-azul-claro {
   width: 90%; /* Ancho del rectángulo */
-  height: 40px; /* Altura del rectángulo */
+  height: 75px; /* Altura del rectángulo */
   background-color: #83C4BE; /* Color de fondo amarillo */
  
 }.rectangulo-azul-oscuro {
   width: 100%; /* Ancho del rectángulo */
-  height: 40px; /* Altura del rectángulo */
+  height: 85px; /* Altura del rectángulo */
   background-color: #016D77; /* Color de fondo amarillo */
   
 }
+.custom-hr {
+  height: 0; /* Sin altura visible */
+  border: none; /* Sin borde */
+  margin: 20px 0; /* Espaciado superior e inferior */
+  background-color: #feffff; /* Color de fondo igual al del body */
+}
+.card-text {
+  line-height: 1.6; /* Mejora la legibilidad del texto */
+}
 
+.list-unstyled {
+  padding-left: 0; /* Elimina el padding por defecto de la lista */
+}
 
-
+.list-unstyled li {
+  margin-bottom: 10px; /* Espaciado entre los elementos de la lista */
+}
+.card-img {
+  width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+  height: 100%; /* Asegura que la imagen ocupe todo el alto del contenedor */
+  object-fit: cover; /* Cubre el contenedor sin distorsionar la imagen */
+}
+.col-md-4 {
+  height: 300px; /* Ajusta este valor según sea necesario */
+}
