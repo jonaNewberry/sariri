@@ -425,7 +425,7 @@ color: #02a551;
 .custom-hr {
   height: 0; /* Sin altura visible */
   border: none; /* Sin borde */
-  margin: 20px 0; /* Espaciado superior e inferior */
+  margin: 5px 0; /* Espaciado superior e inferior */
   background-color: #feffff; /* Color de fondo igual al del body */
 }
 .card-text {
@@ -446,4 +446,27 @@ color: #02a551;
 }
 .col-md-4 {
   height: 300px; /* Ajusta este valor según sea necesario */
+}
+@media (max-width: 768px) {
+  .col-md-4 {
+    height: auto; /* Permitir que la altura se ajuste automáticamente en pantallas pequeñas */
+  }
+}
+/* Títulos */
+#neurocognitiva-title { color: #2c3e50; }    /* Azul oscuro */
+#psicopedagogica-title { color: #16a085; }  /* Verde agua */
+#ados-title { color: #c0392b; }             /* Rojo terracota */
+#neurolinguistica-title { color: #8e44ad; } /* Morado */
+#integracion-title { color: #d35400; }      /* Naranja oscuro */
+
+/* Descripciones */
+.descripcion-evaluacion {
+    color: #7f8c8d;  /* Gris azulado */
+    margin-left: 5px;
+}
+
+/* Opcional: Efecto hover */
+.descripcion-evaluacion:hover {
+    color: #34495e;
+    transition: color 0.3s ease;
 }

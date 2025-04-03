@@ -124,26 +124,61 @@
   </picture>
 </div>
  <hr class="custom-hr">
- <div class="card d-flex flex-row mb-3" style="max-width: 100%;">
-  <div class="col-md-4" style="height: 300px;"> <!-- Ajusta la altura según sea necesario -->
-    <img id="imagen-psicologia" src="SRC/carrusel/psicologia.png" class="card-img" alt="..." style="width: 100%; height: 100%; object-fit: cover;">
-  </div>
-  <div class="col-md-8">
-    <div class="card-body" id="texto-psicologia">
-      <h5 class="card-title">Evaluaciones</h5>
-      <p class="card-text">
-        A continuación se presentan las diferentes evaluaciones que realizamos:
-      </p>
+     <!-- Segunda sección: Evaluaciones -->
+     <div class="row align-items-stretch">
+      <!-- Imagen evaluación (50% del ancho) -->
+      <div class="col-12 col-md-6 p-0">
+          <img id="imagen-psicologia" src="SRC/carrusel/psicologia.png" 
+               class="card-img" alt="Evaluaciones"
+               style="width: 100%; height: 50vh; object-fit: cover;">
+      </div>
+
+      <!-- Lista de evaluaciones (50% del ancho) -->
+      <div class="col-12 col-md-6 evaluaciones-container p-4">
+          <h3 class="mb-4">Nuestras Evaluaciones</h3>
+          
+    
+    
       <ul class="list-unstyled">
-        <li><strong>Evaluación neurocognitiva:</strong> Analiza funciones cognitivas como memoria, atención y razonamiento.</li>
-        <li><strong>Evaluación psicopedagógica:</strong> Detecta dificultades de aprendizaje y desarrollo académico.</li>
-        <li><strong>Evaluación ADOS-2/ADIR:</strong> Diagnostica trastornos del espectro autista.</li>
-        <li><strong>Evaluación neurolingüística:</strong> Examina lenguaje y procesamiento cerebral.</li>
-        <li><strong>Evaluación de integración sensorial:</strong> Evalúa la respuesta del sistema nervioso a estímulos sensoriales.</li>
-      </ul>
-    </div>
-  </div>
-</div>
+        <li>
+            <strong id="neurocognitiva-title">Evaluación neurocognitiva:</strong> 
+            <span class="descripcion-evaluacion">Analiza funciones cognitivas como memoria, atención y razonamiento.</span>
+        </li>
+        <li>
+            <strong id="psicopedagogica-title">Evaluación psicopedagógica:</strong> 
+            <span class="descripcion-evaluacion">Detecta dificultades de aprendizaje y desarrollo académico.</span>
+        </li>
+        <li>
+            <strong id="ados-title">Evaluación ADOS-2/ADIR:</strong> 
+            <span class="descripcion-evaluacion">Diagnostica trastornos del espectro autista.</span>
+            <span id="ados-details" style="display: none;">
+                Esta evaluación incluye una serie de pruebas estandarizadas que ayudan a identificar características del autismo.
+            </span>
+            <a href="#" id="toggle-ados" style="color: blue; text-decoration: underline;">... Leer más</a>
+        </li>
+        <li>
+            <strong id="neurolinguistica-title">Evaluación neurolingüística:</strong> 
+            <span class="descripcion-evaluacion">Examina lenguaje y procesamiento cerebral.</span>
+        </li>
+        <li>
+            <strong id="integracion-title">Evaluación de integración sensorial:</strong> 
+            <span class="descripcion-evaluacion">Evalúa la respuesta del sistema nervioso a estímulos sensoriales.</span>
+        </li>
+    </ul>
+  </div></div></div>
+<script>
+  document.getElementById('toggle-ados').addEventListener('click', function(event) {
+    event.preventDefault(); // Evita que el enlace recargue la página
+    const details = document.getElementById('ados-details');
+    if (details.style.display === 'none' || details.style.display === '') {
+      details.style.display = 'inline'; // Muestra el contenido
+      this.textContent = '... Leer menos'; // Cambia el texto del enlace
+    } else {
+      details.style.display = 'none'; // Oculta el contenido
+      this.textContent = '... Leer más'; // Cambia el texto del enlace
+    }
+  });
+</script>
 <hr class="custom-hr">
 
  <!-- carousel -->
