@@ -70,8 +70,7 @@
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="musicoterapia.html">MUSICOTERAPIA</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="habilidadessociales.html">HABILIDADES SOCIALES</a></li>
-                    </ul>
+                         </ul>
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -135,8 +134,9 @@
 
       <!-- Lista de evaluaciones (50% del ancho) -->
       <div class="col-12 col-md-6 evaluaciones-container p-4">
-          <h3 class="mb-4">Nuestras Evaluaciones</h3>
-          
+
+        <h5 class="card-title" id="titulo-evaluaciones">Nuestras Evaluaciones</h5>
+          <p></p>
     
     
       <ul class="list-unstyled">
@@ -149,13 +149,15 @@
             <span class="descripcion-evaluacion">Detecta dificultades de aprendizaje y desarrollo académico.</span>
         </li>
         <li>
-            <strong id="ados-title">Evaluación ADOS-2/ADIR:</strong> 
-            <span class="descripcion-evaluacion">Diagnostica trastornos del espectro autista.</span>
-            <span id="ados-details" style="display: none;">
-                Esta evaluación incluye una serie de pruebas estandarizadas que ayudan a identificar características del autismo.
-            </span>
-            <a href="#" id="toggle-ados" style="color: blue; text-decoration: underline;">... Leer más</a>
-        </li>
+          <strong id="ados-title">Evaluación ADOS-2/ADIR:</strong> 
+          <span class="descripcion-evaluacion">
+              Diagnostica trastornos del espectro autista.
+              <span id="ados-details" style="display: none; color: inherit;">
+                  Esta evaluación incluye una serie de pruebas estandarizadas que ayudan a identificar características del autismo.
+              </span>
+          </span>
+          <a href="#" id="toggle-ados">... Leer más</a>
+      </li>
         <li>
             <strong id="neurolinguistica-title">Evaluación neurolingüística:</strong> 
             <span class="descripcion-evaluacion">Examina lenguaje y procesamiento cerebral.</span>
@@ -165,7 +167,48 @@
             <span class="descripcion-evaluacion">Evalúa la respuesta del sistema nervioso a estímulos sensoriales.</span>
         </li>
     </ul>
-  </div></div></div>
+  </div>
+</div>
+</div>
+
+<!-- Sección Especialidades -->
+<div class="row align-items-stretch">
+    <!-- Lista de especialidades (50% del ancho) -->
+    <div class="col-12 col-md-6 especialidades-container p-4">
+        <h5 class="card-title" id="titulo-especialidades">Nuestras Especialidades</h5>
+        <p></p>
+        <ul class="list-unstyled">
+            <li>
+                <strong id="psicopedagogia-title">PSICOPEDAGOGÍA:</strong> 
+                <span class="descripcion-especialidad">Intervención en dificultades de aprendizaje y desarrollo de estrategias educativas.</span>
+            </li>
+            <li>
+                <strong id="psicologia-title">PSICOLOGÍA:</strong> 
+                <span class="descripcion-especialidad">Acompañamiento terapéutico para el desarrollo emocional y cognitivo.</span>
+            </li>
+            <li>
+                <strong id="fonoaudiologia-title">FONOAUDIOLOGÍA:</strong> 
+                <span class="descripcion-especialidad">Evaluación e intervención en comunicación, lenguaje y deglución.</span>
+            </li>
+            <li>
+                <strong id="terapiaocupacional-title">TERAPISTA OCUPACIONAL:</strong> 
+                <span class="descripcion-especialidad">Mejora de la autonomía y participación en actividades cotidianas.</span>
+            </li>
+            <li>
+                <strong id="musicoterapia-title">MUSICOTERAPIA:</strong> 
+                <span class="descripcion-especialidad">Uso terapéutico de la música para el desarrollo integral.</span>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Imagen especialidades (50% del ancho) -->
+    <div class="col-12 col-md-6 p-0">
+        <img src="SRC/carrusel/psicologia.png" 
+             class="card-img" 
+             alt="Nuestras Especialidades"
+             style="width: 100%; height: 50vh; object-fit: cover;">
+    </div>
+</div>
 <script>
   document.getElementById('toggle-ados').addEventListener('click', function(event) {
     event.preventDefault(); // Evita que el enlace recargue la página
@@ -179,29 +222,74 @@
     }
   });
 </script>
-<hr class="custom-hr">
 
- <!-- carousel -->
-<div id="carouselExample" class="carousel slide">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="SRC/carrusel/acompañante-externo.png" class="d-block w-100" alt="...">
+
+
+
+
+<!-- Sección Especialidades -->
+<div class="row align-items-stretch">
+    <!-- Lista de especialidades (50% del ancho) -->
+    <div class="col-12 col-md-6 especialidades-container p-4">
+        <h5 class="card-title" id="titulo-especialidades">Nuestras Especialidades</h5>
+        <p></p>
+        <ul class="list-unstyled">
+            <li>
+                <strong id="psicopedagogia-title">PSICOPEDAGOGÍA:</strong> 
+                <span class="descripcion-especialidad">Intervención en dificultades de aprendizaje y desarrollo de estrategias educativas.</span>
+            </li>
+            <li>
+                <strong id="psicologia-title">PSICOLOGÍA:</strong> 
+                <span class="descripcion-especialidad">Acompañamiento terapéutico para el desarrollo emocional y cognitivo.</span>
+            </li>
+            <li>
+                <strong id="fonoaudiologia-title">FONOAUDIOLOGÍA:</strong> 
+                <span class="descripcion-especialidad">Evaluación e intervención en comunicación, lenguaje y deglución.</span>
+            </li>
+            <li>
+                <strong id="terapiaocupacional-title">TERAPISTA OCUPACIONAL:</strong> 
+                <span class="descripcion-especialidad">Mejora de la autonomía y participación en actividades cotidianas.</span>
+            </li>
+            <li>
+                <strong id="musicoterapia-title">MUSICOTERAPIA:</strong> 
+                <span class="descripcion-especialidad">Uso terapéutico de la música para el desarrollo integral.</span>
+            </li>
+        </ul>
     </div>
-    <div class="carousel-item">
-      <img src="SRC/carrusel/fonoaudiologia.png" class="d-block w-100" alt="...">
+
+    <!-- Carrusel (50% del ancho) -->
+    <div class="col-12 col-md-6 p-0" style="height: 50vh;">
+        <div id="carouselExample" class="carousel slide h-100" data-bs-ride="carousel">
+            <div class="carousel-inner h-100">
+                <div class="carousel-item active h-100">
+                    <img src="SRC/carrusel/acompañante-externo.png" 
+                         class="d-block w-100 h-100" 
+                         alt="Acompañamiento terapéutico"
+                         style="object-fit: cover;">
+                </div>
+                <div class="carousel-item h-100">
+                    <img src="SRC/carrusel/fonoaudiologia.png" 
+                         class="d-block w-100 h-100" 
+                         alt="Fonoaudiología"
+                         style="object-fit: cover;">
+                </div>
+                <div class="carousel-item h-100">
+                    <img src="SRC/carrusel/musicoterapia.png" 
+                         class="d-block w-100 h-100" 
+                         alt="Musicoterapia"
+                         style="object-fit: cover;">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
     </div>
-    <div class="carousel-item">
-      <img src="SRC/carrusel/musicoterapia.png" class="d-block w-100" alt="...">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
 </div>
 
 

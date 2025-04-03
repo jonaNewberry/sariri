@@ -467,6 +467,35 @@ color: #02a551;
 
 /* Opcional: Efecto hover */
 .descripcion-evaluacion:hover {
-    color: #34495e;
+    color: #7f8c8d;
     transition: color 0.3s ease;
+}
+#titulo-evaluaciones {
+  margin-left: 2rem;  /* Separación de la izquierda */
+}
+.titulo-especialidades{
+  margin-left: 2rem;
+}
+#psicopedagogia-title{ color: #2c3e50; }
+#psicologia-title{ color: #16a085; }
+#fonoaudiologia-title{ color: #c0392b; } 
+#terapiaocupacional-title{ color: #8e44ad; }
+#musicoterapia-title{ color: #d35400; }
+/* Color para texto desplegable */
+#ados-details {
+  color: inherit; /* Hereda el color del elemento padre */
+  display: inline; /* Mantiene el flujo del texto */
+   
+}
+
+/* Color para el enlace "Leer más/menos" */
+#toggle-ados {
+  color: #016D77 !important; /* Color corporativo */
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+#toggle-ados:hover {
+  text-decoration: underline;
 }
