@@ -18,16 +18,26 @@
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-custom">
-    <div class="container-fluid d-flex align-items-center">
-        <picture>
-            <source srcset="SRC/logosariri.webp" type="image/webp">
-            <!-- Logo -->
-            <img src="SRC/logosariri.jpg" alt="Logo" width="260" height="200" class="d-inline-block align-text-top logo-margin">
-        </picture>
-        <h5 class="card-title mx-2" id="sariri-title">SARIRI</h5> <!-- Añadido margen horizontal para separación -->
-       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <div class="container-fluid">
+        <div class="d-flex flex-column align-items-center"> <!-- Contenedor flex en columna -->
+            <picture>
+                <source srcset="SRC/logosariri.webp" type="image/webp">
+                <img src="SRC/logosariri.jpg" 
+                     alt="Logo" 
+                     width="260" 
+                     height="200" 
+                     class="d-block logo-margin">
+            </picture>
+            <h5 class="card-title mt-2" id="sariri-title">SARIRI</h5> <!-- Margen superior -->
+        </div>
+
+        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" 
+                data-bs-target="#navbarText" aria-controls="navbarText" 
+                aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+
+        
         <div class="collapse navbar-collapse" id="navbarText">
             <!-- Menu Items -->
             <ul class="navbar-nav ms-auto mb-lg-4 mb-lg-2"> <!-- ms-auto para alinear a la derecha -->
