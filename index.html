@@ -106,119 +106,128 @@
 
 </div>
 
-<!-- card -->
+<!-- Tarjeta con efecto vidrio -->
+<div class="d-flex flex-row" style="
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    border-radius: 15px;
+    padding: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    position: relative;">
+    
+    <!-- Efecto de brillo adicional -->
+    <div style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(120deg, 
+            rgba(255,255,255,0.1) 0%, 
+            rgba(255,255,255,0.05) 50%, 
+            rgba(255,255,255,0.1) 100%);
+        pointer-events: none;
+        border-radius: 15px;
+        z-index: -1;">
+    </div>
 
-<div class="card d-flex flex-row">
-  <div class="text-container p-3">
-    <p class="card-text">Sariri es un centro interdisciplinario dedicado a las infancias, ofreciendo terapias como psicología, fonoaudiología y estimulación temprana para potenciar su desarrollo integral en un entorno de acompañamiento y contención.</p>
-    <div class="rectangulo-blanco"></div>
-    <div class="rectangulo-amarillo"></div>
-    <div class="rectangulo-naranja"></div>
-    <div class="rectangulo-azul-claro"></div>
-    <div class="rectangulo-azul-oscuro"></div>
-  </div>
-  
-  <picture class="image-container">
-    <source srcset="SRC/carrusel/puertasabiertas.webp" type="image/webp">
-    <img src="SRC/carrusel/puertasabiertas.png" class="card-img" alt="..." />
-  </picture>
+    <!-- Contenedor de texto -->
+    <div class="text-container p-3" style="flex: 1;">
+        <p class="card-text" style="color: #333; font-weight: 500;">
+            Sariri es un centro interdisciplinario dedicado a las infancias, ofreciendo terapias como psicología, fonoaudiología y estimulación temprana para potenciar su desarrollo integral en un entorno de acompañamiento y contención.
+        </p>
+        
+        <!-- Barras de color con transparencia -->
+        <div class="rectangulo-amarillo"></div>
+        <div class="rectangulo-naranja"></div>
+        <div class="rectangulo-azul-claro"></div>
+        <div class="rectangulo-azul-oscuro"></div>
+    </div>
+
+    <!-- Contenedor de imagen -->
+    <picture class="image-container" style="flex: 1;">
+        <source srcset="SRC/carrusel/puertasabiertas.webp" type="image/webp">
+        <img src="SRC/carrusel/puertasabiertas.png" 
+             class="card-img" 
+             alt="Centro Sariri"
+             style="border-radius: 10px; height: 100%; object-fit: cover;">
+    </picture>
 </div>
  <hr class="custom-hr">
-     <!-- Segunda sección: Evaluaciones -->
-     <div class="row align-items-stretch">
-      <!-- Imagen evaluación (50% del ancho) -->
-      <div class="col-12 col-md-6 p-0">
-          <img id="imagen-psicologia" src="SRC/carrusel/psicologia.png" 
-               class="card-img" alt="Evaluaciones"
-               style="width: 100%; height: 50vh; object-fit: cover;">
-      </div>
+<!-- Segunda sección: Evaluaciones -->
+<div class="row align-items-stretch" style="
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    border-radius: 15px;
+    padding: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    position: relative;">
 
-      <!-- Lista de evaluaciones (50% del ancho) -->
-      <div class="col-12 col-md-6 evaluaciones-container p-4">
+    <!-- Efecto de brillo adicional -->
+    <div style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(120deg, 
+            rgba(255,255,255,0.1) 0%, 
+            rgba(255,255,255,0.05) 50%, 
+            rgba(255,255,255,0.1) 100%);
+        pointer-events: none;
+        border-radius: 15px;
+        z-index: -1;">
+    </div>
 
+    <!-- Imagen evaluación (50% del ancho) -->
+    <div class="col-12 col-md-6 p-0">
+        <img id="imagen-psicologia" src="SRC/carrusel/psicologia.png" 
+             class="card-img" alt="Evaluaciones"
+             style="width: 100%; height: 50vh; object-fit: cover;">
+    </div>
+
+    <!-- Lista de evaluaciones (50% del ancho) -->
+    <div class="col-12 col-md-6 evaluaciones-container p-4">
         <h5 class="card-title" id="titulo-evaluaciones">Nuestras Evaluaciones</h5>
-          <p></p>
-    
-    
-      <ul class="list-unstyled">
-        <li>
-            <strong id="neurocognitiva-title">Evaluación neurocognitiva:</strong> 
-            <span class="descripcion-evaluacion">Analiza funciones cognitivas como memoria, atención y razonamiento.</span>
-        </li>
-        <li>
-            <strong id="psicopedagogica-title">Evaluación psicopedagógica:</strong> 
-            <span class="descripcion-evaluacion">Detecta dificultades de aprendizaje y desarrollo académico.</span>
-        </li>
-        <li>
-          <strong id="ados-title">Evaluación ADOS-2/ADIR:</strong> 
-          <span class="descripcion-evaluacion">
-              Diagnostica trastornos del espectro autista.
-              <span id="ados-details" style="display: none; color: inherit;">
-                  Esta evaluación incluye una serie de pruebas estandarizadas que ayudan a identificar características del autismo.
-              </span>
-          </span>
-          <a href="#" id="toggle-ados">... Leer más</a>
-      </li>
-        <li>
-            <strong id="neurolinguistica-title">Evaluación neurolingüística:</strong> 
-            <span class="descripcion-evaluacion">Examina lenguaje y procesamiento cerebral.</span>
-        </li>
-        <li>
-            <strong id="integracion-title">Evaluación de integración sensorial:</strong> 
-            <span class="descripcion-evaluacion">Evalúa la respuesta del sistema nervioso a estímulos sensoriales.</span>
-        </li>
-    </ul><div class="d-grid gap-2 col-6 mx-auto">
-  <button class="btn btn-primary" type="button">Contacto Evaluación</button>
-  
-</div>
-  </div>
-</div>
-</div>
-
-
-
-<!-- Sección Especialidades -->
-<div class="row align-items-stretch">
-    <!-- Lista de especialidades (50% del ancho) -->
-    <div class="col-12 col-md-6 especialidades-container p-4">
-        <h5 class="card-title" id="titulo-especialidades">Nuestras Especialidades</h5>
-        <p></p>
         <ul class="list-unstyled">
             <li>
-                <strong id="psicopedagogia-title">PSICOPEDAGOGÍA:</strong> 
-                <span class="descripcion-especialidad">Intervención en dificultades de aprendizaje y desarrollo de estrategias educativas.</span>
+                <strong id="neurocognitiva-title">Evaluación neurocognitiva:</strong> 
+                <span class="descripcion-evaluacion">Analiza funciones cognitivas como memoria, atención y razonamiento.</span>
             </li>
             <li>
-                <strong id="psicologia-title">PSICOLOGÍA:</strong> 
-                <span class="descripcion-especialidad">Acompañamiento terapéutico para el desarrollo emocional y cognitivo.</span>
+                <strong id="psicopedagogica-title">Evaluación psicopedagógica:</strong> 
+                <span class="descripcion-evaluacion">Detecta dificultades de aprendizaje y desarrollo académico.</span>
             </li>
             <li>
-                <strong id="fonoaudiologia-title">FONOAUDIOLOGÍA:</strong> 
-                <span class="descripcion-especialidad">Evaluación e intervención en comunicación, lenguaje y deglución.</span>
+                <strong id="ados-title">Evaluación ADOS-2/ADIR:</strong> 
+                <span class="descripcion-evaluacion">
+                    Diagnostica trastornos del espectro autista.
+                    <span id="ados-details" style="display: none; color: inherit;">
+                        Esta evaluación incluye una serie de pruebas estandarizadas que ayudan a identificar características del autismo.
+                    </span>
+                </span>
+                <a href="#" id="toggle-ados">... Leer más</a>
             </li>
             <li>
-                <strong id="terapiaocupacional-title">TERAPISTA OCUPACIONAL:</strong> 
-                <span class="descripcion-especialidad">Mejora de la autonomía y participación en actividades cotidianas.</span>
+                <strong id="neurolinguistica-title">Evaluación neurolingüística:</strong> 
+                <span class="descripcion-evaluacion">Examina lenguaje y procesamiento cerebral.</span>
             </li>
             <li>
-                <strong id="musicoterapia-title">MUSICOTERAPIA:</strong> 
-                <span class="descripcion-especialidad">Uso terapéutico de la música para el desarrollo integral.</span>
+                <strong id="integracion-title">Evaluación de integración sensorial:</strong> 
+                <span class="descripcion-evaluacion">Evalúa la respuesta del sistema nervioso a estímulos sensoriales.</span>
             </li>
         </ul>
         <div class="d-grid gap-2 col-6 mx-auto">
-          <button class="btn btn-primary" type="button">Contacto Especialidades</button>
-          
+            <button class="btn btn-primary" type="button">Contacto Evaluación</button>
         </div>
     </div>
-
-    <!-- Imagen especialidades (50% del ancho) -->
-    <div class="col-12 col-md-6 p-0">
-        <img src="SRC/carrusel/psicologia.png" 
-             class="card-img" 
-             alt="Nuestras Especialidades"
-             style="width: 100%; height: 50vh; object-fit: cover;">
-    </div>
 </div>
+
+
 <script>
   document.getElementById('toggle-ados').addEventListener('click', function(event) {
     event.preventDefault(); // Evita que el enlace recargue la página
@@ -309,64 +318,138 @@
 
 
 <!-- Sección Talleres -->
-<div class="row align-items-stretch">
-    <!-- Carrusel/Imagen (50% ancho - izquierda) -->
-    <div class="col-12 col-md-6 p-0 order-md-1" style="height: 50vh;">
-        <div id="carouselTalleres" class="carousel slide h-100" data-bs-ride="carousel">
-            <div class="carousel-inner h-100">
-                <div class="carousel-item active h-100">
-                    <img src="SRC/carrusel//fonoaudiologia.png" 
-                         class="d-block w-100 h-100" 
-                         alt="Taller Habilidades Sociales"
-                         style="object-fit: cover;">
-                </div>
-                <div class="carousel-item h-100">
-                    <img src="SRC/carrusel/musicoterapia.png" 
-                         class="d-block w-100 h-100" 
-                         alt="Taller Adultos Mayores"
-                         style="object-fit: cover;">
-                </div>
-                <div class="carousel-item h-100">
-                    <img src="SRC/carrusel/habilidades-sociales.png" 
-                         class="d-block w-100 h-100" 
-                         alt="Taller Lego Terapia"
-                         style="object-fit: cover;">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselTalleres" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselTalleres" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
+<div class="row align-items-stretch" style="
+    background: rgba(255, 255, 255, 0.15); /* Transparencia muy ligera */
+    backdrop-filter: blur(20px); /* Desenfoque intenso */
+    border-radius: 15px;
+    padding: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Borde de luz sutil */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4); /* Sombra suave */
+    margin: 20px 0;
+    position: relative;">
+    
+    <!-- Efecto de brillo adicional -->
+    <div style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(120deg, 
+            rgba(255,255,255,0.1) 0%, 
+            rgba(255,255,255,0.05) 50%, 
+            rgba(255,255,255,0.1) 100%);
+        pointer-events: none;
+        border-radius: 15px;
+        z-index: -1;">
+    </div>
+<!-- Carrusel/Imagen (50% ancho - izquierda) -->
+<div class="col-12 col-md-6 talleres-container p-4 order-md-2">
+    <h5 class="card-title" id="titulo-talleres">Nuestros Talleres</h5>
+    <ul class="list-unstyled">
+        <li>
+            <strong>Habilidades Sociales:</strong> 
+            <span class="descripcion-taller">Desarrollo de competencias para la interacción social efectiva.</span>
+        </li>
+        <li>
+            <strong>Adultos Mayores:</strong> 
+            <span class="descripcion-taller">Actividades para promover el envejecimiento activo y saludable.</span>
+        </li>
+        <li>
+            <strong>Lego Terapia:</strong> 
+            <span class="descripcion-taller">Uso de Lego® como herramienta terapéutica para el desarrollo cognitivo.</span>
+        </li>
+    </ul>
+
+    <hr class="custom-hr">
+
+    <div class="d-grid gap-2 col-6 mx-auto">
+        <button class="btn btn-primary" type="button">Inscribirse en Talleres</button>
     </div>
 
-    <!-- Lista de talleres (50% del ancho - derecha) -->
-    <div class="col-12 col-md-6 talleres-container p-4 order-md-2">
-        <h5 class="card-title" id="titulo-talleres">Nuestros Talleres</h5>
-        <ul class="list-unstyled">
-            <li>
-                <strong>Habilidades Sociales:</strong> 
-                <span class="descripcion-taller">Desarrollo de competencias para la interacción social efectiva.</span>
-            </li>
-            <li>
-                <strong>Adultos Mayores:</strong> 
-                <span class="descripcion-taller">Actividades para promover el envejecimiento activo y saludable.</span>
-            </li>
-            <li>
-                <strong>Lego Terapia:</strong> 
-                <span class="descripcion-taller">Uso de Lego® como herramienta terapéutica para el desarrollo cognitivo.</span>
-            </li>
-        </ul>
-        <div class="d-grid gap-2 col-6 mx-auto">
-            <button class="btn btn-primary" type="button">Inscribirse en Talleres</button>
+    <hr class="custom-hr">
+
+    <div class="d-grid gap-2 col-6 mx-auto">
+        <button class="btn btn-outline-primary bg-transparent border-2" 
+                type="button"
+                style="color: #016D77; border-color: #016D77;">
+            Inscribirse en Talleres
+        </button>
+    </div>
+
+    <hr class="custom-hr">
+
+    <div class="d-grid gap-2 col-6 mx-auto">
+        <button class="btn" 
+                type="button"
+                style="
+                    background: rgba(255, 255, 255, 0.2);
+                    backdrop-filter: blur(10px);
+                    border: 1px solid rgba(1, 109, 119, 0.3);
+                    color: #016D77;
+                    transition: all 0.3s ease;">
+            Inscribirse en Talleres
+        </button>
+    </div>
+    <hr class="custom-hr">
+
+    <div class="d-grid gap-2 col-6 mx-auto">
+        <button class="btn bg-transparent" 
+                type="button"
+                style="
+                    box-shadow: 0 2px 8px rgba(1, 109, 119, 0.2);
+                    color: #016D77;
+                    font-weight: 500;
+                    letter-spacing: 0.5px;">
+            Inscribirse en Talleres
+        </button>
+    </div>
+    <hr class="custom-hr">
+    <!-- Uso -->
+<div class="d-grid gap-2 col-6 mx-auto">
+    <button class="btn btn-glass" type="button">
+        Inscribirse en Talleres
+    </button>
+</div>
+</div>
+<div class="col-12 col-md-6 p-0 order-md-1" style="height: 50vh;">
+    <div id="carouselTalleres" class="carousel slide h-100" data-bs-ride="carousel">
+
+        
+        <div class="carousel-inner h-100">
+            <div class="carousel-item active h-100">
+                <img src="SRC/carrusel/fonoaudiologia.png" 
+                     class="d-block w-100 h-100" 
+                     alt="Taller Habilidades Sociales"
+                     style="object-fit: cover;">
+            </div>
+            <div class="carousel-item h-100">
+                <img src="SRC/carrusel/musicoterapia.png" 
+                     class="d-block w-100 h-100" 
+                     alt="Taller Adultos Mayores"
+                     style="object-fit: cover;">
+            </div>
+            <div class="carousel-item h-100">
+                <img src="SRC/carrusel/habilidades-sociales.png" 
+                     class="d-block w-100 h-100" 
+                     alt="Taller Lego Terapia"
+                     style="object-fit: cover;">
+            </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselTalleres" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselTalleres" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
 </div>
 
+<!-- Lista de talleres (50% del ancho - derecha) -->
+
+</div>
 <div class="social-icon whatsapp-icon">
   <a href="https://wa.me/5491123719454" target="_blank" rel="noopener noreferrer">
     <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
@@ -389,7 +472,7 @@
   
 
 
-<hr style="border: 1px solid; margin: 0;">
+
 <footer>
   
   <div class="footer">
