@@ -481,6 +481,9 @@ color: #02a551;
 #fonoaudiologia-title{ color: #c0392b; } 
 #terapiaocupacional-title{ color: #8e44ad; }
 #musicoterapia-title{ color: #d35400; }
+#Habilidades-Sociales-title{ color: #c0392b; } 
+#Adultos-Mayores-title{ color: #8e44ad; }
+#Lego-Terapia-title{ color: #d35400; }
 /* Color para texto desplegable */
 #ados-details {
   color: inherit; /* Hereda el color del elemento padre */
@@ -512,4 +515,42 @@ color: #02a551;
   background: #83C4BE !important;
   color: white !important;
   transform: translateY(-2px);
+}
+/* Para móviles */
+@media (max-width: 767px) {
+  .text-container {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+  }
+  .card-text {
+      font-size: 1rem;
+      line-height: 1.6;
+  }
+
+}
+
+/* Reset de estilos para contenedores flex */
+.d-flex {
+  box-sizing: border-box;
+}
+
+/* Asegurar visibilidad de imagen */
+.card-img {
+  display: block !important;
+  max-width: 100%;
+}
+
+/* Corrección para navegadores antiguos */
+@supports not (backdrop-filter: blur(20px)) {
+  .d-flex {
+      background: rgba(255, 255, 255, 0.95) !important;
+  }
+}
+.evaluaciones-container {
+  background-color: rgba(255, 255, 255, 0.1); /* Fondo sutil para el contenedor de evaluaciones */
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+.card-img {
+  border-radius: 10px; /* Bordes redondeados para la imagen */
 }
