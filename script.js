@@ -45,3 +45,22 @@ scrollUpIcon.addEventListener("click", () => {
 });
  
 });
+// Script para manejar el texto "Leer más/menos"
+document.querySelectorAll('.collapse-link').forEach(link => {
+  link.addEventListener('click', function() {
+      this.textContent = this.textContent.includes('más') ? 'Leer menos' : 'Leer más...';
+  });
+});
+
+// Script para mantener el resaltado después de la animación
+document.addEventListener('DOMContentLoaded', function() {
+  const hash = window.location.hash;
+  if (hash) {
+      const targetSection = document.querySelector(hash);
+      if (targetSection) {
+          setTimeout(() => {
+              targetSection.scrollIntoView({behavior: 'smooth'});
+          }, 100);
+      }
+  }
+});

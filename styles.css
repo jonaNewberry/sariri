@@ -554,3 +554,83 @@ color: #02a551;
 .card-img {
   border-radius: 10px; /* Bordes redondeados para la imagen */
 }
+
+
+#evaluaciones-title {
+  font-size: 3rem;
+  color: #006E77;
+  margin: 0;
+  text-align: left;
+  font-weight: 500; /* Agregado para mejor legibilidad */
+  line-height: 1.2; /* Espaciado entre líneas óptimo para títulos grandes */
+  padding-bottom: 0.5rem; /* Espacio bajo el título */
+  border-bottom: 3px solid #006E77; /* Línea decorativa opcional */
+}
+
+
+
+
+@media (min-width: 768px) {
+  #evaluaciones-title {
+      font-size: 3rem;
+  }
+}
+
+/* Animación de resaltado */
+@keyframes highlight {
+  0% {
+      background-color: rgba(0, 110, 119, 0.2);
+      box-shadow: 0 0 0 4px rgba(0, 110, 119, 0.2);
+  }
+  100% {
+      background-color: transparent;
+      box-shadow: none;
+  }
+}
+
+/* Aplicar animación al título cuando es el target */
+#ados-evaluacion:target h3 {
+  animation: highlight 3.5s ease-out;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+}
+/* Desplazamiento suave en toda la página */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px; /* Ajusta según tu header */
+}
+
+/* Efecto permanente mientras está en foco */
+#ados-evaluacion:target .card {
+  border: 3px solid #06474d;
+  transition: border-color 0.3s ease;
+}
+/* Animación de resaltado para todas las evaluaciones */
+@keyframes highlight {
+  0% {
+      background-color: rgba(0, 110, 119, 0.2);
+      box-shadow: 0 0 0 4px rgba(0, 110, 119, 0.2);
+  }
+  100% {
+      background-color: transparent;
+      box-shadow: none;
+  }
+}
+
+/* Aplicar a todas las secciones de evaluación */
+[id$="-evaluacion"]:target .card {
+  border: 2px solid #006E77;
+  transition: border-color 0.3s ease;
+}
+
+[id$="-evaluacion"]:target h3 {
+  animation: highlight 1.5s ease-out;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+}
+
+/* Desplazamiento suave mejorado */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px; /* Ajustar según altura del header */
+}
