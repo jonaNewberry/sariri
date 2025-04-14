@@ -47,15 +47,15 @@
                         Tratamiento 
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="tratamiento.html#intervencion-psicopedagogica">PSICOPEDAGOGÍA</a></li>
+                        <li><a class="dropdown-item" href="tratamiento.html#intervencion-psicopedagogica-evaluacion">PSICOPEDAGOGÍA</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="tratamiento.html#terapia-psicologica">PSICOLOGÍA</a></li>
+                        <li><a class="dropdown-item" href="tratamiento.html#terapia-psicologica-evaluacion">PSICOLOGÍA</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="tratamiento.html#intervencion-fonoaudiologica">FONOAUDIOLOGÍA</a></li>
+                        <li><a class="dropdown-item" href="tratamiento.html#intervencion-fonoaudiologica-evaluacion">FONOAUDIOLOGÍA</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="tratamiento.html#intervencion-terapia-ocupacional">TERAPISTA OCUPACIONAL</a></li>
+                        <li><a class="dropdown-item" href="tratamiento.html#intervencion-terapia-ocupacional-evaluacion">TERAPISTA OCUPACIONAL</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="tratamiento.html#intervencion-musicoterapia">MUSICOTERAPIA</a></li>
+                        <li><a class="dropdown-item" href="tratamiento.html#intervencion-musicoterapia-evaluacion">MUSICOTERAPIA</a></li>
                        
                          </ul>
                 </li>
@@ -176,14 +176,12 @@
                                 </p>
                             </div>
                         </div>
-                        <a href="#adosDetail" class="collapse-link" data-bs-toggle="collapse">Leer menos</a>
+                        <a href="#adosDetail" class="collapse-link" data-bs-toggle="collapse">Leer más...</a>
                     </div>
                 </div>
             </div>
-
-
-            <!-- Estimulación neurocognitiva -->
-<div class="col-md-6 col-lg-4" id="estimulacion-neurocognitiva">
+<!-- Estimulación Neurocognitiva - Versión compatible -->
+<div class="col-md-6 col-lg-4" id="estimulacion-evaluacion"> <!-- Cambiado ID para match con CSS -->
     <div class="card h-100 shadow-sm">
         <div class="card-body">
             <h3 class="text-indigo mb-4">🧠⚡ Estimulación Neurocognitiva</h3>
@@ -198,18 +196,23 @@
                 <li>Optimización de flexibilidad mental</li>
             </ul>
             <div class="collapse" id="estimulacionDetail">
-                <p class="text-muted small">
-                    <strong>Incluye:</strong>
-                    Programa personalizado basado en neuroplasticidad, técnicas de neuromodulación cognitiva, y seguimiento de progresos cuantificable
-                </p>
+                <div class="pt-2">
+                    <p class="text-muted small mb-0">
+                        <strong>Protocolo de intervención:</strong><br>
+                        1. Evaluación neurocognitiva inicial<br>
+                        2. Diseño de plan de estimulación<br>
+                        3. Sesiones con neurofeedback<br>
+                        4. Reevaluación cuatrimestral
+                    </p>
+                </div>
             </div>
             <a href="#estimulacionDetail" class="collapse-link" data-bs-toggle="collapse">Leer más...</a>
         </div>
     </div>
 </div>
 
-<!-- Psicodiagnóstico -->
-<div class="col-md-6 col-lg-4" id="psicodiagnostico">
+<!-- Psicodiagnóstico - Versión compatible -->
+<div class="col-md-6 col-lg-4" id="psicodiagnostico-evaluacion"> <!-- Cambiado ID para match con CSS -->
     <div class="card h-100 shadow-sm">
         <div class="card-body">
             <h3 class="text-indigo mb-4">📋✅ Psicodiagnóstico</h3>
@@ -224,15 +227,24 @@
                 <li>Evaluación de adaptación psicosocial</li>
             </ul>
             <div class="collapse" id="psicodiagnosticoDetail">
-                <p class="text-muted small">
-                    <strong>Incluye:</strong>
-                    Batería de pruebas validadas (TAT, Rorschach, MMPI-2), informe diagnóstico DSM-5/CIE-11, y propuesta de abordaje terapéutico
-                </p>
+            
+            <p class="text-muted small">
+                <strong>Metodología:</strong><br>
+                
+                  
+                        <strong>Metodología:</strong><br>
+                        1. Entrevista diagnóstica estructurada<br>
+                        2. Aplicación de pruebas específicas<br>
+                        3. Triangulación de resultados<br>
+                        4. Elaboración de informe DSM-5/CIE-11
+                    </p>
+                </div> 
+                <a href="#psicodiagnosticoDetail" class="collapse-link" data-bs-toggle="collapse">Leer más...</a>
+    
             </div>
-            <a href="#psicodiagnosticoDetail" class="collapse-link" data-bs-toggle="collapse">Leer más...</a>
-        </div>
+          </div>
     </div>
-</div>
+
             <!-- Integración Sensorial -->
             <div class="col-md-6 col-lg-4" id="sensorial-evaluacion">
                 <div class="card h-100 shadow-sm">
@@ -288,14 +300,7 @@
  
     </section>
 
-    <!-- Script para Collapse -->
-    <script>
-        document.querySelectorAll('.collapse-link').forEach(link => {
-            link.addEventListener('click', function() {
-                this.textContent = this.textContent.includes('más') ? 'Leer menos' : 'Leer más...';
-            });
-        });
-    </script>
+  
 
     <!-- Estilos Adicionales -->
     <style>
@@ -353,19 +358,7 @@
     </style>
 
 
-<script>
-  document.getElementById('toggle-ados').addEventListener('click', function(event) {
-    event.preventDefault(); // Evita que el enlace recargue la página
-    const details = document.getElementById('ados-details');
-    if (details.style.display === 'none' || details.style.display === '') {
-      details.style.display = 'inline'; // Muestra el contenido
-      this.textContent = '... Leer menos'; // Cambia el texto del enlace
-    } else {
-      details.style.display = 'none'; // Oculta el contenido
-      this.textContent = '... Leer más'; // Cambia el texto del enlace
-    }
-  });
-</script>
+
 
 
 <div class="social-icon whatsapp-icon">

@@ -44,13 +44,7 @@ scrollUpIcon.addEventListener("click", () => {
   });
 });
  
-});
-// Script para manejar el texto "Leer más/menos"
-document.querySelectorAll('.collapse-link').forEach(link => {
-  link.addEventListener('click', function() {
-      this.textContent = this.textContent.includes('más') ? 'Leer menos' : 'Leer más...';
-  });
-});
+
 
 // Script para mantener el resaltado después de la animación
 document.addEventListener('DOMContentLoaded', function() {
@@ -64,3 +58,17 @@ document.addEventListener('DOMContentLoaded', function() {
       }
   }
 });
+
+    
+
+document.querySelectorAll('.collapse').forEach(collapse => {
+  collapse.addEventListener('shown.bs.collapse', function() {
+      const trigger = document.querySelector(`[href="#${this.id}"]`);
+      trigger.textContent = 'Leer menos...';
+  });
+  
+  collapse.addEventListener('hidden.bs.collapse', function() {
+      const trigger = document.querySelector(`[href="#${this.id}"]`);
+      trigger.textContent = 'Leer más...';
+  });
+});})
