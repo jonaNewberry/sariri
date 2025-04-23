@@ -613,7 +613,7 @@ html {
   }
   100% {
       background-color: transparent;
-      box-shadow: none;
+      box-shadow: none; 
   }
 }
 
@@ -629,8 +629,82 @@ html {
   padding: 0.5rem 1rem;
 }
 
-/* Desplazamiento suave mejorado */
+/* VER ESTO desde aca */
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 100px; /* Ajustar según altura del header */
+}
+.nav-tabs .nav-link {
+  color: #000;
+  font-weight: bold;
+}
+.nav-tabs .nav-link.active {
+  color: #007bff;
+  border-bottom: 2px solid #007bff;
+}
+.tab-content {
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 0 0 4px 4px;
+}
+#boton-descripcion {
+  background-color: #007bff; /* Color personalizado para Descripción */
+  color: white; /* Color del texto */
+}
+
+#boton-objetivos {
+  background-color: #28a745; /* Color personalizado para Objetivos */
+  color: white; /* Color del texto */
+}
+
+#boton-modalidad {
+  background-color: #ffc107; /* Color personalizado para Modalidad */
+  color: black; /* Color del texto */
+}
+
+#boton-docente {
+  background-color: #dc3545; /* Color personalizado para Docente */
+  color: white; /* Color del texto */
+}
+
+/* Estilo para el hover */
+.nav-link:hover {
+  opacity: 0.8; /* Efecto de hover */
+}
+/* VER ESTO hasta acaaaaaa*/
+
+
+/* Estilo para el botón activo */
+.nav-pills .nav-link.active {
+  background-color: #007bff; /* Color de fondo del botón activo */
+  color: white; /* Color del texto del botón activo */
+}
+
+/* Estilo para los botones no activos */
+.nav-pills .nav-link {
+  background-color: #f8f9fa; /* Color de fondo de los botones no activos */
+  color: #000; /* Color del texto de los botones no activos */
+  border: 1px solid #007bff; /* Borde para resaltar los botones */
+}
+
+/* Efecto de hover para los botones */
+.nav-pills .nav-link:hover {
+  background-color: #007bff; /* Color de fondo al pasar el mouse */
+  color: white; /* Color del texto al pasar el mouse */
+}
+
+#tarjeta-habilidades-sociales {
+  background-color: #e7b09f; /* Cambia el color según tu preferencia */
+  padding: 40px; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados */
+}
+#tarjeta-adultos-mayores {
+  background-color: #8ac0f0; /* Cambia el color según tu preferencia */
+  padding: 40px; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados */
+}
+#tarjeta-legoterapia {
+  background-color: #e6f7ff; /* Cambia el color según tu preferencia */
+  padding: 40px; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados */
 }

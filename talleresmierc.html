@@ -31,6 +31,9 @@
         <div class="collapse navbar-collapse" id="navbarText">
             <!-- Menu Items -->
             <ul class="navbar-nav ms-auto mb-lg-4 mb-lg-2"> <!-- ms-auto para alinear a la derecha -->
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio </a>
+                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Evaluaciones
@@ -72,18 +75,7 @@
                        
                          </ul>
                 </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Talleres
-                  </a>
-                  <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="talleres.html#tarjeta-habilidades-sociales">Habilidades sociales</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="talleres.html#tarjeta-adultos-mayores">adultos mayores</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="talleres.html#tarjeta-legoterapia">lego terapia</a></li>
-                    </ul>
-              </li>
+
                <li class="nav-item">
                 <a class="nav-link" href="ubicación.html">Capacitaciones </a>
              </li>
@@ -103,60 +95,82 @@
     </div>
   </nav>
 </div>
-<div class="d-flex flex-column flex-md-row align-items-stretch" 
-     style="
-        background: rgba(255, 255, 255, 0.15);
-        backdrop-filter: blur(20px);
-        border-radius: 15px;
-        padding: 25px;
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        margin: 20px 0;
-        min-height: 400px; /* Altura mínima garantizada */
-        position: relative;">
-    
-    <!-- Efecto de brillo (asegurar z-index negativo) -->
-    <div style="
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: linear-gradient(120deg, 
-            rgba(255,255,255,0.1) 0%, 
-            rgba(255,255,255,0.05) 50%, 
-            rgba(255,255,255,0.1) 100%);
-        pointer-events: none;
-        border-radius: 15px;
-        z-index: -1;">
-    </div>
 
-    <!-- Contenedor de texto -->
-    
-    <div class="text-container p-3 order-2 order-md-1 w-100 w-md-50" 
-         style="flex: 1; min-width: 50%;">
-        <p class="card-text">
-            Sariri es un centro interdisciplinario dedicado a las infancias, ofreciendo terapias como psicología, fonoaudiología y estimulación temprana para potenciar su desarrollo integral en un entorno de acompañamiento y contención.
-        </p>
-        
-        <!-- Barras de color -->
-        <div class="rectangulo-amarillo"></div>
-        <div class="rectangulo-naranja"></div>
-        <div class="rectangulo-azul-claro"></div>
-        <div class="rectangulo-azul-oscuro"></div>
-    </div>
+<div class="container">
+    <div class="row">
+        <!-- Carrusel de talleres -->
+        <div id="talleresCarrusel" class="carousel slide col-12 col-md-6 p-0" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="SRC/carrusel/habilidades_sociales.png" class="d-block w-100" alt="Habilidades Sociales" style="height: 50vh; object-fit: cover;">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Habilidades Sociales</h5>
+                        <p>Desarrollo de competencias interpersonales y comunicación efectiva.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="SRC/carrusel/adultos_mayores.png" class="d-block w-100" alt="Adultos Mayores" style="height: 50vh; object-fit: cover;">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Adultos Mayores</h5>
+                        <p>Actividades para mejorar la calidad de vida y el bienestar emocional.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="SRC/carrusel/lego_terapia.png" class="d-block w-100" alt="Lego Terapia" style="height: 50vh; object-fit: cover;">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Lego Terapia</h5>
+                        <p>Uso de bloques de construcción para fomentar la creatividad y habilidades sociales.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#talleresCarrusel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#talleresCarrusel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
 
-    <!-- Contenedor de imagen -->
-    <picture class="image-container order-1 order-md-2 mb-4 mb-md-0" 
-             style="flex: 1; min-width: 50%; padding-left: 25px;">
-        <source srcset="SRC/carrusel/puertasabiertas.webp" type="image/webp">
-        <img src="SRC/carrusel/puertasabiertas.png" 
-             class="card-img h-100 w-100"
-             alt="Centro Sariri"
-             style="border-radius: 10px; object-fit: cover; height: 100%;">
-    </picture>
+        <!-- Lista de talleres (50% del ancho) -->
+        <div class="col-12 col-md-6 talleres-container p-4 d-flex flex-column justify-content-between">
+            <div>
+                <h5 class="card-title" id="titulo-talleres">Nuestros Talleres</h5>
+                <ul class="list-unstyled">
+                    <li>
+                        <strong id="habilidades-sociales-title">Taller de Habilidades Sociales:</strong> 
+                        <span class="descripcion-taller">Fomenta la comunicación y el trabajo en equipo.</span>
+                    </li>
+                    <li>
+                        <strong id="adultos-mayores-title">Taller para Adultos Mayores:</strong> 
+                        <span class="descripcion-taller">Actividades recreativas y de estimulación cognitiva.</span>
+                    </li>
+                    <li>
+                        <strong id="lego-terapia-title">Taller de Lego Terapia:</strong> 
+                        <span class="descripcion-taller">Utiliza la construcción con Lego para desarrollar habilidades emocionales y sociales.</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="d-grid gap-2 col-6 mx-auto">
+                <a class="nav-link w-100" target="_blank" href="https://wa.me/5491123719454">
+                    <button class="btn btn-glass w-100" type="button" 
+                            style="box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);">
+                        Contacto Talleres
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
 </div>
-</div>
+
+
+
+
+
+
+
+
 <div class="container">
     <div class="row">
         <!-- Imagen evaluación (50% del ancho) -->
