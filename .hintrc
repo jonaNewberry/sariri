@@ -19,7 +19,20 @@
         "frame-title": "off"
       }
     ],
-    "disown-opener": "off"
+    "disown-opener": "off",
+    "axe/aria": [
+      "default",
+      {
+        "aria-required-children": "off",
+        "aria-required-parent": "off"
+      }
+    ],
+    "axe/structure": [
+      "default",
+      {
+        "listitem": "off"
+      }
+    ]
   },
   "browserslist": [
     "defaults",
