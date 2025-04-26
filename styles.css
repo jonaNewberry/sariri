@@ -348,13 +348,7 @@ color: #02a551;
     border: none; /* Sin borde */
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-color: #000; /* Color del icono */
-    border-radius: 50%; /* Bordes redondeados para el icono */
-    width: 30px; /* Ancho del icono */
-    height: 30px; /* Alto del icono */
-}
+
 
 /* Aumentar el tamaño del icono */
 .carousel-control-prev-icon::after,
