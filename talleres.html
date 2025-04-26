@@ -99,89 +99,214 @@
 
 <section class="container py-5">
     <h2 id="evaluaciones-title" class="mb-4">Nuestros Talleres</h2>
- 
- <!-- ACA MODIFICO -->
- <div id="tarjeta-habilidades-sociales" class="container mt-4">
 
-    <div class="row">
-        
-        <!-- Imagen a la izquierda (50% del ancho) -->
-        <div class="col-12 col-md-6 p-0">
-            <img id="imagen-psicologia" src="SRC/carrusel/psicologia.png" 
-                 class="card-img" alt="Evaluaciones"
-                 style="width: 100%; height: 50vh; object-fit: cover;">
-        </div>
-
-        <!-- Pestañas a la derecha (50% del ancho) -->
-        <div class="col-12 col-md-6">
+    <div class="card mt-4">
+        <div class="card-header">
             <h3>Taller de Habilidades Sociales</h3>
-            <!-- Enlaces de navegación -->
             <ul class="nav nav-pills mb-3" role="tablist">
                 <li class="nav-item">
-                    <a class="nav-link active rounded-pill" role="tab" data-bs-toggle="tab" href="#descripcion" aria-selected="true">
-                        Descripción
+                    <a class="nav-link active rounded-pill" role="tab" data-bs-toggle="tab" href="#taller-ninos" aria-selected="true">
+                        Niños
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link rounded-pill" role="tab" data-bs-toggle="tab" href="#objetivos" aria-selected="false">
-                        Objetivos
+                    <a class="nav-link rounded-pill" role="tab" data-bs-toggle="tab" href="#taller-adolescentes" aria-selected="false">
+                        Adolescentes
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link rounded-pill" role="tab" data-bs-toggle="tab" href="#modalidad" aria-selected="false">
-                        Modalidad
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link rounded-pill" role="tab" data-bs-toggle="tab" href="#docente" aria-selected="false">
-                        Docente
+                    <a class="nav-link rounded-pill" role="tab" data-bs-toggle="tab" href="#taller-adultos" aria-selected="false">
+                        Adultos
                     </a>
                 </li>
             </ul>
-            <!-- Contenido de las pestañas -->
+        </div>
+        <div class="card-body">
             <div class="tab-content">
-                <!-- Pestaña 1: Descripción -->
-                <div id="descripcion" class="tab-pane active" role="tabpanel">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <p class="mbr-text py-5 mbr-fonts-style display-7">
-                                Este taller tiene como objetivo fomentar las habilidades sociales de los participantes, enfocándose en la comunicación efectiva y el trabajo en equipo. A través de dinámicas y actividades prácticas, los asistentes aprenderán a interactuar de manera positiva y constructiva en diferentes contextos.
-                            </p>
+                <!-- Taller para Niños -->
+                <div id="taller-ninos" class="tab-pane active" role="tabpanel">
+                    <ul class="nav nav-pills mb-3" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active rounded-pill" role="tab" data-bs-toggle="tab" href="#descripcion-ninos" aria-selected="true">
+                                Descripción
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link rounded-pill" role="tab" data-bs-toggle="tab" href="#objetivos-ninos" aria-selected="false">
+                                Objetivos
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link rounded-pill" role="tab" data-bs-toggle="tab" href="#modalidad-ninos" aria-selected="false">
+                                Modalidad
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link rounded-pill" role="tab" data-bs-toggle="tab" href="#docente-ninos" aria-selected="false">
+                                Docente
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="descripcion-ninos" class="tab-pane active" role="tabpanel">
+                            <div class="row">
+                                <div class="col-12 col-md-6 p-0">
+                                    <img id="imagen-ninos" src="SRC/carrusel/habilidades-sociales.png" 
+                                         class="card-img" alt="Taller para Niños"
+                                         style="width: 100%; height: 50vh; object-fit: cover;">
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <p class="mbr-text py-5 mbr-fonts-style display-7">
+                                        Este taller tiene como objetivo fomentar las habilidades sociales de los niños, enfocándose en la comunicación efectiva y el trabajo en equipo a través de juegos y dinámicas.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-
-                <!-- Pestaña 2: Objetivos -->
-                <div id="objetivos" class="tab-pane" role="tabpanel">
-                    <div class="row">
-                        <div class="col-md-12">
+                        <div id="objetivos-ninos" class="tab-pane" role="tabpanel">
                             <h4>Objetivos Generales:</h4>
                             <ul>
-                                <li>Desarrollar habilidades de comunicación efectiva.</li>
-                                <li>Fomentar el trabajo en equipo y la colaboración.</li>
-                                <li>Mejorar la resolución de conflictos y la empatía.</li>
+                                <li>Desarrollar habilidades de comunicación.</li>
+                                <li>Fomentar el trabajo en equipo.</li>
+                                <li>Mejorar la resolución de conflictos.</li>
                             </ul>
                         </div>
-                    </div>
-                </div>
-
-                <!-- Pestaña 3: Modalidad -->
-                <div id="modalidad" class="tab-pane" role="tabpanel">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <p class="mbr-text py-5 mbr-fonts-style display-7">
-                                El taller se llevará a cabo de manera presencial, con una duración total de 15 horas, distribuidas en 3 sesiones de 5 horas cada una. Las actividades incluirán juegos de rol, dinámicas grupales y discusiones en grupo.
+                        <div id="modalidad-ninos" class="tab-pane" role="tabpanel">
+                            <h4>Modalidad:</h4>
+                            <p class="mbr-text py-3 mbr-fonts-style display-7">
+                                El taller se llevará a cabo de manera presencial, con una duración total de 15 horas, distribuidas en 3 sesiones de 5 horas cada una.
+                            </p>
+                        </div>
+                        <div id="docente-ninos" class="tab-pane" role="tabpanel">
+                            <h4>Docente Responsable:</h4>
+                            <p class="mbr-text py-3 mbr-fonts-style display-7">
+                                <strong>Nombre:</strong> [Nombre del Docente]<br>
+                                <strong>Título:</strong> [Título del Docente]<br>
+                                <strong>Experiencia:</strong> [Breve descripción de su experiencia]
                             </p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Pestaña 4: Docente -->
-                <div id="docente" class="tab-pane" role="tabpanel">
-                    <div class="row">
-                        <div class="col-md-12">
+                <!-- Taller para Adolescentes -->
+                <div id="taller-adolescentes" class="tab-pane" role="tabpanel">
+                    <ul class="nav nav-pills mb-3" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active rounded-pill" role="tab" data-bs-toggle="tab" href="#descripcion-adolescentes" aria-selected="true">
+                                Descripción
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link rounded-pill" role="tab" data-bs-toggle="tab" href="#objetivos-adolescentes" aria-selected="false">
+                                Objetivos
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link rounded-pill" role="tab" data-bs-toggle="tab" href="#modalidad-adolescentes" aria-selected="false">
+                                Modalidad
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link rounded-pill" role="tab" data-bs-toggle="tab" href="#docente-adolescentes" aria-selected="false">
+                                Docente
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="descripcion-adolescentes" class="tab-pane active" role="tabpanel">
+                            <div class="row">
+                                <div class="col-12 col-md-6 p-0">
+                                    <img id="imagen-adolescentes" src="SRC/carrusel/habilidades-sociales.png" 
+                                         class="card-img" alt="Taller para Adolescentes"
+                                         style="width: 100%; height: 50vh; object-fit: cover;">
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <p class="mbr-text py-5 mbr-fonts-style display-7">
+                                        Este taller tiene como objetivo fomentar las habilidades sociales de los adolescentes, enfocándose en la comunicación efectiva y el trabajo en equipo a través de dinámicas interactivas.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="objetivos-adolescentes" class="tab-pane" role="tabpanel">
+                            <h4>Objetivos Generales:</h4>
+                            <ul>
+                                <li>Desarrollar habilidades de comunicación asertiva.</li>
+                                <li>Fomentar la colaboración y el trabajo en grupo.</li>
+                                <li>Mejorar la empatía y la resolución de conflictos.</li>
+                            </ul>
+                        </div>
+                        <div id="modalidad-adolescentes" class="tab-pane" role="tabpanel">
+                            <h4>Modalidad:</h4>
+                            <p class="mbr-text py-3 mbr-fonts-style display-7">
+                                El taller se llevará a cabo de manera presencial, con una duración total de 12 horas, distribuidas en 4 sesiones de 3 horas cada una.
+                            </p>
+                        </div>
+                        <div id="docente-adolescentes" class="tab-pane" role="tabpanel">
                             <h4>Docente Responsable:</h4>
-                            <p class="mbr-text py-3 mbr-fonts-style display -7">
+                            <p class="mbr-text py-3 mbr-fonts-style display-7">
+                                <strong>Nombre:</strong> [Nombre del Docente]<br>
+                                <strong>Título:</strong> [Título del Docente]<br>
+                                <strong>Experiencia:</strong> [Breve descripción de su experiencia]
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Taller para Adultos -->
+                <div id="taller-adultos" class="tab-pane" role="tabpanel">
+                    <ul class="nav nav-pills mb-3" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active rounded-pill" role="tab" data-bs-toggle="tab" href="#descripcion-adultos" aria-selected="true">
+                                Descripción
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link rounded-pill" role="tab" data-bs-toggle="tab" href="#objetivos-adultos" aria-selected="false">
+                                Objetivos
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link rounded-pill" role="tab" data-bs-toggle="tab" href="#modalidad-adultos" aria-selected="false">
+                                Modalidad
+                            </a>
+                        </li>
+                        <li class ="nav-item">
+                            <a class="nav-link rounded-pill" role="tab" data-bs-toggle="tab" href="#docente-adultos" aria-selected="false">
+                                Docente
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="descripcion-adultos" class="tab-pane active" role="tabpanel">
+                            <div class="row">
+                                <div class="col-12 col-md-6 p-0">
+                                    <img id="imagen-adultos" src="SRC/carrusel/habilidades-sociales.png" 
+                                         class="card-img" alt="Taller para Adultos"
+                                         style="width: 100%; height: 50vh; object-fit: cover;">
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <p class="mbr-text py-5 mbr-fonts-style display-7">
+                                        Este taller tiene como objetivo fomentar las habilidades sociales de los adultos, enfocándose en la comunicación efectiva y el trabajo en equipo a través de actividades prácticas y discusiones grupales.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="objetivos-adultos" class="tab-pane" role="tabpanel">
+                            <h4>Objetivos Generales:</h4>
+                            <ul>
+                                <li>Desarrollar habilidades de comunicación efectiva en entornos laborales y sociales.</li>
+                                <li>Fomentar la colaboración y el trabajo en equipo en proyectos grupales.</li>
+                                <li>Mejorar la resolución de conflictos y la empatía en interacciones cotidianas.</li>
+                            </ul>
+                        </div>
+                        <div id="modalidad-adultos" class="tab-pane" role="tabpanel">
+                            <h4>Modalidad:</h4>
+                            <p class="mbr-text py-3 mbr-fonts-style display-7">
+                                El taller se llevará a cabo de manera presencial, con una duración total de 10 horas, distribuidas en 5 sesiones de 2 horas cada una.
+                            </p>
+                        </div>
+                        <div id="docente-adultos" class="tab-pane" role="tabpanel">
+                            <h4>Docente Responsable:</h4>
+                            <p class="mbr-text py-3 mbr-fonts-style display-7">
                                 <strong>Nombre:</strong> [Nombre del Docente]<br>
                                 <strong>Título:</strong> [Título del Docente]<br>
                                 <strong>Experiencia:</strong> [Breve descripción de su experiencia]
@@ -192,10 +317,6 @@
             </div>
         </div>
     </div>
-</div>
-
-
-   
 
     <!-- Taller de Lego Terapia -->
     <div id="tarjeta-legoterapia" class="container mt-4">
