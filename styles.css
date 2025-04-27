@@ -23,6 +23,7 @@
 .navbar-nav .nav-item:hover {
     border-bottom: 2px solid #02a551;
     padding-bottom: 2px; 
+    
 }
 .logo-margin {
   margin-right: 55px; 
@@ -670,7 +671,7 @@ html {
 
 /* Estilo para el botón activo */
 .nav-pills .nav-link.active {
-  background-color: #007bff; /* Color de fondo del botón activo */
+  background-color: #16a085; /* Color de fondo del botón activo */
   color: white; /* Color del texto del botón activo */
 }
 
@@ -678,17 +679,19 @@ html {
 .nav-pills .nav-link {
   background-color: #f8f9fa; /* Color de fondo de los botones no activos */
   color: #000; /* Color del texto de los botones no activos */
-  border: 1px solid #007bff; /* Borde para resaltar los botones */
+  border: 1px solid #006E77; /* Borde para resaltar los botones */
+  padding: 15px;
 }
 
 /* Efecto de hover para los botones */
 .nav-pills .nav-link:hover {
-  background-color: #007bff; /* Color de fondo al pasar el mouse */
+  background-color: #006E77; /* Color de fondo al pasar el mouse */
   color: white; /* Color del texto al pasar el mouse */
 }
+/* Cambiar a niños/adolescentes/adultos */
 
 #tarjeta-habilidades-sociales {
-  background-color: #e7b09f; /* Cambia el color según tu preferencia */
+  background-color: #eec5b9; /* Cambia el color según tu preferencia */
   padding: 40px; /* Espaciado interno */
   border-radius: 10px; /* Bordes redondeados */
 }
@@ -701,4 +704,12 @@ html {
   background-color: #e6f7ff; /* Cambia el color según tu preferencia */
   padding: 40px; /* Espaciado interno */
   border-radius: 10px; /* Bordes redondeados */
+}
+.nav-item {
+  margin-right: 10px; /* Espacio entre botones */
+  margin-top: 7px;
+}
+#imagen-adolescentes{
+  padding: 25px;
+  border-radius: 20px;
 }
