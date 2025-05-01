@@ -589,6 +589,7 @@ color: #02a551;
   border-radius: 8px;
   padding: 0.5rem 1rem;
 }
+
 /* Desplazamiento suave en toda la página */
 html {
   scroll-behavior: smooth;
@@ -614,12 +615,12 @@ html {
 
 /* Aplicar a todas las secciones de evaluación */
 [id$="-evaluacion"]:target .card {
-  border: 2px solid #006E77;
-  transition: border-color 0.3s ease;
+  border: 2px solid #035f68;
+  transition: border-color 2.30s ease;
 }
 
 [id$="-evaluacion"]:target h3 {
-  animation: highlight 1.5s ease-out;
+  animation: highlight 5.5s ease-out;
   border-radius: 8px;
   padding: 0.5rem 1rem;
 }
@@ -689,18 +690,18 @@ html {
   color: white; /* Color del texto al pasar el mouse */
 }
 /* Cambiar a niños/adolescentes/adultos */
-#tarjeta-adultos-mayores {
+#taller-tarjeta-adultos-mayores-evaluacion {
   background-color:  #f3e2ce;/* Cambia el color según tu preferencia */
   padding: 40px; /* Espaciado interno */
   border-radius: 10px; /* Bordes redondeados */
 }
-#tarjeta-habilidades-sociales {
+#taller-tarjeta-habilidades-sociales-evaluacion {
   background-color:   #e6f7ff;/* Cambia el color según tu preferencia */
   padding: 40px; /* Espaciado interno */
   border-radius: 10px; /* Bordes redondeados */
 }
 
-#tarjeta-legoterapia {
+#taller-tarjeta-legoterapia-evaluacion {
   background-color: #8ac0f0;/* Cambia el color según tu preferencia */
   padding: 40px; /* Espaciado interno */
   border-radius: 10px; /* Bordes redondeados */
@@ -713,3 +714,31 @@ html {
   padding: 25px;
   border-radius: 20px;
 }
+#intervencion-psicopedagogica-evaluacion {
+  background-color:   #e6f7ff;/* Cambia el color según tu preferencia */
+  padding: 40px; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+#intervencion-terapia-psicologica-evaluacion {
+  background-color:   #f3fcdf;/* Cambia el color según tu preferencia */
+  padding: 40px; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados */
+}
+#intervencion-fonoaudiologica-evaluacion{
+  background-color:   #e6eaff;/* Cambia el color según tu preferencia */
+  padding: 40px; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados */
+}
+#intervencion-terapia-ocupacional-evaluacion{
+  background-color:   #f5ffe6;/* Cambia el color según tu preferencia */
+  padding: 40px; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados */
+}
+#intervencion-musicoterapia-evaluacion{
+  background-color:   #e8ffe6;/* Cambia el color según tu preferencia */
+  padding: 40px; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+

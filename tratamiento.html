@@ -98,7 +98,7 @@
 </div>
 
 
-<body class="bg-light">
+
    <!-- Sección Psicopedagogía -->
 
    <!-- Sección Unificada de Servicios -->
@@ -106,141 +106,471 @@
     <!-- Evaluaciones Especializadas -->
     <h2 id="evaluaciones-title" class="mb-4">Nuestros Abordajes</h2>
     <div class="row g-4">
-
-
-
-        
-        
         <!-- Psicopedagogía -->
-        <div class="col-md-6 col-lg-4" id="intervencion-psicopedagogica-evaluacion">
-            <div class="card h-100 shadow-sm">
-                <div class="card-body">
-                    <h3 class="text-indigo mb-4">📚 Intervención Psicopedagógica</h3>
-                    <p class="card-text">
-                        <strong>Objetivo:</strong> Optimización de procesos de aprendizaje
-                    </p>
-                    <ul class="list-styled">
-                        <li>Estrategias de estudio personalizadas</li>
-                        <li>Desarrollo de funciones cognitivas básicas</li>
-                        <li>Adaptaciones curriculares</li>
-                        <li>Manejo de dificultades específicas</li>
-                        <li>Orientación vocacional</li>
-                    </ul>
-                    <div class="collapse" id="psicopedagogiaDetail">
-                        <p class="text-muted small">
-                            <strong>Metodología:</strong>
-                            Enfoque constructivista con técnicas de andamiaje y aprendizaje significativo
-                        </p>
+         <div class="container mt-4" id="intervencion-psicopedagogica-evaluacion">
+            <div class="row">
+                <div class="row">
+                    <!-- Imagen a la izquierda (50% del ancho) -->
+                    <div class="col-12 col-md-6 p-0">
+                        <img id="imagen-psicopedagogia" src="SRC/carrusel/acompañante-externo.png" 
+                             class="card-img" alt="Intervención Psicopedagógica"
+                             style="width: 100%; height: 50vh; object-fit: cover;">
                     </div>
-                    <a href="#psicopedagogiaDetail" class="collapse-link" data-bs-toggle="collapse">Leer más...</a>
-                </div>
-            </div>
-        </div>
 
-        <!-- Psicología -->
-        <div class="col-md-6 col-lg-4" id="terapia-psicologica-evaluacion">
-            <div class="card h-100 shadow-sm">
-                <div class="card-body">
-                    <h3 class="text-indigo mb-4">🧠💬 Terapia Individual</h3>
-                    <p class="card-text">
-                        <strong>Enfoque:</strong> Promoción de salud mental integral
-                    </p>
-                    <ul class="list-styled">
-                        <li>Terapia cognitivo-conductual</li>
-                        <li>Manejo de ansiedad y estrés</li>
-                        <li>Desarrollo emocional</li>
-                        <li>Habilidades sociales</li>
-                        <li>Autoestima y autoconcepto</li>
-                    </ul>
-                    <div class="collapse" id="psicologiaDetail">
-                        <p class="text-muted small">
-                            <strong>Abordajes:</strong>
-                            Integración de técnicas humanistas, sistémicas y de tercera generación
-                        </p>
-                    </div>
-                    <a href="#psicologiaDetail" class="collapse-link" data-bs-toggle="collapse">Leer más...</a>
-                </div>
-            </div>
-        </div>
+        <!-- Pestañas a la derecha (50% del ancho) -->
+        <div class="col-12 col-md-6">
+            <h3>📚 Intervención Psicopedagógica</h3>
+            <!-- Enlaces de navegación -->
+            <ul class="nav nav-pills mb-3" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active rounded-pill" role="tab" data-bs-toggle="tab" href="#descripcion-psicopedagogia" aria-selected="true">
+                        Descripción
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link rounded-pill" role="tab" data-bs-toggle="tab" href="#objetivos-psicopedagogia" aria-selected="false">
+                        Objetivos
+                    </a>
+                </li>
 
-        <!-- Fonoaudiología -->
-        <div class="col-md-6 col-lg-4" id="intervencion-fonoaudiologica-evaluacion">
-            <div class="card h-100 shadow-sm">
-                <div class="card-body">
-                    <h3 class="text-indigo mb-4">🗣️👂 Rehabilitación Integral</h3>
-                    <p class="card-text">
-                        <strong>Objetivo:</strong> Desarrollo de competencias comunicativas
-                    </p>
-                    <ul class="list-styled">
-                        <li>Trastornos del lenguaje</li>
-                        <li>Dificultades de deglución</li>
-                        <li>Terapia vocal</li>
-                        <li>Estimulación temprana</li>
-                        <li>Rehabilitación auditiva</li>
-                    </ul>
-                    <div class="collapse" id="fonoDetail">
-                        <p class="text-muted small">
-                            <strong>Técnicas:</strong>
-                            Uso de sistemas aumentativos y tecnología asistiva especializada
-                        </p>
-                    </div>
-                    <a href="#fonoDetail" class="collapse-link" data-bs-toggle="collapse">Leer más...</a>
-                </div>
-            </div>
-        </div>
+                <li class="nav-item">
+                    <a class="nav-link rounded-pill" role="tab" data-bs-toggle="tab" href="#metodologia-psicopedagogia" aria-selected="false">
+                        Metodología
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link rounded-pill" role="tab" data-bs-toggle="tab" href="#modalidad-psicopedagogia" aria-selected="false">
+                        Modalidad
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link rounded-pill" role="tab" data-bs-toggle="tab" href="#docente-psicopedagogia" aria-selected="false">
+                        Docente
+                    </a>
+                </li>
+            </ul>
 
-        <!-- Terapia Ocupacional -->
-        <div class="col-md-6 col-lg-4" id="intervencion-terapia-ocupacional-evaluacion">
-            <div class="card h-100 shadow-sm">
-                <div class="card-body">
-                    <h3 class="text-indigo mb-4">👩⚕️🛠️ Rehabilitación Funcional</h3>
-                    <p class="card-text">
-                        <strong>Meta:</strong> Maximizar la autonomía e independencia
-                    </p>
-                    <ul class="list-styled">
-                        <li>Integración sensorial</li>
-                        <li>Motricidad fina/gruesa</li>
-                        <li>Actividades de la vida diaria</li>
-                        <li>Adaptación de entornos</li>
-                        <li>Tecnología de asistencia</li>
-                    </ul>
-                    <div class="collapse" id="toDetail">
-                        <p class="text-muted small">
-                            <strong>Enfoque:</strong>
-                            Modelo de ocupación humana con abordaje ecológico
-                        </p>
+            <!-- Contenido de las pestañas -->
+            <div class="tab-content">
+                <!-- Pestaña 1: Descripción -->
+                <div id="descripcion-psicopedagogia" class="tab-pane active" role="tabpanel">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="mbr-text py-5 mbr-fonts-style display-7">
+                                Este taller está diseñado para optimizar los procesos de aprendizaje a través de estrategias personalizadas, desarrollo de funciones cognitivas y adaptaciones curriculares.
+                            </p>
+                        </div>
                     </div>
-                    <a href="#toDetail" class="collapse-link" data-bs-toggle="collapse">Leer más...</a>
                 </div>
-            </div>
-        </div>
 
-        <!-- Musicoterapia -->
-        <div class="col-md-6 col-lg-4" id="intervencion-musicoterapia-evaluacion">
-            <div class="card h-100 shadow-sm">
-                <div class="card-body">
-                    <h3 class="text-indigo mb-4">🎵🎶 Terapia Sonora</h3>
-                    <p class="card-text">
-                        <strong>Propósito:</strong> Estimulación a través de la experiencia musical
-                    </p>
-                    <ul class="list-styled">
-                        <li>Expresión emocional</li>
-                        <li>Estimulación cognitiva</li>
-                        <li>Desarrollo comunicativo</li>
-                        <li>Regulación conductual</li>
-                        <li>Integración social</li>
-                    </ul>
-                    <div class="collapse" id="musicDetail">
-                        <p class="text-muted small">
-                            <strong>Métodos:</strong>
-                            Improvisación guiada, técnicas receptivas y composición terapéutica
-                        </p>
+                <!-- Pestaña 2: Objetivos -->
+                <div id="objetivos-psicopedagogia" class="tab-pane" role="tabpanel">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h5>Objetivos Generales:</h5>
+                            <ul>
+                                <li>Estrategias de estudio personalizadas</li>
+                                <li>Desarrollo de funciones cognitivas básicas</li>
+                                <li>Adaptaciones curriculares</li>
+                                <li>Manejo de dificultades específicas</li>
+                                <li>Orientación vocacional</li>
+                            </ul>
+                        </div>
                     </div>
-                    <a href="#musicDetail" class="collapse-link" data-bs-toggle="collapse">Leer más...</a>
+                </div>
+
+                <!-- Pestaña 3: Modalidad -->
+                <div id="modalidad-psicopedagogia" class="tab-pane" role="tabpanel">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="mbr-text py-5 mbr-fonts-style display-7">
+                                El taller se llevará a cabo de manera presencial en nuestras instalaciones.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="metodologia-psicopedagogia" class="tab-pane" role="tabpanel">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="mbr-text py-5 mbr-fonts-style display-7">
+                                Enfoque constructivista con técnicas de andamiaje y aprendizaje significativo
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pestaña 4: Docente -->
+                <div id="docente-psicopedagogia" class="tab-pane" role="tabpanel">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h5>Profecional:</h5>
+                            <p class="mbr-text py-3 mbr-fonts-style display-7">
+                                <strong>Nombre:</strong> [Nombre del Docente]<br>
+                                <strong>Título:</strong> [Título del Docente]<br>
+                                <strong>Experiencia:</strong> [Breve descripción de su experiencia]
+                            </p>
+ </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
+</div>
+
+
+<!-- Psicología - Nueva estructura -->
+<div class="container mt-4" id="intervencion-terapia-psicologica-evaluacion">
+    <div class="row">
+        <!-- Imagen a la izquierda -->
+        <div class="col-12 col-md-6 p-0">
+            <img id="imagen-psicologia" src="SRC/carrusel/psicologia.png" 
+                 class="card-img" alt="Terapia Psicológica"
+                 style="width: 100%; height: 50vh; object-fit: cover;">
+        </div>
+
+        <!-- Pestañas a la derecha -->
+        <div class="col-12 col-md-6">
+            <h3>🧠💬 Terapia Individual</h3>
+            <ul class="nav nav-pills mb-3" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active rounded-pill" data-bs-toggle="tab" href="#descripcion-psicologia">
+                        Enfoque
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link rounded-pill" data-bs-toggle="tab" href="#abordajes-psicologia">
+                        Abordajes
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link rounded-pill" data-bs-toggle="tab" href="#Metodología-psicologia">
+                        Metodología
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link rounded-pill" data-bs-toggle="tab" href="#profesional-psicologia">
+                        Profesional
+                    </a>
+                </li>
+            </ul>
+
+            <div class="tab-content">
+                <!-- Enfoque -->
+                <div class="tab-pane active" id="descripcion-psicologia">
+                    <div class="row py-3">
+                        <div class="col-12">
+                            <p class="lead">Promoción de salud mental integral</p>
+                            <ul class="list-unstyled">
+                                <li> Manejo de ansiedad y estrés</li>
+                                <li>Desarrollo emocional</li>
+                                <li> Habilidades sociales</li>
+                                <li> Autoestima y autoconcepto</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Abordajes -->
+                <div class="tab-pane" id="abordajes-psicologia">
+                    <div class="row py-3">
+                        <div class="col-12">
+                            <h5>Enfoques integrativos:</h5>
+                            <ul>
+                                <li>Terapia cognitivo-conductual (TCC)</li>
+                                <li>Psicología humanista</li>
+                                <li>Enfoque sistémico</li>
+                                <li>Técnicas de tercera generación</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Técnicas -->
+                <div class="tab-pane" id="Metodología-psicologia">
+                    <div class="row py-3">
+                        <div class="col-12">
+                            <h5>Metodología de trabajo:</h5>
+                            <ul>
+                                <li>Entrevistas motivacionales</li>
+                                <li>Mindfulness aplicado</li>
+                                <li>Role-playing terapéutico</li>
+                                <li>Psicoeducación</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Profesional -->
+                <div class="tab-pane" id="profesional-psicologia">
+                    <div class="row py-3">
+                        <div class="col-12">
+                            <h5>Profesional:</h5>
+                            <p class="mbr-text mbr-fonts-style display-7">
+                                <strong>Nombre:</strong> [Nombre del Psicólogo]<br>
+                                <strong>Título:</strong> Lic. en Psicología<br>
+                                <strong>Especialidad:</strong> Terapia Cognitivo-Conductual<br>
+                                <strong>Experiencia:</strong> 10 años en clínica privada
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Fonoaudiología -->
+<div class="container mt-4" id="intervencion-fonoaudiologica-evaluacion">
+    <div class="row">
+        <!-- Imagen a la izquierda -->
+        <div class="col-12 col-md-6 p-0">
+            <img id="imagen-fonoaudiologia" src="SRC/carrusel/fonoaudiologia.png" 
+                 class="card-img" alt="Rehabilitación Integral en Fonoaudiología"
+                 style="width: 100%; height: 50vh; object-fit: cover;">
+        </div>
+
+        <!-- Pestañas a la derecha -->
+        <div class="col-12 col-md-6">
+            <h3>🗣️👂 Rehabilitación Integral</h3>
+            <ul class="nav nav-pills mb-3" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active rounded-pill" data-bs-toggle="tab" href="#objetivo-fonoaudiologia">
+                        Propósito
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link rounded-pill" data-bs-toggle="tab" href="#Metodología-fonoaudiologia">
+                        Metodología
+                    </a>
+                </li>
+              
+                <li class="nav-item">
+                    <a class="nav-link rounded-pill" data-bs-toggle="tab" href="#profesional-fonoaudiologia">
+                        Profesional
+                    </a>
+                </li>
+            </ul>
+            </ul>
+
+            <div class="tab-content">
+                <!-- Objetivo -->
+                <div class="tab-pane active" id="objetivo-fonoaudiologia">
+                    <div class="row py-3">
+                        <div class="col-12">
+                            <p class="lead">Desarrollo de competencias comunicativas</p>
+                            <ul class="list-unstyled">
+                                <li>Trastornos del lenguaje</li>
+                                <li> Dificultades de deglución</li>
+                                <li> Terapia vocal</li>
+                                <li> Estimulación temprana</li>
+                                <li> Rehabilitación auditiva</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Técnicas -->
+                <div class="tab-pane" id="Metodología-fonoaudiologia">
+                    <div class="row py-3">
+                        <div class="col-12">
+                            <h5>Técnicas utilizadas:</h5>
+                            <p class="text-muted small">
+                                Uso de sistemas aumentativos y tecnología asistiva especializada
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="profesional-fonoaudiologia">
+                    <div class="row py-3">
+                        <div class="col-12">
+                            <h5>Profesional:</h5>
+                            <p class="mbr-text mbr-fonts-style display-7">
+                                <strong>Nombre:</strong> [Nombre del Psicólogo]<br>
+                                <strong>Título:</strong> Lic. en Psicología<br>
+                                <strong>Especialidad:</strong> Terapia Cognitivo-Conductual<br>
+                                <strong>Experiencia:</strong> 10 años en clínica privada
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Terapia Ocupacional -->
+<div class="container mt-4" id="intervencion-terapia-ocupacional-evaluacion">
+    <div class="row">
+        <!-- Imagen a la izquierda -->
+        <div class="col-12 col-md-6 p-0">
+            <img id="imagen-terapia-ocupacional" src="SRC/carrusel/habilidades-sociales.png" 
+                 class="card-img" alt="Rehabilitación Funcional"
+                 style="width: 100%; height: 50vh; object-fit: cover;">
+        </div>
+
+        <!-- Pestañas a la derecha -->
+        <div class="col-12 col-md-6">
+            <h3>👩⚕️🛠️ Rehabilitación Funcional</h3>
+            <ul class="nav nav-pills mb-3" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active rounded-pill" data-bs-toggle="tab" href="#meta-terapia-ocupacional">
+                        Propósito
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link rounded-pill" data-bs-toggle="tab" href="#enfoque-terapia-ocupacional">
+                        Enfoque
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link rounded-pill" data-bs-toggle="tab" href="#Metodología-terapia-ocupacional">
+                        Metodología
+                    </a>
+                </li>
+              
+                <li class="nav-item">
+                    <a class="nav-link rounded-pill" data-bs-toggle="tab" href="#profesional-terapia-ocupacional">
+                        Profesional
+                    </a>
+                </li>
+            </ul>
+
+            <div class="tab-content">
+                <!-- Meta -->
+                <div class="tab-pane active" id="meta-terapia-ocupacional">
+                    <div class="row py-3">
+                        <div class="col-12">
+                            <p class="lead">Maximizar la autonomía e independencia</p>
+                            <ul class="list-unstyled">
+                                <li> Integración sensorial</li>
+                                <li> Motricidad fina/gruesa</li>
+                                <li> Actividades de la vida diaria</li>
+                                <li> Adaptación de entornos</li>
+                                <li> Tecnología de asistencia</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Enfoque -->
+                <div class="tab-pane" id="enfoque-terapia-ocupacional">
+                    <div class="row py-3">
+                        <div class="col-12">
+                            <h5>Enfoque utilizado:</h5>
+                            <p class="text-muted small">
+                                Modelo de ocupación humana con abordaje ecológico
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                  <!-- Técnicas -->
+                  <div class="tab-pane" id="Metodología-terapia-ocupacional">
+                    <div class="row py-3">
+                        <div class="col-12">
+                            <h5>Técnicas utilizadas:</h5>
+                            <p class="text-muted small">
+                               CAMBIAR
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="profesional-terapia-ocupacional">
+                    <div class="row py-3">
+                        <div class="col-12">
+                            <h5>Profesional:</h5>
+                            <p class="mbr-text mbr-fonts-style display-7">
+                                <strong>Nombre:</strong> [Nombre del Psicólogo]<br>
+                                <strong>Título:</strong> Lic. en Psicología<br>
+                                <strong>Especialidad:</strong> Terapia Cognitivo-Conductual<br>
+                                <strong>Experiencia:</strong> 10 años en clínica privada
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Musicoterapia -->
+<div class="container mt-4" id="intervencion-musicoterapia-evaluacion">
+    <div class="row">
+        <!-- Imagen a la izquierda -->
+        <div class="col-12 col-md-6 p-0">
+            <img id="imagen-musicoterapia" src="SRC/carrusel/fonoaudiologia.png" 
+                 class="card-img" alt="Terapia Sonora"
+                 style="width: 100%; height: 50vh; object-fit: cover;">
+        </div>
+
+        <!-- Pestañas a la derecha -->
+        <div class="col-12 col-md-6">
+            <h3>🎵🎶 Terapia Sonora</h3>
+            <ul class="nav nav-pills mb-3" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active rounded-pill" data-bs-toggle="tab" href="#proposito-musicoterapia">
+                        Propósito
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link rounded-pill" data-bs-toggle="tab" href="#metodos-musicoterapia">
+                        Métodos
+                    </a>
+                </li>
+              
+              
+                <li class="nav-item">
+                    <a class="nav-link rounded-pill" data-bs-toggle="tab" href="#profesional-musicoterapia">
+                        Profesional
+                    </a>
+                </li>
+            </ul>
+
+            <div class="tab-content">
+                <!-- Propósito -->
+                <div class="tab-pane active" id="proposito-musicoterapia">
+                    <div class="row py-3">
+                        <div class="col-12">
+                            <p class="lead">Estimulación a través de la experiencia musical</p>
+                            <ul class="list-unstyled">
+                                <li>Expresión emocional</li>
+                                <li> Estimulación cognitiva</li>
+                                <li> Desarrollo comunicativo</li>
+                                <li> Regulación conductual</li>
+                                <li> Integración social</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Métodos -->
+                <div class="tab-pane" id="metodos-musicoterapia">
+                    <div class="row py-3">
+                        <div class="col-12">
+                            <h5>Métodos utilizados:</h5>
+                            <p class="text-muted small">
+                                Improvisación guiada, técnicas receptivas y composición terapéutica
+                            </p>
+                        </div>
+                    </div>
+                </div>         
+                                <div class="tab-pane" id="profesional-musicoterapia">
+                                    <div class="row py-3">
+                                        <div class="col-12">
+                                            <h5>Profesional:</h5>
+                                            <p class="mbr-text mbr-fonts-style display-7">
+                                                <strong>Nombre:</strong> [Nombre del Psicólogo]<br>
+                                                <strong>Título:</strong> Lic. en Psicología<br>
+                                                <strong>Especialidad:</strong> Terapia Cognitivo-Conductual<br>
+                                                <strong>Experiencia:</strong> 10 años en clínica privada
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </section>
     <!-- Script para Collapse -->
     <script>
@@ -281,12 +611,7 @@
             transform: translateY(-5px);
             box-shadow: 0 8px 20px rgba(0,0,0,0.1);
         }
-    </style>
-
-
-
-    <!-- Estilos personalizados -->
-    <style>
+  
         .bg-indigo {
             background-color: #72adab;
         }
@@ -299,7 +624,7 @@
             border: 1px solid rgba(255, 255, 255, 0.2);
         }
         .card {
-            transition: transform 0.3s;
+            transition: transform 0.28s;
         }
         .card:hover {
             transform: translateY(-5px);
