@@ -447,27 +447,7 @@ color: #02a551;
     height: auto; /* Permitir que la altura se ajuste automáticamente en pantallas pequeñas */
   }
 }
-/* Títulos */
-#neurocognitiva-title { color: #2c3e50; }    /* Azul oscuro */
-#psicopedagogica-title { color: #16a085; }  /* Verde agua */
-#ados-title { color: #c0392b; }             /* Rojo terracota */
-#neurolinguistica-title { color: #8e44ad; } /* Morado */
-#integracion-title { color: #d35400; }      /* Naranja oscuro */
 
-/* Descripciones */
-.descripcion-evaluacion {
-    color: #7f8c8d;  /* Gris azulado */
-    margin-left: 5px;
-}
-
-/* Opcional: Efecto hover */
-.descripcion-evaluacion:hover {
-    color: #7f8c8d;
-    transition: color 0.3s ease;
-}
-#titulo-evaluaciones {
-  margin-left: 2rem;  /* Separación de la izquierda */
-}
 .titulo-especialidades{
   margin-left: 2rem;
 }
@@ -740,5 +720,57 @@ html {
   padding: 40px; /* Espaciado interno */
   border-radius: 10px; /* Bordes redondeados */
 }
+/* evaluaciones */
 
+/* Títulos */
+#neurocognitiva-title { color: #2c3e50; }    /* Azul oscuro */
+#psicopedagogica-title { color: #16a085; }  /* Verde agua */
+#ados-title { color: #c0392b; }             /* Rojo terracota */
+#neurolinguistica-title { color: #8e44ad; } /* Morado */
+#integracion-title { color: #d35400; }      /* Naranja oscuro */
+
+/* Descripciones */
+.descripcion-evaluacion {
+    color: #7f8c8d;  /* Gris azulado */
+    margin-left: 5px;
+}
+
+/* Opcional: Efecto hover */
+.descripcion-evaluacion:hover {
+    color: #7f8c8d;
+    transition: color 0.3s ease;
+}
+#titulo-evaluaciones {
+  margin-left: 2rem;  /* Separación de la izquierda */
+}
+
+#evaluacion-neurocognitiva-evaluacion {
+  background-color:   #f7aa96d5;/* Cambia el color según tu preferencia */
+  padding: 40px; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados */
+}#evaluacion-psicopedagogica-evaluacion {
+  background-color:   #92aef3;/* Cambia el color según tu preferencia */
+  padding: 40px; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados */
+}#ados-evaluacion-evaluacion {
+  background-color:   #e6e8ff;/* Cambia el color según tu preferencia */
+  padding: 40px; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados */
+}#estimulacion-evaluacion-evaluacion {
+  background-color:   #82f3a494;/* Cambia el color según tu preferencia */
+  padding: 40px; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados */
+}#psicodiagnostico-evaluacion-evaluacion {
+  background-color:   #e29b9bd0;/* Cambia el color según tu preferencia */
+  padding: 40px; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados */
+}#sensorial-evaluacion-evaluacion {
+  background-color:   #82bfdbd0;/* Cambia el color según tu preferencia */
+  padding: 40px; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados */
+}#neurolinguistica-evaluacion-evaluacion {
+  background-color:   #dab1d4;/* Cambia el color según tu preferencia */
+  padding: 40px; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados */
+}
 
