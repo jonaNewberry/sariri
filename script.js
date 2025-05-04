@@ -80,3 +80,50 @@ document.getElementById('toggle-ados').addEventListener('click', function(event)
     this.textContent = this.textContent === 'Leer más...' ? 'Leer menos...' : 'Leer más...';
   });
 });
+
+//whatsapp   //
+document.getElementById('whatsappButton').addEventListener('click', function() {
+  // Número de teléfono (incluye el código de país, sin el símbolo +)
+  var phoneNumber = '+5492215038029'; // Reemplaza con el número de teléfono deseado
+  var message = 'Buenos días, me dirijo a ustedes solicitando información sobre .';
+  var url = 'https://wa.me/' + phoneNumber + '?text=' + encodeURIComponent(message);
+  
+  // Abrir la URL en una nueva pestaña
+  window.open(url, '_blank');
+});
+document.getElementById('whatsappButtonevaluaciones').addEventListener('click', function() {
+  // Número de teléfono (incluye el código de país, sin el símbolo +)
+  var phoneNumber = '+5492215038029'; // Reemplaza con el número de teléfono deseado
+  var message = 'Buenos días, quisiera solicitar información detallada sobre las EVALUACIONES que realizan. Desde ya, muchas gracias.';
+  var url = 'https://wa.me/' + phoneNumber + '?text=' + encodeURIComponent(message);
+  
+  // Abrir la URL en una nueva pestaña
+  window.open(url, '_blank');
+});
+document.getElementById('whatsappButton').addEventListener('click', function() {
+  // Número de teléfono (incluye el código de país, sin el símbolo +)
+  var phoneNumber = '+5492215038029'; // Reemplaza con el número de teléfono deseado
+  var message = 'Buenos días, me dirijo a ustedes solicitando información sobre .';
+  var url = 'https://wa.me/' + phoneNumber + '?text=' + encodeURIComponent(message);
+  
+  // Abrir la URL en una nueva pestaña
+  window.open(url, '_blank');
+});
+document.getElementById('whatsappButton').addEventListener('click', function() {
+  // Número de teléfono (incluye el código de país, sin el símbolo +)
+  var phoneNumber = '+5492215038029'; // Reemplaza con el número de teléfono deseado
+  var message = 'Buenos días, me dirijo a ustedes solicitando información sobre .';
+  var url = 'https://wa.me/' + phoneNumber + '?text=' + encodeURIComponent(message);
+  
+  // Abrir la URL en una nueva pestaña
+  window.open(url, '_blank');
+});
+document.getElementById('whatsappButton').addEventListener('click', function() {
+  // Número de teléfono (incluye el código de país, sin el símbolo +)
+  var phoneNumber = '+5492215038029'; // Reemplaza con el número de teléfono deseado
+  var message = 'Buenos días, me dirijo a ustedes solicitando información sobre .';
+  var url = 'https://wa.me/' + phoneNumber + '?text=' + encodeURIComponent(message);
+  
+  // Abrir la URL en una nueva pestaña
+  window.open(url, '_blank');
+});

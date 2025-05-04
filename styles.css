@@ -784,3 +784,21 @@ html {
   padding: 5px; /* Espaciado interno */
   border-radius: 5px; /* Bordes redondeados */
 }
+
+        /* Estilos para el botón */
+        .whatsapp-button {
+          display: block;
+          margin-left: auto;
+          margin-top: 15px;
+          background-color: #25D366; /* Color de WhatsApp */
+          color: white;
+          padding: 10px 50px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          font-size: 16px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      }
+      .whatsapp-button:hover {
+          background-color: #128C7E; /* Color más oscuro al pasar el mouse */
+      }
