@@ -410,7 +410,26 @@
 <div class="scroll-up-icon">
   <i class="fa-solid fa-arrow-up"></i>
 </div>
-
+<script>
+    // Número de teléfono por defecto (sin '+')
+    const defaultPhoneNumber = '542215038029';
+  
+    // Seleccionamos todos los botones con la clase whatsapp-button
+    const whatsappButtons = document.querySelectorAll('.whatsapp-button');
+  
+    whatsappButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        // Obtenemos el mensaje desde el atributo data-message
+        const message = button.getAttribute('data-message');
+        
+        // Construimos la URL para WhatsApp
+        const url = `https://wa.me/${defaultPhoneNumber}?text=${encodeURIComponent(message)}`;
+        
+        // Abrimos WhatsApp en una nueva pestaña
+        window.open(url, '_blank');
+      });
+    });
+  </script>
 
   
   

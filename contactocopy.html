@@ -104,11 +104,37 @@
       </div>
     </div>
   </nav>
+<hr>
 
+<button class="whatsapp-button" data-message="Buenos días, me dirijo a ustedes solicitando información sobre TRATAMIENTOS.">Contacto Tratamientos</button>
+
+<button class="whatsapp-button" data-message="Hola, quisiera más información sobre las evaluaciones que realizan.">Contacto Evaluaciones</button>
+
+<button class="whatsapp-button" data-message="Quisiera saber sobre horarios y disponibilidad.">Contacto Horarios</button>
+
+<script>
+  // Número de teléfono por defecto (sin '+')
+  const defaultPhoneNumber = '542215038029';
+
+  // Seleccionamos todos los botones con la clase whatsapp-button
+  const whatsappButtons = document.querySelectorAll('.whatsapp-button');
+
+  whatsappButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      // Obtenemos el mensaje desde el atributo data-message
+      const message = button.getAttribute('data-message');
+      
+      // Construimos la URL para WhatsApp
+      const url = `https://wa.me/${defaultPhoneNumber}?text=${encodeURIComponent(message)}`;
+      
+      // Abrimos WhatsApp en una nueva pestaña
+      window.open(url, '_blank');
+    });
+  });
+</script>
+
+<hr>
  
-    <style>
-
-    </style>
 
 
     <button class="whatsapp-button" id="whatsappButtontratamiento">CONTACTO</button>

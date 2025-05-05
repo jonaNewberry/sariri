@@ -14,7 +14,7 @@
     <link rel="icon" href="SRC/logosariri.jpg" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
- 
+    <script src="whatsapp-buttons.js" defer></script>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-custom">
@@ -207,7 +207,11 @@
 
    
 </div>
-<button class="whatsapp-button" id="whatsappButtonevaluaciones">CONTACTO EVALUACION</button>
+<!-- Este boton va: -->
+<button class="whatsapp-button" data-message="Buenos días, quisiera solicitar información detallada sobre las EVALUACIONES que realizan. Desde ya, muchas gracias.">
+    CONTACTO EVALUACIÓN
+  </button>
+
     </div>
 <!-- Evaluación Psicopedagógica -->
 <div class="container mt-4" id="evaluacion-psicopedagogica-evaluacion">
@@ -326,7 +330,9 @@
         </div>
       
     </div>
-    <button class="whatsapp-button" id="whatsappButtonevaluaciones">CONTACTO EVALUACION</button>
+    <button class="whatsapp-button" data-message="Buenos días, quisiera solicitar información detallada sobre las EVALUACIONES que realizan. Desde ya, muchas gracias.">
+        CONTACTO EVALUACIÓN
+      </button>
 </div>
 
 
@@ -446,7 +452,9 @@
         </div>
         
     </div>
-    <button class="whatsapp-button" id="whatsappButtonevaluaciones">CONTACTO EVALUACION</button>
+    <button class="whatsapp-button" data-message="Buenos días, quisiera solicitar información detallada sobre las EVALUACIONES que realizan. Desde ya, muchas gracias.">
+        CONTACTO EVALUACIÓN
+      </button>
 </div>
 
 <!-- Estimulación Neurocognitiva -->
@@ -564,7 +572,9 @@
             </div>
         </div>
     </div>
-    <button class="whatsapp-button" id="whatsappButtonevaluaciones">CONTACTO EVALUACION</button>
+    <button class="whatsapp-button" data-message="Buenos días, quisiera solicitar información detallada sobre las EVALUACIONES que realizan. Desde ya, muchas gracias.">
+        CONTACTO EVALUACIÓN
+      </button>
 </div>
 
 
@@ -686,7 +696,9 @@
             </div>
         </div>
     </div>
-    <button class="whatsapp-button" id="whatsappButtonevaluaciones">CONTACTO EVALUACION</button>
+    <button class="whatsapp-button" data-message="Buenos días, quisiera solicitar información detallada sobre las EVALUACIONES que realizan. Desde ya, muchas gracias.">
+        CONTACTO EVALUACIÓN
+      </button>
 </div>
 
             <!-- Integración Sensorial -->
@@ -803,7 +815,9 @@
         </div>
   
     </div>
-    <button class="whatsapp-button" id="whatsappButtonevaluaciones">CONTACTO EVALUACION</button>
+    <button class="whatsapp-button" data-message="Buenos días, quisiera solicitar información detallada sobre las EVALUACIONES que realizan. Desde ya, muchas gracias.">
+        CONTACTO EVALUACIÓN
+      </button>
 </div>
        
            <!-- Evaluación Neurolingüística -->
@@ -918,7 +932,9 @@
             </div>
         </div>
     </div>
-    <button class="whatsapp-button" id="whatsappButtonevaluaciones">CONTACTO EVALUACION</button>
+    <button class="whatsapp-button" data-message="Buenos días, quisiera solicitar información detallada sobre las EVALUACIONES que realizan. Desde ya, muchas gracias.">
+        CONTACTO EVALUACIÓN
+      </button>
 </div>
         
  
@@ -1000,7 +1016,26 @@
 <div class="scroll-up-icon">
   <i class="fa-solid fa-arrow-up"></i>
 </div>
-
+<script>
+    // Número de teléfono por defecto (sin '+')
+    const defaultPhoneNumber = '542215038029';
+  
+    // Seleccionamos todos los botones con la clase whatsapp-button
+    const whatsappButtons = document.querySelectorAll('.whatsapp-button');
+  
+    whatsappButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        // Obtenemos el mensaje desde el atributo data-message
+        const message = button.getAttribute('data-message');
+        
+        // Construimos la URL para WhatsApp
+        const url = `https://wa.me/${defaultPhoneNumber}?text=${encodeURIComponent(message)}`;
+        
+        // Abrimos WhatsApp en una nueva pestaña
+        window.open(url, '_blank');
+      });
+    });
+  </script>
 
   
   

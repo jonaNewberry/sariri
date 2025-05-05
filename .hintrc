@@ -38,7 +38,8 @@
       {
         "duplicate-id-active": "off"
       }
-    ]
+    ],
+    "button-type": "off"
   },
   "browserslist": [
     "defaults",
