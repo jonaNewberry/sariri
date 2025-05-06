@@ -65,20 +65,5 @@ document.addEventListener('DOMContentLoaded', function() {
       }
   }
 });
-document.getElementById('toggle-ados').addEventListener('click', function(event) {
-  event.preventDefault(); // Evita que el enlace recargue la página
-  const details = document.getElementById('ados-details');
-  if (details.style.display === 'none' || details.style.display === '') {
-    details.style.display = 'inline'; // Muestra el contenido
-    this.textContent = '... Leer menos'; // Cambia el texto del enlace
-  } else {
-    details.style.display = 'none'; // Oculta el contenido
-    this.textContent = '... Leer más'; // Cambia el texto del enlace
-  }
-});document.querySelectorAll('.collapse-link').forEach(link => {
-  link.addEventListener('click', function() {
-    this.textContent = this.textContent === 'Leer más...' ? 'Leer menos...' : 'Leer más...';
-  });
-});
 
 //whatsapp  //
