@@ -311,12 +311,7 @@ p {
   flex-direction: column;
   align-items: center;
 }
-.custom-heading {
-font-family: Arial, Helvetica, sans-serif;
-font-size: 2.5rem;
-font-weight: bold;
-color: #02a551;
-}
+
 .alineado-izquierda {
     text-align: left; 
     line-height: 1.6; 
@@ -371,12 +366,7 @@ p {
   flex-direction: column;
   align-items: center;
 }
-.custom-heading {
-font-family: Arial, Helvetica, sans-serif;
-font-size: 2.5rem;
-font-weight: bold;
-color: #02a551;
-}
+
 .alineado-izquierda {
     text-align: left; 
     line-height: 1.6; 
@@ -776,26 +766,64 @@ html {
 
 
 #ubicacion-contacto{
-  background-color:   #82a9dbd0;/* Cambia el color según tu preferencia */
+  background-color:   #f3f4f7d0;/* Cambia el color según tu preferencia */
   padding: 5px; /* Espaciado interno */
   border-radius: 5px; /* Bordes redondeados */
 }
+.custom-heading {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #006E77;
+  }
+#contacto-title{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.5rem;
+  color: #006E77;
+  margin: 0;
+  text-align: left;
+  font-weight: 500; /* Agregado para mejor legibilidad */
+  line-height: 1.2; /* Espaciado entre líneas óptimo para títulos grandes */
+  padding-bottom: 0.5rem; /* Espacio bajo el título */
+  border-radius: 5px;
+}
 
-        /* Estilos para el botón */
-        .whatsapp-button {
-          display: block;
-          margin-left: auto;
-          margin-top: 15px;
-          background-color: #25D366; /* Color de WhatsApp */
-          color: white;
-          padding: 10px 50px;
-          border: none;
-          border-radius: 5px;
-          cursor: pointer;
-          font-size: 16px;
-          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-      }
+.whatsapp-button {
+  background-color: white !important; /* conserva tu color */
+  color: #006E77 !important;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  margin: 10px;
+}
+
       .whatsapp-button:hover {
           background-color: #128C7E; /* Color más oscuro al pasar el mouse */
       }
- 
+      .custom-button {
+        background-color: #0057b3d2; /* azul brillante */
+        color: white;
+        padding: 12px 24px;
+        font-size: 16px;
+        font-weight: bold;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        text-decoration: none; /* útil si usás <a> */
+        display: inline-block;
+        text-align: center;
+      }
+      
+      .custom-button:hover {
+        background-color: #0057b3d2; /* azul más oscuro al pasar el mouse */
+        transform: scale(1.05);
+      }
+      
+      .custom-button:active {
+        transform: scale(0.98);
+      }
+      
