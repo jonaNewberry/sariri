@@ -85,18 +85,7 @@
                       <li><a class="dropdown-item" href="talleres.html#taller-tarjeta-legoterapia-evaluacion">lego terapia</a></li>
                     </ul>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                   Salud
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="salud.html#taller-tarjeta-habilidades-sociales-evaluacion">Habilidades sociales</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="salud.html#taller-tarjeta-adultos-mayores-evaluacion">adultos mayores</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="salud.html#taller-tarjeta-legoterapia-evaluacion">lego terapia</a></li>
-                  </ul>
-            </li>
+
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     CONTACTO
@@ -163,8 +152,13 @@
     <div class="text-container p-3 order-2 order-md-1 w-100 w-md-50" 
          style="flex: 1; min-width: 50%;">
         <p class="card-text">
-            SARIRI es un centro interdisciplinario dedicado a las infancias, ofreciendo terapias como psicología, fonoaudiología y estimulación temprana para potenciar su desarrollo integral en un entorno de acompañamiento y contención.
-        </p>
+       Sariri es un espacio interdisciplinario dedicado a la atención integral de personas de todas las edades, con o sin diagnóstico, que buscan acompañamiento en su desarrollo, aprendizaje, comunicación, salud emocional y bienestar general.
+
+Contamos con un equipo de profesionales especializados en neurodesarrollo que trabajan de manera articulada para abordar cada caso desde una mirada integral, contemplando no solo las características individuales de cada persona, sino también el contexto familiar, educativo y social.
+
+Atendemos a niños, adolescentes, adultos y personas mayores que presentan trastornos del neurodesarrollo —como TEA, TDAH, dislexia, trastornos del lenguaje, entre otros, así como a quienes desean fortalecer habilidades cognitivas, emocionales o sociales sin contar con un diagnóstico clínico.
+
+Nuestro enfoque es respetuoso, empático y centrado en la persona. Acompañamos con compromiso y sensibilidad tanto a quienes consultan como a sus familias, generando espacios cálidos, personalizados y basados en el trabajo en equipo. </p>
         
         <!-- Barras de color -->
         <div class="rectangulo-amarillo"></div>
@@ -437,9 +431,19 @@
   <i class="fa-solid fa-arrow-up"></i>
 </div>
 
-
-  
-  
+<script>
+  document.getElementById('toggle-ados').addEventListener('click', function(event) {
+    event.preventDefault(); // Evita que el enlace recargue la página
+    const details = document.getElementById('ados-details');
+    if (details.style.display === 'none' || details.style.display === '') {
+      details.style.display = 'inline'; // Muestra el contenido
+      this.textContent = '... Leer menos'; // Cambia el texto del enlace
+    } else {
+      details.style.display = 'none'; // Oculta el contenido
+      this.textContent = '... Leer más'; // Cambia el texto del enlace
+    }
+  });
+</script>
   
 
 <footer>

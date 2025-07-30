@@ -389,22 +389,22 @@ p {
 .rectangulo-amarillo {
   width: 70%; /* Ancho del rectángulo */
   height: 50px; /* Altura del rectángulo */
-  background-color: #FFD700; /* Color de fondo amarillo */
+  background-color: #f7f4e7; /* Color de fondo amarillo */
 
 }.rectangulo-naranja {
   width: 80%; /* Ancho del rectángulo */
   height: 60px; /* Altura del rectángulo */
-  background-color: #E6927C; /* Color de fondo amarillo */
+  background-color: #c9a095; /* Color de fondo amarillo */
  
 }.rectangulo-azul-claro {
   width: 90%; /* Ancho del rectángulo */
   height: 75px; /* Altura del rectángulo */
-  background-color: #83C4BE; /* Color de fondo amarillo */
+  background-color: #7bb4af; /* Color de fondo amarillo */
  
 }.rectangulo-azul-oscuro {
   width: 100%; /* Ancho del rectángulo */
   height: 85px; /* Altura del rectángulo */
-  background-color: #016D77; /* Color de fondo amarillo */
+  background-color: #0f7b85ea; /* Color de fondo amarillo */
   
 }
 .custom-hr {
