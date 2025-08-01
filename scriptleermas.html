@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+  <strong class="toggle-title">Evaluación neurocognitiva:</strong> 
+  <span class="descripcion-evaluacion">
+    Es un estudio integral que permite conocer en profundidad
+    <span class="toggle-details" style="display: none;">
+      el funcionamiento del cerebro en áreas clave como la atención, la memoria, el lenguaje, las funciones ejecutivas, habilidades académicas y las habilidades sociales. En niños y adolescentes, esta evaluación es una herramienta fundamental para comprender su desarrollo cognitivo, emocional y conductual.
+      El proceso es realizado por profesionales especializados, en un entorno seguro y respetuoso, adaptado a la edad y necesidades del niño o adolescente. El objetivo final es brindar claridad, comprensión y estrategias concretas que ayuden a potenciar su bienestar y desarrollo integral.
+    </span>
+  </span>
+  <a href="#" class="toggle-link">... Leer más</a>
+</li>
+
+
+<script>
+  // Usamos delegación de eventos en el <body> o en un contenedor
+  document.addEventListener('click', function(event) {
+    // Verifica si el clic fue en un enlace con clase 'toggle-link'
+    if (event.target.classList.contains('toggle-link')) {
+      event.preventDefault();
+
+      // Encuentra el span hermano con clase 'toggle-details'
+      const details = event.target.previousElementSibling.querySelector('.toggle-details');
+      const link = event.target;
+
+      if (details.style.display === 'none' || details.style.display === '') {
+        details.style.display = 'inline';
+        link.textContent = '... Leer menos';
+      } else {
+        details.style.display = 'none';
+        link.textContent = '... Leer más';
+      }
+    }
+  });
+</script>
+
+
+<p> este otro codigo es el viejo y no va pero lo guardo
+    
+</p>
+     <li>
+                        <strong id="neurocognitiva-title">Evaluación neurocognitiva:</strong> 
+                        <span class="descripcion-evaluacion">Es un estudio integral que permite conocer en profundidad
+  <span id="XXX-details" style="display: none; color: inherit;">
+el funcionamiento del cerebro en áreas clave como la atención,la memoria, el lenguaje, las funciones ejecutivas, habilidades académicas y las habilidades sociales. En niños y adolescentes, esta evaluación es una herramienta fundamental para comprender su desarrollo cognitivo, emocional y conductual.
+El proceso es realizado por profesionales especializados, en un entorno seguro y respetuoso, adaptado a la edad y necesidades del niño o adolescente. El objetivo final es brindar claridad, comprensión y estrategias concretas que ayuden a potenciar su bienestar y desarrollo integral.
+                            </span>
+                        </span>
+                    <a href="#" id="toggle-XXX">... Leer más</a>
+                    </li>
+                    <li>
+
+                        <script>//
+
+                        document.getElementById('toggle-XXX').addEventListener('click', function(event) {
+    event.preventDefault(); // Evita que el enlace recargue la página
+    const details = document.getElementById('XXX-details');
+    if (details.style.display === 'none' || details.style.display === '') {
+      details.style.display = 'inline'; // Muestra el contenido
+      this.textContent = '... Leer menos'; // Cambia el texto del enlace
+    } else {
+      details.style.display = 'none'; // Oculta el contenido
+      this.textContent = '... Leer más'; // Cambia el texto del enlace
+    }
+  });
+</script>
+</body>
+</html>

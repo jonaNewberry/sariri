@@ -47,11 +47,11 @@ scrollUpIcon.addEventListener("click", () => {
 
 });
 // Script para manejar el texto "Leer más/menos"
-document.querySelectorAll('.collapse-link').forEach(link => {
-  link.addEventListener('click', function() {
-      this.textContent = this.textContent.includes('más') ? 'Leer menos' : 'Leer más...';
-  });
-});
+//document.querySelectorAll('.collapse-link').forEach(link => {
+  //link.addEventListener('click', function() {
+    //  this.textContent = this.textContent.includes('más') ? 'Leer menos' : 'Leer más...';
+  //});
+//});
 
 // Script para mantener el resaltado después de la animación
 document.addEventListener('DOMContentLoaded', function() {
@@ -66,15 +66,24 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 
-  document.getElementById('toggle-ados').addEventListener('click', function(event) {
-    event.preventDefault(); // Evita que el enlace recargue la página
-    const details = document.getElementById('ados-details');
-    if (details.style.display === 'none' || details.style.display === '') {
-      details.style.display = 'inline'; // Muestra el contenido
-      this.textContent = '... Leer menos'; // Cambia el texto del enlace
-    } else {
-      details.style.display = 'none'; // Oculta el contenido
-      this.textContent = '... Leer más'; // Cambia el texto del enlace
+
+   // Usamos delegación de eventos en el <body> o en un contenedor
+  document.addEventListener('click', function(event) {
+    // Verifica si el clic fue en un enlace con clase 'toggle-link'
+    if (event.target.classList.contains('toggle-link')) {
+      event.preventDefault();
+
+      // Encuentra el span hermano con clase 'toggle-details'
+      const details = event.target.previousElementSibling.querySelector('.toggle-details');
+      const link = event.target;
+
+      if (details.style.display === 'none' || details.style.display === '') {
+        details.style.display = 'inline';
+        link.textContent = '... Leer menos';
+      } else {
+        details.style.display = 'none';
+        link.textContent = '... Leer más';
+      }
     }
   });
 
