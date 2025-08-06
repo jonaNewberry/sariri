@@ -168,9 +168,26 @@ font-style: normal;
 @media (max-width: 768px) {
 
 body {
-margin: 0; 
-padding: 0; 
-font-size: 14px;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    background-color: #feffff;
+    background-image: url('SRC/gemini2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Sobrescribe solo en móviles si necesitas un fondo diferente */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+        /* El fondo ya está definido arriba, pero puedes cambiarlo aquí si quieres */
+    }
 }
 .container {
 padding: 18px;
@@ -835,4 +852,25 @@ html {
       .custom-button:active {
         transform: scale(0.98);
       }
-      
+    body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    background-color: #feffff;
+    background-image: url('SRC/gemini2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Sobrescribe solo en móviles si necesitas un fondo diferente */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+        /* El fondo ya está definido arriba, pero puedes cambiarlo aquí si quieres */
+    }
+}  
