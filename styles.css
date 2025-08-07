@@ -475,7 +475,7 @@ p {
 
 /* Color para el enlace "Leer más/menos" */
 #toggle-ados {
-  color: #016D77 !important; /* Color corporativo */
+  color: #5f6768 !important; /* Color corporativo */
   text-decoration: none;
   font-weight: 500;
   margin-left: 5px;
@@ -485,20 +485,22 @@ p {
   text-decoration: underline;
 }
 
-#toggle-link {
-  color: #016D77 !important; /* Color corporativo */
-  text-decoration: none;
-  font-weight: 500;
-  margin-left: 5px;
+.toggle-link {
+    color: #6c757d; /* Gris suave (como "texto secundario") */
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease; /* Suaviza el cambio de color */
 }
-
+.toggle-link.leer-menos {
+    color: #007bff; /* Azul estándar de enlaces */
+}
 #toggle-link:hover {
   text-decoration: underline;
 }
 .btn-glass {
   background: rgba(255, 255, 255, 0.1) !important;
   border: 2px solid #83C4BE !important;
-  color: #016D77 !important;
+  color: #676b6b !important;
   transition: all 0.3s ease;
 }
 
@@ -852,25 +854,41 @@ html {
       .custom-button:active {
         transform: scale(0.98);
       }
-    body {
+body {
     margin: 0;
     padding: 0;
     font-size: 14px;
-    background-color: #feffff;
-    background-image: url('SRC/gemini2.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     min-height: 100vh;
-    color: #333;
+    color: #0c0c0c;
     font-family: 'Montserrat', sans-serif;
+    position: relative;
+   overflow: visible
 }
 
-/* Sobrescribe solo en móviles si necesitas un fondo diferente */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-image: url('SRC/gemini2.png');
+    background-size: cover;
+    z-index: -2;           /* Imagen de fondo: más atrás */
+    pointer-events: none;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(255, 255, 255, 0.85);
+    z-index: -1;           /* Overlay blanco: un poco más adelante */
+    pointer-events: none;
+}
+
 @media (max-width: 768px) {
-    body {
-        font-size: 14px;
-        /* El fondo ya está definido arriba, pero puedes cambiarlo aquí si quieres */
+    body::before {
+        opacity: 0.09;
+        filter: blur(4px);
     }
-}  
+}
