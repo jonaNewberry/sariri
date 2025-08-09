@@ -815,6 +815,28 @@ html {
   padding-bottom: 0.5rem; /* Espacio bajo el título */
   border-radius: 5px;
 }
+.obra-social-button {
+   background-color: white !important; /* conserva tu color */
+  color: #006E77 !important;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  margin: 10px;
+}
+.exampleModalLabel-obra-social{
+   background-color: white !important; /* conserva tu color */
+  color: #006E77 !important;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  margin: 10px;
+}
 
 .whatsapp-button {
   background-color: white !important; /* conserva tu color */

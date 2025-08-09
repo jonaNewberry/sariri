@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SARIRI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="SRC/logosariri.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <script src="whatsapp-buttons.js" defer></script>
+ 
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container-fluid d-flex align-items-center">
+        <picture>
+            <source srcset="SRC/logosariri.webp" type="image/webp">
+            <!-- Logo -->
+            <img src="SRC/logosariri.jpg" alt="Logo" width="260" height="200" class="d-inline-block align-text-top logo-margin">
+        </picture>
+        <h5 class="card-title mx-2" id="sariri-title">SARIRI</h5> <!-- Añadido margen horizontal para separación -->
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <!-- Menu Items -->
+            <ul class="navbar-nav ms-auto mb-lg-4 mb-lg-2"> <!-- ms-auto para alinear a la derecha -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Evaluaciones
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="evaluaciones.html#ados-evaluacion-evaluacion">ADOS</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="evaluaciones.html#ados-evaluacion-evaluacion">ADIR</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="evaluaciones.html#evaluacion-neurocognitiva-evaluacion">EVALUACION NEUROCOGNITIVA</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="evaluaciones.html#neurolinguistica-evaluacion-evaluacion">Evaluación neurolingüística</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="evaluaciones.html#evaluacion-psicopedagogica-evaluacion">Evaluación psicopedagógica</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="evaluaciones.html#sensorial-evaluacion-evaluacion">Evaluación integración sensorial</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="evaluaciones.html#psicodiagnostico-evaluacion-evaluacion">Psicodiagnóstico</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="evaluaciones.html#estimulacion-evaluacion-evaluacion">Estimulación Neurocognitiva</a></li>
+                    
+                      </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Tratamiento 
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="tratamiento.html#intervencion-psicopedagogica-evaluacion">PSICOPEDAGOGÍA</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="tratamiento.html#intervencion-terapia-psicologica-evaluacion">PSICOLOGÍA</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="tratamiento.html#intervencion-fonoaudiologica-evaluacion">FONOAUDIOLOGÍA</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="tratamiento.html#intervencion-terapia-ocupacional-evaluacion">TERAPISTA OCUPACIONAL</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="tratamiento.html#intervencion-musicoterapia-evaluacion">MUSICOTERAPIA</a></li>
+                       
+                         </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Talleres
+                  </a>
+                  <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="talleres.html#taller-tarjeta-adultos-mayores-evaluacion">Estimulacion neurocognitiva</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="talleres.html#taller-tarjeta-habilidades-sociales-evaluacion">Habilidades sociales</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="talleres.html#taller-tarjeta-legoterapia-evaluacion">lego terapia</a></li>
+                    </ul>
+              </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    CONTACTO
+                </a>
+                <ul class="dropdown-menu">
+                 <li>
+                        <a class="dropdown-item" target="_blank" href="https://linktr.ee/Jonatan_Newberry">
+                            <i class="fa-solid fa-link"></i> Linktree <!-- Icono de enlace -->
+                        </a>
+                      </li><hr class="dropdown-divider">
+                    <li>
+                        <a class="dropdown-item" href="contacto.html#form-contacto-evaluacion">Formulario </a>
+                     </li> <li><hr class="dropdown-divider"></li>
+                     <li>
+                        <a class="dropdown-item" href="contacto.html#ubicación-evaluacion"> Ubicación
+                            <i class="fas fa-map-marker-alt"></i><!-- Icono de ubicación -->
+                        </a>
+                    </li>
+                  
+                      
+                      
+                 </ul>
+            </li>
+
+
+    
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<div class="d-flex flex-column flex-md-row align-items-stretch" 
+     style="
+        background: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(20px);
+        border-radius: 15px;
+        padding: 25px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        margin: 20px 0;
+        min-height: 400px; /* Altura mínima garantizada */
+        position: relative;">
+    
+    <!-- Efecto de brillo (asegurar z-index negativo) -->
+    <div style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(120deg, 
+            rgba(255,255,255,0.1) 0%, 
+            rgba(255,255,255,0.05) 50%, 
+            rgba(255,255,255,0.1) 100%);
+        pointer-events: none;
+        background-color:   #e6e8ff;
+        border-radius: 15px;
+        z-index: -1;">
+    </div>
+
+    <!-- Contenedor de texto -->  
+
+    
+    <div class="text-container p-3 order-2 order-md-1 w-100 w-md-50" 
+         style="flex: 1; min-width: 50%;">
+         <span class="descripcion-sariri">
+        <p class="card-text">
+       Sariri es un espacio interdisciplinario dedicado a la atención integral de personas de todas las edades, con o sin diagnóstico, que buscan acompañamiento en su desarrollo, aprendizaje, comunicación, salud emocional y bienestar general.
+
+Contamos con un equipo de profesionales especializados en neurodesarrollo que trabajan de manera articulada para abordar cada caso desde una mirada integral, contemplando no solo las características individuales de cada persona, sino también el contexto familiar, educativo y social
+<span class="toggle-details" style="display: none; color: inherit;">.Atendemos a niños, adolescentes, adultos y personas mayores que presentan trastornos del neurodesarrollo como TEA, TDAH, dislexia, trastornos del lenguaje, entre otros, así como a quienes desean fortalecer habilidades cognitivas, emocionales o sociales sin contar con un diagnóstico clínico.
+
+Nuestro enfoque es respetuoso, empático y centrado en la persona. Acompañamos con compromiso y sensibilidad tanto a quienes consultan como a sus familias, generando espacios cálidos, personalizados y basados en el trabajo en equipo. 
+</p></span></span>
+  <a href="#" class="toggle-link">... Leer más</a>
+        
+        <!-- Barras de color -->
+        <div class="rectangulo-amarillo"></div>
+        <div class="rectangulo-naranja"></div>
+        <div class="rectangulo-azul-claro"></div>
+        <div class="rectangulo-azul-oscuro"></div>
+    </div>
+
+    <!-- Contenedor de imagen -->
+    <picture class="image-container order-1 order-md-2 mb-4 mb-md-0" 
+             style="flex: 1; min-width: 50%; padding-left: 25px;">
+        <source srcset="SRC/carrusel/puertasabiertas.webp" type="image/webp">
+        <img src="SRC/carrusel/puertasabiertas.png" 
+             class="card-img h-100 w-100"
+             alt="Centro Sariri"
+             style="border-radius: 10px; object-fit: cover; height: 100%;">
+    </picture>
+</div>
+</div>
+<div class="container">
+    <div class="row">
+        <!-- Imagen evaluación (50% del ancho) -->
+        <div class="col-12 col-md-6 p-0">
+            <img id="imagen-psicologia" src="SRC/carrusel/psicologia.png" 
+                 class="card-img" alt="Evaluaciones"
+                 style="width: 100%; height: 50vh; object-fit: cover;">
+        </div>
+
+        <!-- Lista de evaluaciones (50% del ancho) -->
+        <div class="col-12 col-md-6 evaluaciones-container p-4 d-flex flex-column justify-content-between">
+            <div>
+                <h5 class="card-title" id="titulo-evaluaciones">Nuestras Evaluaciones</h5>
+                <ul class="list-unstyled">
+                    <li>
+                        <strong id="neurocognitiva-title">Evaluación neurocognitiva:</strong> 
+                         
+  <span class="descripcion-evaluacion">
+Es un estudio integral que permite conocer en profundidad
+    <span class="toggle-details" style="display: none; color: inherit;">
+     
+el funcionamiento del cerebro en áreas clave como la atención,la memoria, el lenguaje, las funciones ejecutivas, habilidades académicas y las habilidades sociales. En niños y adolescentes, esta evaluación es una herramienta fundamental para comprender su desarrollo cognitivo, emocional y conductual.
+El proceso es realizado por profesionales especializados, en un entorno seguro y respetuoso, adaptado a la edad y necesidades del niño o adolescente. El objetivo final es brindar claridad, comprensión y estrategias concretas que ayuden a potenciar su bienestar y desarrollo integral.
+                           </span>
+  </span>
+  <a href="#" class="toggle-link">... Leer más</a>
+
+                    </li>
+                    <li>
+                        <strong id="psicopedagogica-title">Evaluación psicopedagógica:</strong> 
+                        <span class="descripcion-evaluacion">Detecta dificultades de aprendizaje y desarrollo académico.</span>
+                         
+                     
+                    </li>
+                    <li>
+                        <strong id="ados-title">Evaluacion ADOS-2/AD-R:</strong> 
+                        <span class="descripcion-evaluacion">
+                            El ADOS-2 es una evaluación observacional estandarizada que permite identificar conductas
+                           <span class="toggle-details" style="display: none; color: inherit;">
+  vinculadas con el espectro autista en niños, adolescentes y adultos. A través de una serie de actividades estructuradas y semiestructuradas, el evaluador observa directamente aspectos como la comunicación verbal y no verbal, la reciprocidad social, el juego simbólico y la flexibilidad conductual.
+El ADI-R es una entrevista clínica estructurada que se realiza con los padres o cuidadores principales. Profundiza en el desarrollo temprano, los antecedentes conductuales y las características sociales, comunicativas y de comportamiento repetitivo del niño o adolescente, permitiendo obtener una visión global y detallada de su historia evolutiva.
+Ambas herramientas son fundamentales en el proceso diagnóstico del autismo, ya que proporcionan información objetiva y confiable, y son utilizadas dentro de un enfoque clínico amplio, que incluye observación directa, historia de desarrollo y evaluación multidisciplinaria.
+                         </span>
+                        </span>
+                         <a href="#" class="toggle-link">... Leer más</a>
+                    </li>
+                    <li>
+                        <strong id="neurolinguistica-title">Evaluación neurolingüística:</strong> 
+                        <span class="descripcion-evaluacion">Es un estudio especializado que permite explorar en profundidad
+                             <span class="toggle-details" style="display: none; color: inherit;"> cómo el lenguaje —en todas sus formas— se desarrolla, procesa y se manifiesta en niños y adolescentes. Esta evaluación analiza tanto la comprensión como la expresión verbal, la comunicación no verbal, la capacidad narrativa, la conciencia fonológica y otros aspectos clave del lenguaje, siempre en relación con el funcionamiento neurocognitivo general.
+Su objetivo principal es detectar alteraciones en el desarrollo del lenguaje que puedan estar interfiriendo con la comunicación, el aprendizaje o las relaciones sociales.
+La evaluación se realiza a través de pruebas estandarizadas, juegos estructurados y entrevistas, adaptadas a la edad y estilo comunicativo de cada niño. Se analizan no solo los aspectos lingüísticos, sino también cómo el lenguaje se usa funcionalmente en la vida cotidiana.
+</span>
+</span>
+  <a href="#" class="toggle-link">... Leer más</a>
+                    </li>
+                    <li>
+                        <strong id="integracion-title">Evaluación de integración sensorial:</strong> 
+                        <span class="descripcion-evaluacion">La evaluación en terapia ocupacional con enfoque en integración sensorial permite
+                            <span class="toggle-details" style="display: none; color: inherit;"> 
+                                 comprender cómo un niño percibe, procesa e interactúa con los estímulos del entorno, y cómo esto impacta en su vida diaria: el juego, el aprendizaje, la alimentación, el descanso, la regulación emocional y la participación social.
+El sistema sensorial incluye no solo los sentidos clásicos (vista, oído, gusto, olfato y tacto), sino también sistemas fundamentales como el vestibular (equilibrio y movimiento), propioceptivo (conciencia corporal) e interoceptivo (registro de sensaciones internas). Cuando la integración de esta información se ve alterada, pueden aparecer desafíos en la conducta, la atención, la coordinación motriz,
+ la autorregulación o la adaptación al entorno.
+</span>
+ </span>
+  <a href="#" class="toggle-link">... Leer más</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="d-grid gap-2 col-6 mx-auto">
+                <button
+                  class="btn btn-glass w-100 whatsapp-button"
+                  type="button"
+                  data-message="Buenos días, quisiera solicitar información detallada sobre las EVALUACIONES que realizan. Desde ya, muchas gracias.">
+                  CONTACTO EVALUACIÓN
+                </button>
+              </div>
+<br>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-glass w-100 obra-social-button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+Trabajamos con las siguientes Obras Sociales
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel-obra-social" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel-obra-social">Trabajamos con las siguientes Obras Sociales</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ul>
+            <li>Sancor Salud, OSDE, UNION PERSONAL, OSECAC, OSME, OSSACRA, RED. ARG. DE SANITARIOS, ELEVAR, OSTEE, SMATA, OSPECON, OSMEDICA, OSPEJ, OSPM, OSCHOCA.</li>
+<li>Tambien trabajamos con CUD.</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+        </div>
+
+
+    </div>
+</div>
+
+
+
+
+
+
+
+<!-- Sección Especialidades -->
+<div class="row align-items-stretch">
+    <!-- Lista de especialidades (50% del ancho) -->
+    <div class="col-12 col-md-6 especialidades-container p-4">
+        <h5 class="card-title" id="titulo-especialidades">Nuestras Especialidades</h5>
+        <p></p>
+        <ul class="list-unstyled">
+            <li>
+                <strong id="psicopedagogia-title">PSICOPEDAGOGÍA:</strong> 
+                <span class="descripcion-especialidad">Se trabaja desde una mirada neuroeducativa para acompañar procesos de aprendizaje
+                    <span class="toggle-details" style="display: none; color: inherit;"> , atendiendo a las funciones cognitivas involucradas como la atención, la memoria, las funciones ejecutivas y la autorregulación. Se diseñan intervenciones personalizadas para potenciar el 
+                    rendimiento escolar y el bienestar socioemocional del niño o adolescente.
+                    </span>
+ </span>
+  <a href="#" class="toggle-link">... Leer más</a>
+            </li>
+            <li>
+                <strong id="psicologia-title">PSICOLOGÍA:</strong> 
+                <span class="descripcion-especialidad">Brinda un espacio terapéutico donde se abordan aspectos emocionales, conductuales y vinculares.
+                    <span class="toggle-details" style="display: none; color: inherit;"> 
+                         Se acompaña al niño o adolescente en el desarrollo de recursos internos para afrontar desafíos, comprender 
+                    sus emociones y fortalecer su autoestima, trabajando también con las familias cuando es necesario.</span>
+           
+ </span>
+  <a href="#" class="toggle-link">... Leer más</a>
+                </li>
+            <li>
+                <strong id="fonoaudiologia-title">FONOAUDIOLOGÍA:</strong> 
+                <span class="descripcion-especialidad">Se interviene en las áreas del lenguaje oral y escrito, habla, comunicación y conciencia fonológica,
+                    <span class="toggle-details" style="display: none; color: inherit;"> 
+                         desde una perspectiva que integra el funcionamiento del sistema nervioso con el desarrollo del lenguaje.
+                     Se busca favorecer una comunicación eficaz y funcional, clave para el aprendizaje y la socialización.</span>
+           
+ </span>
+  <a href="#" class="toggle-link">... Leer más</a>
+                    </li>
+            <li>
+                <strong id="terapiaocupacional-title">TERAPISTA OCUPACIONAL:</strong> 
+                <span class="descripcion-especialidad">Promueve la autonomía y el desarrollo de habilidades necesarias para la vida diaria.<span class="toggle-details" style="display: none; color: inherit;"> 
+                     Se interviene en el juego, la motricidad fina y gruesa, la planificación motriz
+                     y la autorregulación, integrando aspectos sensoriales que pueden influir en el desempeño cotidiano.</span>
+                      </span>
+  <a href="#" class="toggle-link">... Leer más</a>
+            </li>
+            <li>
+                <strong id="musicoterapia-title">MUSICOTERAPIA:</strong> 
+                <span class="descripcion-especialidad">Utiliza la música como canal de expresión, comunicación y regulación emocional.
+                    <span class="toggle-details" style="display: none; color: inherit;"> 
+                         A través de la improvisación, el uso de instrumentos y el juego musical, se construye un espacio terapéutico que favorece el desarrollo emocional, social y cognitivo, adaptado a cada necesidad particular.</span>
+            
+ </span>
+  <a href="#" class="toggle-link">... Leer más</a>
+            </li>
+        </ul>
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <button
+              class="btn btn-glass w-100 whatsapp-button"
+              type="button"
+              data-message="Buenos días, me comunico con ustedes para solicitar información acerca de los TRATAMIENTOS que ofrecen. Desde ya, muchas gracias por su atención.">
+              CONTACTO TRATAMIENTO
+            </button>
+          </div>
+        
+          
+
+
+    </div>
+
+    <!-- Carrusel (50% del ancho) -->
+    <div class="col-12 col-md-6 p-0" style="height: 50vh;">
+        <div id="carouselExample" class="carousel slide h-100" data-bs-ride="carousel">
+            <div class="carousel-inner h-100">
+                <div class="carousel-item active h-100">
+                    <img src="SRC/carrusel/acompañante-externo.png" 
+                         class="d-block w-100 h-100" 
+                         alt="Acompañamiento terapéutico"
+                         style="object-fit: cover;">
+                </div>
+                <div class="carousel-item h-100">
+                    <img src="SRC/carrusel/fonoaudiologia.png" 
+                         class="d-block w-100 h-100" 
+                         alt="Fonoaudiología"
+                         style="object-fit: cover;">
+                </div>
+                <div class="carousel-item h-100">
+                    <img src="SRC/carrusel/musicoterapia.png" 
+                         class="d-block w-100 h-100" 
+                         alt="Musicoterapia"
+                         style="object-fit: cover;">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</div>
+<!-- Línea divisoria -->
+
+
+<!-- Sección Talleres -->
+<div class="row align-items-stretch" style="
+    background: rgba(255, 255, 255, 0.15); /* Transparencia muy ligera */
+    backdrop-filter: blur(20px); /* Desenfoque intenso */
+    border-radius: 15px;
+    padding: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Borde de luz sutil */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4); /* Sombra suave */
+    margin: 0;
+    position: relative;">
+    
+    <!-- Efecto de brillo adicional -->
+    <div style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(120deg, 
+            rgba(255,255,255,0.1) 0%, 
+            rgba(255,255,255,0.05) 50%, 
+            rgba(255,255,255,0.1) 100%);
+        pointer-events: none;
+        border-radius: 15px;
+        z-index: -1;">
+    </div>
+<!-- Carrusel/Imagen (50% ancho - izquierda) -->
+<div class="col-12 col-md-6 talleres-container p-4 order-md-2">
+    <h5 class="card-title" id="titulo-talleres">Nuestros Talleres</h5>
+    <ul class="list-unstyled">
+           <li>
+            <strong id="Adultos-Mayores-title">Estimulacion neurocognitiva:</strong> 
+            <span class="descripcion-taller">Está dirigido a personas mayores con o sin diagnóstico neurológico
+                <span class="toggle-details" style="display: none; color: inherit;"> 
+                    , incluyendo aquellas que presentan trastornos neurodegenerativos como deterioro cognitivo leve, enfermedad de Alzheimer, Parkinson u otras demencias.
+
+            </span>
+        
+ </span>
+  <a href="#" class="toggle-link">... Leer más</a>
+        </li>
+        <li>
+            <strong id="Habilidades-Sociales-title">Habilidades Sociales:</strong> 
+            <span class="descripcion-taller">El enfoque del taller es funcional, respetuoso y centrado en la autonomía
+                <span class="toggle-details" style="display: none; color: inherit;"> 
+                    , adaptando las propuestas a las necesidades y ritmos de cada participante. 
+                Se prioriza el desarrollo de las habilidades de la vida diaria que puedan ser aplicadas en contextos reales</span>
+        
+ </span>
+  <a href="#" class="toggle-link">... Leer más</a>
+            </li>
+     
+
+        <li>
+            <strong id="Lego-Terapia-title">Lego Terapia:</strong> 
+            <span class="descripcion-taller">Está diseñado para promover el desarrollo integral a través del
+                 uso terapéutico y recreativo de los ladrillos LEGO®.
+                 <span class="toggle-details" style="display: none; color: inherit;"> 
+                     Esta metodología innovadora y lúdica permite trabajar habilidades cognitivas, emocionales, sociales y motrices en niños, adolescentes y adultos.</span>
+       
+ </span>
+  <a href="#" class="toggle-link">... Leer más</a>
+        </li>
+    </ul>
+
+
+
+    <div class="d-grid gap-2 col-6 mx-auto">
+        <button
+          class="btn btn-glass w-100 whatsapp-button"
+          type="button"
+          data-message="Buenos días, me comunico con ustedes para solicitar información acerca de los TALLERES que ofrecen. Desde ya, muchas gracias por su atención.">
+          CONTACTO TALLERES
+        </button>
+      </div>
+      
+
+      <br>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-glass w-100 obra-social-button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+Trabajamos con las siguientes Obras Sociales
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel-obra-social" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel-obra-social">Trabajamos con las siguientes Obras Sociales</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ul>
+            <li>Sancor Salud, OSDE, UNION PERSONAL, OSECAC, OSME, OSSACRA, RED. ARG. DE SANITARIOS, ELEVAR, OSTEE, SMATA, OSPECON, OSMEDICA, OSPEJ, OSPM, OSCHOCA.</li>
+<li>Tambien trabajamos con CUD.</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</div>
+<div class="col-12 col-md-6 p-0 order-md-1" style="height: 50vh;">
+    <div id="carouselTalleres" class="carousel slide h-100" data-bs-ride="carousel">
+
+        
+        <div class="carousel-inner h-100">
+            <div class="carousel-item active h-100">
+                <img src="SRC/carrusel/fonoaudiologia.png" 
+                     class="d-block w-100 h-100" 
+                     alt="Taller Habilidades Sociales"
+                     style="object-fit: cover;">
+            </div>
+            <div class="carousel-item h-100">
+                <img src="SRC/carrusel/musicoterapia.png" 
+                     class="d-block w-100 h-100" 
+                     alt="Taller Adultos Mayores"
+                     style="object-fit: cover;">
+            </div>
+            <div class="carousel-item h-100">
+                <img src="SRC/carrusel/habilidades-sociales.png" 
+                     class="d-block w-100 h-100" 
+                     alt="Taller Lego Terapia"
+                     style="object-fit: cover;">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselTalleres" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselTalleres" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+<!-- Lista de talleres (50% del ancho - derecha) -->
+
+</div>
+<div class="social-icon whatsapp-icon">
+  <a href="https://wa.me/5491123719454" target="_blank" rel="noopener noreferrer">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+  </a>
+</div>
+
+<div class="social-icon facebook-icon">
+  <a href="https://www.facebook.com/centropuertasabiertas" target="_blank" rel="noopener noreferrer">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+  </a>
+</div>
+
+<div class="scroll-up-icon">
+  <i class="fa-solid fa-arrow-up"></i>
+</div>
+
+
+  
+
+<footer>
+  
+    <div class="footer">
+      <div class="container text-center">
+        <div class="footer-icons">
+          <a href="https://wa.me/5491162676675" target="_blank" class="footer-social-icon">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+          </a>
+          <a href="https://www.facebook.com/ReynagaGabriel" target="_blank" class="footer-social-icon">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+          </a>
+          <a href="https://www.instagram.com/espacio.sariri?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="footer-social-icon">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram">
+          </a>
+  
+          <button class="custom-button" onclick="location.href='mailto:reynagabriel.psp@gmail.com?subject=Envío%20de%20CV&body=Adjunto%20mi%20currículum%20para%20su%20consideración.'">
+            ¡Envíanos tu CV!
+          </button>
+          
+    
+        
+        </div>
+       <div><br></div>
+       <div style="text-align: center; font-family: Arial, sans-serif; color: #333;">
+        <div style="display: flex; justify-content: center; align-items: stretch; margin: 10px 0;">
+            <div style="margin-right: 20px; flex: 1; min-width: 150px;">
+              <strong>Encontranos en:</strong><br>
+              Av. Mitre 5616 // Av. Mitre 5489,<br>
+              Wilde, Avellaneda,<br>
+              Buenos Aires.
+          </div>
+          <div style="margin-right: 20px; flex: 1; min-width: 150px;">
+              <strong>Teléfono:</strong><br>
+              <a href="tel:1142075531" style="text-decoration: none; color: inherit;">1142075531</a>
+          </div>
+      </div>
+          <div style="flex: 1; min-width: 150px;">
+              <strong>Horario:</strong><br>
+              Lunes a Viernes de 9:00 a 20:00 hs.
+          </div>
+      </div>
+      <p style="margin: 20px 0; font-size: 0.9em; color: #777;">
+          &copy; 2025 Centro interdisciplinario SARIRI. Todos los derechos reservados.
+      </p>
+    </div>
+    </footer>
+</body>
+</html>
