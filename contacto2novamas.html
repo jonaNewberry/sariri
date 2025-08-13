@@ -180,35 +180,22 @@
 <hr>
 
 <!-- Formulario -->
- <!-- Formulario con endpoint oculto y protección anti-spam -->
 <div id="form-contacto-evaluacion" class="container my-5 d-flex justify-content-center">
   <div class="p-4 rounded-4 shadow-lg w-100" style="max-width: 960px; background-color: #e7e0e0;">
     <h3 id="contacto-title" class="text-center">Escribinos</h3>
-
-    <!-- Formulario sin action (lo agrega JS) -->
-    <form id="contactForm">
-      <!-- Campos ocultos para Formspree -->
-      <input type="hidden" name="_next" value="https://jonanewberry.github.io/sariri/#ubicación-evaluacion">
-      <input type="hidden" name="_captcha" value="true">
-      <!-- Honeypot: campo oculto que los bots rellenan, los humanos no -->
-      <input type="text" name="_honey" style="display:none !important;">
-
+    <form target="_blank" action="https://formsubmit.co/9d98c735afeff3a2aa862a94480bc2d4" method="POST">
+     <input type="hidden" name="_next" value="http://127.0.0.1:5501/contacto.html#ubicaci%C3%B3n-evaluacion">
       <!-- Datos personales -->
-      <div class="row g-3 mb-2">
-        <div class="col-12 col-md-6">
-          <div class="mb-3">
-            <input type="text" class="form-control rounded-2 py-2 shadow-sm" name="name" placeholder="Nombre" required>
-          </div>
-        </div>
-        <div class="col-12 col-md-6">
-          <div class="mb-3">
-            <input type="text" class="form-control rounded-2 py-2 shadow-sm" name="apellido" placeholder="Apellido" required>
-          </div>
-        </div>
-        <div class="col-12">
-          <div class="mb-3">
-            <input type="email" class="form-control rounded-2 py-2 shadow-sm" name="email" placeholder="Correo electrónico" required>
-          </div>
+      <div class="row g-3 mb-2"><div>
+        <div class="mb-3">
+          <input type="text" class="form-control rounded-2 py-2 shadow-sm" name="name" placeholder="Nombre" required>
+        </div></div>
+        <div>
+        <div class="mb-3">
+          <input type="text" class="form-control rounded-2 py-2 shadow-sm" name="apellido" placeholder="Apellido" required>
+        </div></div>
+        <div class="mb-3">
+          <input type="email" class="form-control rounded-2 py-2 shadow-sm" name="email" placeholder="Correo electrónico" required>
         </div>
       </div>
 
@@ -221,69 +208,10 @@
       <div class="text-center">
         <button type="submit" class="btn btn-primary rounded-pill px-5 py-2">Enviar mensaje</button>
       </div>
+
     </form>
-
-    <!-- Mensaje de éxito (oculto por defecto) -->
-    <div id="successMessage" class="alert alert-success mt-3 text-center" style="display: none;">
-      ¡Gracias! Tu mensaje fue enviado con éxito. 🎉
-    </div>
-
-    <!-- Mensaje de error -->
-    <div id="errorMessage" class="alert alert-danger mt-3 text-center" style="display: none;">
-      Hubo un error al enviar el mensaje. Por favor, intentá nuevamente.
-    </div>
   </div>
 </div>
-
-<!-- Script para manejar el formulario -->
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const form = document.getElementById("contactForm");
-    const successMessage = document.getElementById("successMessage");
-    const errorMessage = document.getElementById("errorMessage");
-
-    // Decodificar el endpoint desde Base64 (oculto)
-    const endpoint = atob("aHR0cHM6Ly9mb3Jtc3ByZWUuaW8vZi9tcWFsbmdraz==");
-
-    // Asignar el action al formulario
-    form.action = endpoint;
-
-    // Manejar el envío
-    form.addEventListener("submit", function (e) {
-      e.preventDefault(); // Evita el envío normal
-
-      const formData = new FormData(form);
-
-      fetch(endpoint, {
-        method: "POST",
-        body: formData,
-        headers: {
-          "Accept": "application/json",
-        },
-      })
-        .then((response) => {
-          if (response.ok) {
-            // Éxito
-            form.reset();
-            successMessage.style.display = "block";
-            errorMessage.style.display = "none";
-
-            // Redirigir después de 10 segundos
-            setTimeout(() => {
-              window.location.href = "https://jonanewberry.github.io/sariri/#ubicación-evaluacion";
-            }, 5000);
-          } else {
-            throw new Error("Error en la respuesta de Formspree");
-          }
-        })
-        .catch((error) => {
-          console.error("Error:", error);
-          successMessage.style.display = "none";
-          errorMessage.style.display = "block";
-        });
-    });
-  });
-</script>
 
 
 
