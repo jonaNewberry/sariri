@@ -824,7 +824,8 @@ html {
   padding: 10px 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   cursor: pointer;
-  margin: 10px;
+   margin-top: 10px;   
+ 
 }
 .exampleModalLabel-obra-social{
    background-color: white !important; /* conserva tu color */
@@ -835,7 +836,7 @@ html {
   padding: 10px 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   cursor: pointer;
-  margin: 10px;
+ 
 }
 
 .whatsapp-button {
@@ -914,3 +915,7 @@ body::after {
         filter: blur(4px);
     }
 }
+* {
+  outline: 1px solid red !important;
+}
+/* */
