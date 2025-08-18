@@ -915,7 +915,7 @@ body::after {
         filter: blur(4px);
     }
 }
-* {
+
+/* * {
   outline: 1px solid red !important;
-}
-/* */
+}*/
