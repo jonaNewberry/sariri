@@ -893,7 +893,7 @@ body::before {
     position: fixed;
     top: 0; left: 0;
     width: 100%; height: 100%;
-    background-image: url('SRC/gemini2.png');
+    background-image: url('SRC/gemini2.webp');
     background-size: cover;
     z-index: -2;           /* Imagen de fondo: más atrás */
     pointer-events: none;
