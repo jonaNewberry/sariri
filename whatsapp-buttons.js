@@ -1,17 +1,15 @@
 // whatsapp-buttons.js
-
 document.addEventListener('DOMContentLoaded', () => {
-    const defaultPhoneNumber = '542215038029';
+    const defaultPhoneNumber = '5491123719454';
     const whatsappButtons = document.querySelectorAll('.whatsapp-button');
-  
-    if (!whatsappButtons.length) return; // No hay botones, salimos
-  
+
+    if (!whatsappButtons.length) return;
+
     whatsappButtons.forEach(button => {
-      button.addEventListener('click', () => {
-        const message = button.getAttribute('data-message') || '';
-        const url = `https://wa.me/${defaultPhoneNumber}?text=${encodeURIComponent(message)}&t=${Date.now()}`;
-        window.open(url, '_blank', 'noopener,noreferrer');
-      });
+        button.addEventListener('click', () => {
+            const message = button.getAttribute('data-message') || '';
+            const url = `https://wa.me/${defaultPhoneNumber}?text=${encodeURIComponent(message)}&t=${Date.now()}`;
+            window.open(url, '_blank', 'noopener,noreferrer');
+        });
     });
-  });
-  
+});

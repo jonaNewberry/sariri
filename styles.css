@@ -1,6 +1,11 @@
 .navbar-custom {
   background-color: #feffff !important;
     padding-right: 20px;
+    /* Asegurar que el navbar siempre esté arriba */
+
+  z-index: 1100; /* Mayor que los íconos sociales */
+  position: relative; /* Asegura que el z-index funcione */
+
 }
 #sariri-title {
   margin-right: 60px; /* Ajusta este valor para aumentar la separación */
@@ -36,19 +41,19 @@ body {
 
  .social-icon  {
       position: fixed;
-      right: 20px;
-      width: 40px; 
-      height: 40px;
+      right: 10px;
+      width: 60px; 
+      height: 60px;
       z-index: 1000;
     }
 
     .whatsapp-icon {
-      bottom: 140px; 
+      bottom: 250px; 
     }
 
     
       .facebook-icon {
-        bottom: 90px; 
+        bottom: 180px; 
   }
     
   @media (max-width: 768px) {
