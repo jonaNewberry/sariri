@@ -1,6 +1,6 @@
 // whatsapp-buttons.js
 document.addEventListener('DOMContentLoaded', () => {
-    const defaultPhoneNumber = '5491123719454';
+    const defaultPhoneNumber = '5491162676675';
     const whatsappButtons = document.querySelectorAll('.whatsapp-button');
 
     if (!whatsappButtons.length) return;
