@@ -226,7 +226,7 @@ color: #78B7B5;
 
 
 .nav-item.dropdown:hover .dropdown-menu {
-display: block;
+/*display: block;*/
 }
 .dropdown-item {
 color: #78B7B5; 
@@ -234,12 +234,12 @@ color: #78B7B5;
 
 
 .dropdown-menu {
-display: none;
+/*display: none;*/
 transition: opacity 0.3s ease-in-out;
 }
 
 .nav-item.dropdown:hover .dropdown-menu {
-display: block;
+/*display: block;*/
 opacity: 1;
 }
 
