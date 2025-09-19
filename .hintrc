@@ -46,7 +46,8 @@
       {
         "link-name": "off"
       }
-    ]
+    ],
+    "apple-touch-icons": "off"
   },
   "browserslist": [
     "defaults",
