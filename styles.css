@@ -42,8 +42,8 @@ body {
  .social-icon  {
       position: fixed;
       right: 10px;
-      width: 60px; 
-      height: 60px;
+      width: 70px; 
+      height: 70px;
       z-index: 1000;
     }
 
@@ -65,14 +65,14 @@ body {
       }
   }
     .social-icon img {
-width: 50px; 
+width: 60px; 
 height: auto;
 
 
   }
 
   .footer-social-icon img {
-width: 50px;
+width: 60px;
 height: auto;
 margin: 0 20px; 
 opacity: 0.7; 
@@ -177,7 +177,7 @@ body {
     padding: 0;
     font-size: 14px;
     background-color: #feffff;
-    background-image: url('SRC/gemini2.png');
+    background-image: url('SRC/saririfondo.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -225,9 +225,7 @@ color: #78B7B5;
 }
 
 
-.nav-item.dropdown:hover .dropdown-menu {
-/*display: block;*/
-}
+
 .dropdown-item {
 color: #78B7B5; 
 }
@@ -461,7 +459,7 @@ p {
 }
 
 .titulo-especialidades{
-  margin-left: 2rem;
+  margin-left: 2.5rem;
 }
 #psicopedagogia-title{ color: #2c3e50; }
 #psicologia-title{ color: #16a085; }
@@ -764,7 +762,7 @@ html {
     transition: color 0.3s ease;
 }
 #titulo-evaluaciones {
-  margin-left: 2rem;  /* Separación de la izquierda */
+  margin-left: 2.5rem;  /* Separación de la izquierda */
 }
 
 #evaluacion-neurocognitiva-evaluacion {
@@ -898,7 +896,7 @@ body::before {
     position: fixed;
     top: 0; left: 0;
     width: 100%; height: 100%;
-    background-image: url('SRC/gemini2.webp');
+    background-image: url('SRC/saririfondo.webp');
     background-size: cover;
     z-index: -2;           /* Imagen de fondo: más atrás */
     pointer-events: none;
