@@ -253,7 +253,7 @@
     <!-- Formulario sin action (lo agrega JS) -->
     <form id="contactForm">
       <!-- Campos ocultos para Formspree -->
-      <input type="hidden" name="_next" value="https://www.espaciosariri.com.ar/index">
+      <input type="hidden" name="_next" value="https://www.espaciosariri.com.ar">
       <input type="hidden" name="_captcha" value="true">
       <!-- Honeypot: campo oculto que los bots rellenan, los humanos no -->
       <input type="text" name="_honey" style="display:none !important;">
@@ -339,9 +339,9 @@
             errorMessage.style.display = "none";
 
             // Redirigir después de 4 segundos
-            setTimeout(() => {
-              window.location.href = "https://www.espaciosariri.com.ar/index";
-            }, 4000);
+          //  setTimeout(() => {
+            //   window.location.href = "https://www.espaciosariri.com.ar/index";
+           //   }, 4000);
           } else {
             throw new Error("Error en la respuesta de Formspree");
           }
