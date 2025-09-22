@@ -819,10 +819,10 @@ html {
   border-radius: 5px;
 }
 .obra-social-button {
-   background-color: white !important; /* conserva tu color */
-  color: #006E77 !important;
+   background-color:#006E77  !important; /* conserva tu color */
+  color: white !important;
   border: none;
-  border-radius: 5px;
+  border-radius: 6px;
   font-size: 16px;
   padding: 10px 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -843,7 +843,7 @@ html {
 }
 
 .whatsapp-button {
-  background-color: white !important; /* conserva tu color */
+  background-color: #f1d4d8da !important; /* conserva tu color */
   color: #006E77 !important;
   border: none;
   border-radius: 5px;
@@ -853,10 +853,10 @@ html {
   cursor: pointer;
   margin: 10px;
 }
-
-      .whatsapp-button:hover {
-          background-color: #128C7E; /* Color más oscuro al pasar el mouse */
-      }
+.whatsapp-button:hover {
+  background-color: #bda8abe0  !important; /* Melocotón más intenso */
+  color: #006d77d8 !important;
+}
       .custom-button {
         background-color: #0057b3d2; /* azul brillante */
         color: white;
