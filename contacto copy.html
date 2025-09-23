@@ -266,7 +266,8 @@
         </div>
         <div class="col-12 col-md-6">
           <div class="mb-3">
-            <input type="text" class="form-control rounded-2 py-2 shadow-sm" name="apellido" placeholder="Apellido" required>
+            <input type="text" class="form-control rounded-2 py-2 shadow-sm" name="apellido" 
+            placeholder="Apellido" required>
           </div>
         </div>
         <div class="col-12 col-md-6">
@@ -280,8 +281,10 @@
           </div>
         </div>
       </div>
-      <div class="g-recaptcha" data-sitekey="your_site_key"></div>
-      <!-- Mensaje -->
+      <div>
+      <div class="g-recaptcha" data-sitekey="6LdPANMrAAAAAIm-SDittMQfu359Il_gsZCU5eqo"></div>
+     </div> 
+     <!-- Mensaje -->
       <div class="mb-3">
         <textarea class="form-control rounded-3 py-3 shadow-sm" name="message" rows="6" placeholder="Escribí tu mensaje..." required></textarea>
       </div>
@@ -298,7 +301,7 @@
     </div>
 
     <!-- Mensaje de error -->
-    <div id="errorMessage" class="alert alert-danger mt-3 text-center" style="display: none;">
+   <div id="errorMessage" class="alert alert-danger mt-3 text-center" style="display: none;">
       Hubo un error al enviar el mensaje. Por favor, intentá nuevamente.
     </div>
   </div>
@@ -306,52 +309,68 @@
 
 <!-- Script para manejar el formulario -->
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const form = document.getElementById("contactForm");
-    const successMessage = document.getElementById("successMessage");
-    const errorMessage = document.getElementById("errorMessage");
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("contactForm");
+  const successMessage = document.getElementById("successMessage");
+  const errorMessage = document.getElementById("errorMessage");
+  const submitButton = form.querySelector('button[type="submit"]');
 
-    // Decodificar el endpoint desde Base64 (oculto)
-    const endpoint = atob("aHR0cHM6Ly9mb3Jtc3ByZWUuaW8vZi9tZ3ZsZ2VnYg==");
+  // Decodificar endpoint (mejor aún: usar directamente, no hay necesidad de ofuscar)
+  const endpoint = atob("aHR0cHM6Ly9mb3Jtc3ByZWUuaW8vZi9tZ3ZsZ2VnYg==");
+  form.action = endpoint;
 
-    // Asignar el action al formulario
-    form.action = endpoint;
+  form.addEventListener("submit", async function (e) {
+    e.preventDefault();
 
-    // Manejar el envío
-    form.addEventListener("submit", function (e) {
-      e.preventDefault(); // Evita el envío normal
+    const recaptchaContainer = document.querySelector('.g-recaptcha');
+    const existingError = document.getElementById('recaptcha-error');
+    if (existingError) existingError.remove();
 
-      const formData = new FormData(form);
+    // Validar reCAPTCHA
+    const recaptchaResponse = grecaptcha.getResponse();
+    if (!recaptchaResponse || recaptchaResponse.length === 0) {
+      const errorDiv = document.createElement('div');
+      errorDiv.className = 'text-danger mt-2';
+      errorDiv.textContent = 'Por favor, completa el reCAPTCHA. 🙏';
+      errorDiv.id = 'recaptcha-error';
+      recaptchaContainer.parentNode.appendChild(errorDiv);
+      return;
+    }
 
-      fetch(endpoint, {
+    // Deshabilitar botón y mostrar estado de carga
+    submitButton.disabled = true;
+    submitButton.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Enviando...';
+
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch(endpoint, {
         method: "POST",
         body: formData,
         headers: {
           "Accept": "application/json",
         },
-      })
-        .then((response) => {
-          if (response.ok) {
-            // Éxito
-            form.reset();
-            successMessage.style.display = "block";
-            errorMessage.style.display = "none";
+      });
 
-            // Redirigir después de 4 segundos
-          //  setTimeout(() => {
-            //   window.location.href = "https://www.espaciosariri.com.ar/index";
-           //   }, 4000);
-          } else {
-            throw new Error("Error en la respuesta de Formspree");
-          }
-        })
-        .catch((error) => {
-          console.error("Error:", error);
-          successMessage.style.display = "none";
-          errorMessage.style.display = "block";
-        });
-    });
+      if (!response.ok) throw new Error("Error en la respuesta de Formspree");
+
+      // Éxito
+      form.reset();
+      grecaptcha.reset();
+      successMessage.style.display = "block";
+      errorMessage.style.display = "none";
+
+    } catch (error) {
+      console.error("Error:", error);
+      errorMessage.style.display = "block";
+      successMessage.style.display = "none";
+    } finally {
+      // Rehabilitar botón
+      submitButton.disabled = false;
+      submitButton.textContent = "Enviar mensaje";
+    }
   });
+});
 </script>
 <div class="social-icon whatsapp-icon">
   <a href="https://wa.me/5491162676675" target="_blank" rel="noopener noreferrer" style="color: #25D366; font-size: 2.5rem;">
