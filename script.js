@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
   };
 
   // Validar que los elementos existan antes de manipularlos
-  if (!whatsappIcon || !facebookIcon || instagramIcon || !scrollUpIcon) {
+  if (!whatsappIcon || !facebookIcon || !instagramIcon || !scrollUpIcon) {
     console.warn("Algunos íconos no se encontraron en el DOM.");
   }
 
