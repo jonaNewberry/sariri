@@ -4,17 +4,17 @@ document.addEventListener('DOMContentLoaded', function () {
   // === 1. Manejo de íconos flotantes (WhatsApp, Facebook, Scroll Up) ===
   const whatsappIcon = document.querySelector(".whatsapp-icon");
   const facebookIcon = document.querySelector(".facebook-icon");
-  const instagramkIcon = document.querySelector(".instagram-icon");
+  const instagramIcon = document.querySelector(".instagram-icon");
   const scrollUpIcon = document.querySelector(".scroll-up-icon");
 
   const initialPositions = {
-    whatsapp: 90,
-    facebook: 170,
-    instagram:240
+    whatsapp: 100,
+    facebook: 200,
+    instagram:300
   };
 
   // Validar que los elementos existan antes de manipularlos
-  if (!whatsappIcon || !facebookIcon || instagramkIcon || !scrollUpIcon) {
+  if (!whatsappIcon || !facebookIcon || instagramIcon || !scrollUpIcon) {
     console.warn("Algunos íconos no se encontraron en el DOM.");
   }
 
@@ -22,16 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
   window.addEventListener("scroll", () => {
     const scrollPosition = window.scrollY;
 
-    if (whatsappIcon) {
-      whatsappIcon.style.top = initialPositions.whatsapp + scrollPosition * 0.03 + "px";
-    }
-
-    if (facebookIcon) {
-      facebookIcon.style.top = initialPositions.facebook + scrollPosition * 0.03 + "px";
-    }
- if (instagramkIcon) {
-      instagramkIcon.style.top = initialPositions.instagram + scrollPosition * 0.03 + "px";
-    }
+  
     // Mostrar/Ocultar flecha de subir
     if (scrollUpIcon) {
       if (scrollPosition > 100) {

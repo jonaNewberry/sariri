@@ -48,7 +48,7 @@ body {
     }
 
     .whatsapp-icon {
-      bottom: 260px; 
+      bottom: 290px; 
     }
 
     
@@ -61,14 +61,14 @@ body {
     
   @media (max-width: 768px) {
       .whatsapp-icon {
-          bottom: 110px; 
+          bottom: 130px; 
       }
       .facebook-icon {
-          bottom: 60px; 
+          bottom: 80px; 
       }
 
       .instagram-icon{
-    bottom: 10px;
+    bottom: 20px;
   }
   .social-icon {
         right: 1px;   /* También pegado al borde en móvil */
